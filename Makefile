@@ -1,7 +1,7 @@
-DEVICE  = attiny45
-F_CPU   = 16500000
-FUSE_L  = 0xe1
-FUSE_H  = 0xdd
+DEVICE  = attiny44
+F_CPU   = 8000000 #
+FUSE_L  = 0xC2 # internal 8MHz oscillator running ATTINY at 8MHz
+FUSE_H  = 0xDF # SPI programming enabled
 AVRDUDE = avrdude -c avrisp2 -P usb -p $(DEVICE) # edit this line for your programmer
 
 
@@ -72,8 +72,7 @@ main.hex: main.elf
 disasm:	main.elf
 	avr-objdump -d main.elf
 
-cpp:
-	$(COMPILEPP) -E main.cpp 
 c:
+	$(COMPILE) -E main.c 
 	$(COMPILE) -E usiTwiSlave.c 
 
