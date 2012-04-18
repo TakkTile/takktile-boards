@@ -295,10 +295,10 @@ ISR( USI_START_VECTOR ) {
 	// Condition as in Application Note AVR312 because the Stop Condition Flag is
 	// going to be set from the last TWI sequence
 	while (
-			 // SCL his high
-			 ( PIN_USI & ( 1 << PIN_USI_SCL ) ) &&
-			 // and SDA is low
-			 !( ( PIN_USI & ( 1 << PIN_USI_SDA ) ) )
+			// SCL is high
+			( PIN_USI & ( 1 << PIN_USI_SCL ) ) &&
+			// and SDA is low
+			!( ( PIN_USI & ( 1 << PIN_USI_SDA ) ) )
 	);
 
 
@@ -307,44 +307,44 @@ ISR( USI_START_VECTOR ) {
 		// a Stop Condition did not occur
 
 		USICR =
-				 // keep Start Condition Interrupt enabled to detect RESTART
-				 ( 1 << USISIE ) |
-				 // enable Overflow Interrupt
-				 ( 1 << USIOIE ) |
-				 // set USI in Two-wire mode, hold SCL low on USI Counter overflow
-				 ( 1 << USIWM1 ) | ( 1 << USIWM0 ) |
-				 // Shift Register Clock Source = External, positive edge
-				 // 4-Bit Counter Source = external, both edges
-				 ( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
-				 // no toggle clock-port pin
-				 ( 0 << USITC );
+				// keep Start Condition Interrupt enabled to detect RESTART
+				( 1 << USISIE ) |
+				// enable Overflow Interrupt
+				( 1 << USIOIE ) |
+				// set USI in Two-wire mode, hold SCL low on USI Counter overflow
+				( 1 << USIWM1 ) | ( 1 << USIWM0 ) |
+				// Shift Register Clock Source = External, positive edge
+				// 4-Bit Counter Source = external, both edges
+				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
+				// no toggle clock-port pin
+				( 0 << USITC );
 
 	}
 	else {
 
 		// a Stop Condition did occur
 		USICR =
-				 // enable Start Condition Interrupt
-				 ( 1 << USISIE ) |
-				 // disable Overflow Interrupt
-				 ( 0 << USIOIE ) |
-				 // set USI in Two-wire mode, no USI Counter overflow hold
-				 ( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-				 // Shift Register Clock Source = external, positive edge
-				 // 4-Bit Counter Source = external, both edges
-				 ( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
-				 // no toggle clock-port pin
-				 ( 0 << USITC );
+				// enable Start Condition Interrupt
+				( 1 << USISIE ) |
+				// disable Overflow Interrupt
+				( 0 << USIOIE ) |
+				// set USI in Two-wire mode, no USI Counter overflow hold
+				( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
+				// Shift Register Clock Source = external, positive edge
+				// 4-Bit Counter Source = external, both edges
+				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
+				// no toggle clock-port pin
+				( 0 << USITC );
 
 	} // end if
 
 	USISR =
-			 // clear interrupt flags - resetting the Start Condition Flag will
-			 // release SCL
-			 ( 1 << USI_START_COND_INT ) | ( 1 << USIOIF ) |
-			 ( 1 << USIPF ) |( 1 << USIDC ) |
-			 // set USI to sample 8 bits (count 16 external SCL pin toggles)
-			 ( 0x0 << USICNT0);
+			// clear interrupt flags - resetting the Start Condition Flag will
+			// release SCL
+			( 1 << USI_START_COND_INT ) | ( 1 << USIOIF ) |
+			( 1 << USIPF ) |( 1 << USIDC ) |
+			// set USI to sample 8 bits (count 16 external SCL pin toggles)
+			( 0x0 << USICNT0);
 
 } // end ISR( USI_START_VECTOR )
 
