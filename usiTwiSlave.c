@@ -202,7 +202,7 @@ void usiTwiSlaveInit( uint8_t ownAddress ) {
 	// set SDA high
 	PORT_USI |= ( 1 << PORT_USI_SDA );
 
-	// Set SDA as input
+	// set SDA as input
 	DDR_USI &= ~( 1 << PORT_USI_SDA );
 
 	USICR =
@@ -212,7 +212,7 @@ void usiTwiSlaveInit( uint8_t ownAddress ) {
 			 ( 0 << USIOIE ) |
 			 // set USI in Two-wire mode, no USI Counter overflow hold
 			 ( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-			 // Shift Register Clock Source = external, positive edge
+			 // shift Register Clock Source = external, positive edge
 			 // 4-Bit Counter Source = external, both edges
 			 ( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
 			 // no toggle clock-port pin
@@ -359,7 +359,7 @@ ISR( USI_OVERFLOW_VECTOR ) {
 
 	switch ( overflowState ) {
 
-		// Address mode: check address and send ACK (and next USI_SLAVE_SEND_DATA) if OK, else reset USI
+		// Address mode: check address and send ACK (and then USI_SLAVE_SEND_DATA) if OK, else reset USI
 		case USI_SLAVE_CHECK_ADDRESS:
 			if ( ( USIDR == 0 ) || ( ( USIDR >> 1 ) == slaveAddress) ) {
 				if ( USIDR & 0x01 ) {
@@ -384,7 +384,7 @@ ISR( USI_OVERFLOW_VECTOR ) {
 			}
 			// from here we just drop straight into USI_SLAVE_SEND_DATA if the master sent an ACK
 
-		// copy data from buffer to USIDR and set USI to shift byte, next USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA
+		// copy data from buffer to USIDR and set USI to shift byte, then USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA
 		case USI_SLAVE_SEND_DATA:
 			// Get data from Buffer
 			if ( txHead != txTail ) {
@@ -400,25 +400,25 @@ ISR( USI_OVERFLOW_VECTOR ) {
 			SET_USI_TO_SEND_DATA( );
 			break;
 
-		// set USI to sample reply from master, next USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA
+		// set USI to sample reply from master, then USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA
 		case USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA:
 			overflowState = USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA;
 			SET_USI_TO_READ_ACK( );
 			break;
 
-		// master read data mode: set USI to sample data from master, next USI_SLAVE_GET_DATA_AND_SEND_ACK
+		// master read data mode: set USI to sample data from master, then USI_SLAVE_GET_DATA_AND_SEND_ACK
 		case USI_SLAVE_REQUEST_DATA:
 			overflowState = USI_SLAVE_GET_DATA_AND_SEND_ACK;
 			SET_USI_TO_READ_DATA( );
 			break;
 
-		// copy data from USIDR and send ACK, next USI_SLAVE_REQUEST_DATA
+		// copy data from USIDR and send ACK, then USI_SLAVE_REQUEST_DATA
 		case USI_SLAVE_GET_DATA_AND_SEND_ACK:
 			// put data into buffer
 			// not necessary, but prevents warnings
 			rxHead = ( rxHead + 1 ) & TWI_RX_BUFFER_MASK;
 			rxBuf[ rxHead ] = USIDR;
-			// next USI_SLAVE_REQUEST_DATA
+			// then USI_SLAVE_REQUEST_DATA
 			overflowState = USI_SLAVE_REQUEST_DATA;
 			SET_USI_TO_SEND_ACK( );
 			break;
