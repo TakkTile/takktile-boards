@@ -41,7 +41,7 @@ Change Activity:
 ********************************************************************************/
 
 #define DDR_USI  DDRA
-#define PORT_US	PORTA
+#define PORT_USI PORTA
 #define PIN_USI PINA
 #define PORT_USI_SDA PA6
 #define PORT_USI_SCL PA4
