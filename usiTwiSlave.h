@@ -6,7 +6,6 @@ Created by Donald R. Blake
 donblake at worldnet.att.net
 
 ---------------------------------------------------------------------------------
-
 Created from Atmel source files for Application Note AVR312: Using the USI Module
 as an I2C slave.
 
@@ -18,15 +17,12 @@ version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
 WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
 ---------------------------------------------------------------------------------
 
 Change Activity:
-
     Date       Description
    ------      -------------
   15 Mar 2007  Created.
-
 ********************************************************************************/
 
 
@@ -34,12 +30,8 @@ Change Activity:
 #ifndef _USI_TWI_SLAVE_H_
 #define _USI_TWI_SLAVE_H_
 
-
-
 /********************************************************************************
-
                                     includes
-
 ********************************************************************************/
 
 #include <stdbool.h>
@@ -47,9 +39,7 @@ Change Activity:
 
 
 /********************************************************************************
-
                                    prototypes
-
 ********************************************************************************/
 
 void    usiTwiSlaveInit( uint8_t );
@@ -60,9 +50,7 @@ bool    usiTwiDataInReceiveBuffer( void );
 
 
 /********************************************************************************
-
                            driver buffer definitions
-
 ********************************************************************************/
 
 // permitted RX buffer sizes: 1, 2, 4, 8, 16, 32, 64, 128 or 256
@@ -82,7 +70,6 @@ bool    usiTwiDataInReceiveBuffer( void );
 #if ( TWI_TX_BUFFER_SIZE & TWI_TX_BUFFER_MASK )
 #  error TWI TX buffer size is not a power of 2
 #endif
-
 
 
 #endif  // ifndef _USI_TWI_SLAVE_H_
