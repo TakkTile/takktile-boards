@@ -140,39 +140,35 @@ Change Activity:
 
 typedef enum
 {
-	USI_SLAVE_CHECK_ADDRESS								= 0x00,
-	USI_SLAVE_SEND_DATA										= 0x01,
+	USI_SLAVE_CHECK_ADDRESS	= 0x00,
+	USI_SLAVE_SEND_DATA	= 0x01,
 	USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA = 0x02,
-	USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA	 = 0x03,
-	USI_SLAVE_REQUEST_DATA								 = 0x04,
-	USI_SLAVE_GET_DATA_AND_SEND_ACK				= 0x05
+	USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA = 0x03,
+	USI_SLAVE_REQUEST_DATA = 0x04,
+	USI_SLAVE_GET_DATA_AND_SEND_ACK	= 0x05
 } overflowState_t;
-
 
 
 /********************************************************************************
 								local variables
 ********************************************************************************/
 
-static uint8_t									slaveAddress;
+static uint8_t slaveAddress;
 static volatile overflowState_t overflowState;
 
 
-static uint8_t					rxBuf[ TWI_RX_BUFFER_SIZE ];
+static uint8_t rxBuf[ TWI_RX_BUFFER_SIZE ];
 static volatile uint8_t rxHead;
 static volatile uint8_t rxTail;
 
-static uint8_t					txBuf[ TWI_TX_BUFFER_SIZE ];
+static uint8_t txBuf[ TWI_TX_BUFFER_SIZE ];
 static volatile uint8_t txHead;
 static volatile uint8_t txTail;
-
 
 
 /********************************************************************************
 								local functions
 ********************************************************************************/
-
-
 
 // flushes the TWI buffers
 
@@ -184,11 +180,9 @@ static void flushTwiBuffers( void ) {
 } // end flushTwiBuffers
 
 
-
 /********************************************************************************
 								public functions
 ********************************************************************************/
-
 
 // initialise USI for TWI slave mode
 
@@ -257,7 +251,6 @@ void usiTwiTransmitByte( uint8_t data ) {
 } // end usiTwiTransmitByte
 
 
-
 // return a byte from the receive buffer, wait if buffer is empty
 
 uint8_t usiTwiReceiveByte( void ) {
@@ -274,7 +267,6 @@ uint8_t usiTwiReceiveByte( void ) {
 } // end usiTwiReceiveByte
 
 
-
 // check if there is data in the receive buffer
 
 bool usiTwiDataInReceiveBuffer( void ) {
@@ -283,7 +275,6 @@ bool usiTwiDataInReceiveBuffer( void ) {
 	return rxHead != rxTail;
 
 } // end usiTwiDataInReceiveBuffer
-
 
 
 /********************************************************************************
@@ -361,7 +352,7 @@ ISR( USI_START_VECTOR ) {
 
 /********************************************************************************
 
-																USI Overflow ISR
+USI Overflow ISR
 
 Handles all the communication.
 
