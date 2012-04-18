@@ -11,10 +11,10 @@
 #define SCL PA4
 #define RST4 PA5
 #define SDA PA6
-#define PA7 ADDR3
-#define PB0 ADDR0
-#define PB1 ADDR1
-#define PB2 ADDR2
+#define ADDR3 PA7
+#define ADDR0 PB0
+#define ADDR1 PB1
+#define ADDR2 PB2
 
 /*
 	DDRA - port direction configuration
