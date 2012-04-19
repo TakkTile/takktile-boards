@@ -31,6 +31,8 @@ Change Activity:
 	27 Mar 2007	    Added support for ATtiny261, 461 and 861.
 	26 Apr 2007	    Fixed ACK of slave address on a read.
 	04 Jul 2007	    Fixed USISIF in ATtiny45 def
+	   Apr 2012		Reformatted
+	   Apr 2012		Changed from device-specific definitions to generics from iotn44a.h
 	   Apr 2012		Heavily modified to contain purpose-specific functionality.
 
 ********************************************************************************/
@@ -39,26 +41,14 @@ Change Activity:
 #include <avr/interrupt.h>
 #include "usiTwiSlave.h"
 
-/********************************************************************************
-								ATTINY44-specific defines
-********************************************************************************/
-
-#define DDR_USI  DDRA
-#define PORT_USI PORTA
-#define PIN_USI PINA
-#define PORT_USI_SDA PA6
-#define PORT_USI_SCL PA4
-#define PIN_USI_SDA	PINA6
-#define PIN_USI_SCL	PINA4
 #define USI_START_COND_INT USISIF
-#define USI_START_VECTOR USI_START_vect
-#define USI_OVERFLOW_VECTOR USI_OVF_vect
+
 
 static inline void SET_USI_TO_SEND_ACK( ) {
 	/* prepare ACK */
 	USIDR = 0;
 	/* set SDA as output */
-	DDR_USI |= ( 1 << PORT_USI_SDA );
+	SDA_DDR |= ( 1 << SDA_BIT );
 	/* clear all interrupt flags, except Start Cond */
 	USISR = 
 		( 0 << USI_START_COND_INT ) |
@@ -70,7 +60,7 @@ static inline void SET_USI_TO_SEND_ACK( ) {
 
 static inline void SET_USI_TO_READ_ACK( ) {
 	/* set SDA as input */
-	DDR_USI &= ~( 1 << PORT_USI_SDA );
+	SDA_DDR &= ~( 1 << SDA_BIT );
 	/* prepare ACK */
 	USIDR = 0;
 	/* clear all interrupt flags, except Start Cond */
@@ -102,7 +92,7 @@ static inline void SET_USI_TO_TWI_START_CONDITION_MODE( ) {
 
 static inline void SET_USI_TO_SEND_DATA( ) {
 	/* set SDA as output */
-	DDR_USI |=	( 1 << PORT_USI_SDA );
+	SDA_DDR |=	( 1 << SDA_BIT );
 	/* clear all interrupt flags, except Start Cond */
 	USISR =
 		( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
@@ -113,7 +103,7 @@ static inline void SET_USI_TO_SEND_DATA( ) {
 
 static inline void SET_USI_TO_READ_DATA( ) {
 	/* set SDA as input */
-	DDR_USI &= ~( 1 << PORT_USI_SDA );
+	SDA_DDR &= ~( 1 << SDA_BIT );
 	/* clear all interrupt flags, except Start Cond */
 	USISR =
 		( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) |
@@ -185,16 +175,17 @@ void usiTwiSlaveInit( void ) {
 	// by the ISRs (USI_START_vect and USI_OVERFLOW_vect).
 
 	// Set SCL and SDA as output
-	DDR_USI |= ( 1 << PORT_USI_SCL ) | ( 1 << PORT_USI_SDA );
+	SDA_DDR |= ( 1 << SDA_BIT );
+	SCL_DDR |= ( 1 << SCL_BIT );
 
 	// set SCL high
-	PORT_USI |= ( 1 << PORT_USI_SCL );
+	SCL_PORT |= ( 1 << SCL_BIT );
 
 	// set SDA high
-	PORT_USI |= ( 1 << PORT_USI_SDA );
+	SDA_PORT |= ( 1 << SDA_BIT );
 
 	// set SDA as input
-	DDR_USI &= ~( 1 << PORT_USI_SDA );
+	SDA_DDR &= ~( 1 << SDA_BIT );
 
 	USICR =
 			 // enable Start Condition Interrupt
@@ -268,13 +259,13 @@ bool usiTwiDataInReceiveBuffer( void ) {
 							USI Start Condition ISR
 ********************************************************************************/
 
-ISR( USI_START_VECTOR ) {
+ISR( USI_STR_vect ) {
 
 	// set default starting conditions for new TWI package
 	overflowState = USI_SLAVE_CHECK_ADDRESS;
 
 	// set SDA as input
-	DDR_USI &= ~( 1 << PORT_USI_SDA );
+	SDA_DDR &= ~( 1 << SDA_BIT );
 
 	// wait for SCL to go low to ensure the Start Condition has completed (the
 	// start detector will hold SCL low ) - if a Stop Condition arises then leave
@@ -283,13 +274,13 @@ ISR( USI_START_VECTOR ) {
 	// going to be set from the last TWI sequence
 	while (
 			// SCL is high
-			( PIN_USI & ( 1 << PIN_USI_SCL ) ) &&
+			( SCL_PIN & ( 1 << SCL_BIT ) ) &&
 			// and SDA is low
-			!( ( PIN_USI & ( 1 << PIN_USI_SDA ) ) )
+			!( ( SDA_PIN & ( 1 << SDA_BIT ) ) )
 	);
 
 
-	if ( !( PIN_USI & ( 1 << PIN_USI_SDA ) ) ) {
+	if ( !( SDA_PIN & ( 1 << SDA_BIT ) ) ) {
 
 		// a Stop Condition did not occur
 
@@ -332,7 +323,7 @@ ISR( USI_START_VECTOR ) {
 			// set USI to sample 8 bits (count 16 external SCL pin toggles)
 			( 0x0 << USICNT0);
 
-} // end ISR( USI_START_VECTOR )
+} // end ISR( USI_STR_vect )
 
 
 
@@ -346,7 +337,7 @@ Only disabled when waiting for a new Start Condition.
 
 ********************************************************************************/
 
-ISR( USI_OVERFLOW_VECTOR ) {
+ISR( USI_OVF_vect ) {
 
 	switch ( overflowState ) {
 

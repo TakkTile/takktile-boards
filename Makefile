@@ -1,4 +1,4 @@
-DEVICE  = attiny44
+DEVICE  = attiny44a
 F_CPU   = 8000000 #
 FUSE_L  = 0xC2 # internal 8MHz oscillator running ATTINY at 8MHz
 FUSE_H  = 0xDF # SPI programming enabled
