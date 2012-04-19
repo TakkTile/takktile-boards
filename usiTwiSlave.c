@@ -182,11 +182,11 @@ static void flushTwiBuffers( void ) {
 
 // initialise USI for TWI slave mode
 
-void usiTwiSlaveInit( uint8_t ownAddress ) {
+void usiTwiSlaveInit( void ) {
 
 	flushTwiBuffers( );
 
-	slaveAddress = ownAddress;
+//	slaveAddress = ownAddress;
 
 	// In Two Wire mode (USIWM1, USIWM0 = 1X), the slave USI will pull SCL
 	// low when a start condition is detected or a counter overflow (only
