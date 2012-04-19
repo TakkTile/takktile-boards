@@ -47,17 +47,9 @@ int main(void) {
 	usiTwiSlaveInit(slaveAddress);
 
 	for(;;) {
-		if(usiTwiDataInReceiveBuffer())
-		{
-			uint8_t value;
+		if ( usiTwiDataInReceiveBuffer() ) {
 			uint8_t temp = usiTwiReceiveByte();
-			if (temp == 1) 
-			{
-				PORTB ^= _BV(PB3);
-				value = 'D';
-			}
-
-			usiTwiTransmitByte(value);
+			usiTwiTransmitByte(temp);
 		}
 	}
 }
