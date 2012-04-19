@@ -5,6 +5,8 @@ USI TWI Slave driver.
 Created by Donald R. Blake
 donblake at worldnet.att.net
 
+Heavily modified by Ian Daniher
+it.daniher at gmail.com
 ---------------------------------------------------------------------------------
 
 Created from Atmel source files for Application Note AVR312: Using the USI Module
@@ -29,6 +31,7 @@ Change Activity:
 	27 Mar 2007	    Added support for ATtiny261, 461 and 861.
 	26 Apr 2007	    Fixed ACK of slave address on a read.
 	04 Jul 2007	    Fixed USISIF in ATtiny45 def
+	   Apr 2012		Heavily modified to contain purpose-specific functionality.
 
 ********************************************************************************/
 
@@ -50,10 +53,6 @@ Change Activity:
 #define USI_START_COND_INT USISIF
 #define USI_START_VECTOR USI_START_vect
 #define USI_OVERFLOW_VECTOR USI_OVF_vect
-
-/********************************************************************************
-							functions implemented as macros
-********************************************************************************/
 
 static inline void SET_USI_TO_SEND_ACK( ) {
 	/* prepare ACK */
