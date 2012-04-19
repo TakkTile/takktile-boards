@@ -55,77 +55,72 @@ Change Activity:
 							functions implemented as macros
 ********************************************************************************/
 
-static inline void SET_USI_TO_SEND_ACK( )
-{
+static inline void SET_USI_TO_SEND_ACK( ) {
 	/* prepare ACK */
 	USIDR = 0;
 	/* set SDA as output */
 	DDR_USI |= ( 1 << PORT_USI_SDA );
 	/* clear all interrupt flags, except Start Cond */
 	USISR = 
-			 ( 0 << USI_START_COND_INT ) |
-			 ( 1 << USIOIF ) | ( 1 << USIPF ) | 
-			 ( 1 << USIDC )| 
-			 /* set USI counter to shift 1 bit */
-			 ( 0x0E << USICNT0 );
+		( 0 << USI_START_COND_INT ) |
+		( 1 << USIOIF ) | ( 1 << USIPF ) | 
+		( 1 << USIDC )| 
+		/* set USI counter to shift 1 bit */
+		( 0x0E << USICNT0 );
 }
 
-static inline void SET_USI_TO_READ_ACK( )
-{
+static inline void SET_USI_TO_READ_ACK( ) {
 	/* set SDA as input */
 	DDR_USI &= ~( 1 << PORT_USI_SDA );
 	/* prepare ACK */
 	USIDR = 0;
 	/* clear all interrupt flags, except Start Cond */
 	USISR =
-			 ( 0 << USI_START_COND_INT ) |
-			 ( 1 << USIOIF ) |
-			 ( 1 << USIPF ) |
-			 ( 1 << USIDC ) | 
-			 /* set USI counter to shift 1 bit */
-			 ( 0x0E << USICNT0 );
+		( 0 << USI_START_COND_INT ) |
+		( 1 << USIOIF ) |
+		( 1 << USIPF ) |
+		( 1 << USIDC ) | 
+		/* set USI counter to shift 1 bit */
+		( 0x0E << USICNT0 );
 }
 
-static inline void SET_USI_TO_TWI_START_CONDITION_MODE( )
-{
+static inline void SET_USI_TO_TWI_START_CONDITION_MODE( ) {
 	USICR =
-			 /* enable Start Condition Interrupt, disable Overflow Interrupt */
-			 ( 1 << USISIE ) | ( 0 << USIOIE ) |
-			 /* set USI in Two-wire mode, no USI Counter overflow hold */
-			 ( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-			 /* Shift Register Clock Source = External, positive edge */
-			 /* 4-Bit Counter Source = external, both edges */
-			 ( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
-			 /* no toggle clock-port pin */
-			 ( 0 << USITC );
+		/* enable Start Condition Interrupt, disable Overflow Interrupt */
+		( 1 << USISIE ) | ( 0 << USIOIE ) |
+		/* set USI in Two-wire mode, no USI Counter overflow hold */
+		( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
+		/* Shift Register Clock Source = External, positive edge */
+		/* 4-Bit Counter Source = external, both edges */
+		( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
+		/* no toggle clock-port pin */
+		( 0 << USITC );
 	USISR =
-				/* clear all interrupt flags, except Start Cond */
-				( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
-				( 1 << USIDC ) | ( 0x0 << USICNT0 );
+		/* clear all interrupt flags, except Start Cond */
+		( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
+		( 1 << USIDC ) | ( 0x0 << USICNT0 );
 }
 
-static inline void SET_USI_TO_SEND_DATA( )
-{
+static inline void SET_USI_TO_SEND_DATA( ) {
 	/* set SDA as output */
 	DDR_USI |=	( 1 << PORT_USI_SDA );
 	/* clear all interrupt flags, except Start Cond */
-	USISR		=
-			 ( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
-			 ( 1 << USIDC) |
-			 /* set USI to shift out 8 bits */
-			 ( 0x0 << USICNT0 );
+	USISR =
+		( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
+		( 1 << USIDC) |
+		/* set USI to shift out 8 bits */
+		( 0x0 << USICNT0 );
 }
 
-static inline void SET_USI_TO_READ_DATA( )
-{
+static inline void SET_USI_TO_READ_DATA( ) {
 	/* set SDA as input */
 	DDR_USI &= ~( 1 << PORT_USI_SDA );
 	/* clear all interrupt flags, except Start Cond */
-	USISR		=
-			 ( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) |
-			 ( 1 << USIPF ) | ( 1 << USIDC ) |
-			 /* set USI to shift out 8 bits */
-			 ( 0x0 << USICNT0 );
+	USISR =
+		( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) |
+		( 1 << USIPF ) | ( 1 << USIDC ) |
+		/* set USI to shift out 8 bits */
+		( 0x0 << USICNT0 );
 }
 
 
