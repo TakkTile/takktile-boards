@@ -30,12 +30,7 @@ Change Activity:
 #ifndef _USI_TWI_SLAVE_H_
 #define _USI_TWI_SLAVE_H_
 
-/********************************************************************************
-                                    includes
-********************************************************************************/
-
 #include <stdbool.h>
-
 
 
 /********************************************************************************
@@ -47,6 +42,7 @@ void    usiTwiTransmitByte( uint8_t );
 uint8_t usiTwiReceiveByte( void );
 bool    usiTwiDataInReceiveBuffer( void );
 
+uint8_t slaveAddress;
 
 
 /********************************************************************************

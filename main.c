@@ -38,7 +38,7 @@ void configPins(void) {
 int main(void) {
 	configPins();
 	// calculate slaveAddress from state of ADDR pins, shift
-	uint8_t slaveAddress = (PINA & ADDR3) << 3 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
+	slaveAddress = (PINA & ADDR3) << 3 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
 	slaveAddress <<= 3;
 
 	// enable interupts	

@@ -149,7 +149,6 @@ typedef enum
 								local variables
 ********************************************************************************/
 
-static uint8_t slaveAddress;
 static volatile overflowState_t overflowState;
 
 
@@ -185,8 +184,6 @@ static void flushTwiBuffers( void ) {
 void usiTwiSlaveInit( void ) {
 
 	flushTwiBuffers( );
-
-//	slaveAddress = ownAddress;
 
 	// In Two Wire mode (USIWM1, USIWM0 = 1X), the slave USI will pull SCL
 	// low when a start condition is detected or a counter overflow (only
