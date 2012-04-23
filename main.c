@@ -25,7 +25,7 @@
 void configPins(void) {
 
 	// disable all MPL115A2 sensors
-	DDRA |= RST0 | RST1 | RST2 | RST3 | RST4; // all 
+	DDRA |= RST0 | RST1 | RST2 | RST3 | RST4; 
 	PORTA &= ~(RST0 | RST1 | RST2 | RST3 | RST4);
 
 	// set all ADDR pins as inputs with pullups
@@ -39,12 +39,13 @@ int main(void) {
 	configPins();
 	// calculate slaveAddress from state of ADDR pins, shift
 	slaveAddress = (PINA & ADDR3) << 3 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
-	slaveAddress <<= 3;
+	slaveAddress <<= 4;
 
 	// enable interupts	
 	sei(); 
 	
 	usiTwiSlaveInit();
+	usiTwiTransmitByte(slaveAddress);
 
 	for(;;) {
 		if ( usiTwiDataInReceiveBuffer() ) {

@@ -343,13 +343,15 @@ ISR( USI_OVF_vect ) {
 
 		// Address mode: check address and send ACK (and then USI_SLAVE_SEND_DATA) if OK, else reset USI
 		case USI_SLAVE_CHECK_ADDRESS:
-			if ( ( USIDR == 0 ) || ( ( USIDR >> 1 ) == slaveAddress) ) {
+			if ( (USIDR&0xF0) == (slaveAddress&0xF0) ) {
 				if ( USIDR & 0x01 ) {
-					overflowState = USI_SLAVE_SEND_DATA;
+					PORTA |= 1 << ((USIDR & 0x0F) >> 1);
+//					overflowState = USI_SLAVE_SEND_DATA;
 				}
 				else {
-					overflowState = USI_SLAVE_REQUEST_DATA;
+					PORTA &= ~(1 << ((USIDR & 0x0F) >> 1));
 				} 
+				overflowState = USI_SLAVE_REQUEST_DATA;
 				SET_USI_TO_SEND_ACK( );
 			}
 			else {
