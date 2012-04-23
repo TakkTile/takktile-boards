@@ -45,12 +45,7 @@ int main(void) {
 	sei(); 
 	
 	usiTwiSlaveInit();
-	usiTwiTransmitByte(slaveAddress);
 
 	for(;;) {
-		if ( usiTwiDataInReceiveBuffer() ) {
-			uint8_t temp = usiTwiReceiveByte();
-			usiTwiTransmitByte(temp);
-		}
 	}
 }
