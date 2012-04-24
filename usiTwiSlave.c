@@ -16,21 +16,6 @@ static inline void SET_USI_TO_SEND_ACK( ) {
 		( 0x0E << USICNT0 );
 }
 
-static inline void SET_USI_TO_READ_ACK( ) {
-	/* set SDA as input */
-	SDA_DDR &= ~( 1 << SDA_BIT );
-	/* prepare ACK */
-	USIDR = 0;
-	/* clear all interrupt flags, except Start Cond */
-	USISR =
-		( 0 << USISIF ) |
-		( 1 << USIOIF ) |
-		( 1 << USIPF ) |
-		( 1 << USIDC ) | 
-		/* set USI counter to shift 1 bit */
-		( 0x0E << USICNT0 );
-}
-
 static inline void SET_USI_TO_TWI_START_CONDITION_MODE( ) {
 	USICR =
 		/* enable Start Condition Interrupt, disable Overflow Interrupt */
@@ -46,17 +31,6 @@ static inline void SET_USI_TO_TWI_START_CONDITION_MODE( ) {
 		/* clear all interrupt flags, except Start Cond */
 		( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
 		( 1 << USIDC ) | ( 0x0 << USICNT0 );
-}
-
-static inline void SET_USI_TO_SEND_DATA( ) {
-	/* set SDA as output */
-	SDA_DDR |=	( 1 << SDA_BIT );
-	/* clear all interrupt flags, except Start Cond */
-	USISR =
-		( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
-		( 1 << USIDC) |
-		/* set USI to shift out 8 bits */
-		( 0x0 << USICNT0 );
 }
 
 static inline void SET_USI_TO_READ_DATA( ) {
@@ -79,8 +53,7 @@ static inline void SET_USI_TO_READ_DATA( ) {
 typedef enum
 {
 	USI_SLAVE_CHECK_ADDRESS	= 0x00,
-	USI_SLAVE_REQUEST_DATA = 0x04,
-	USI_SLAVE_GET_DATA_AND_SEND_ACK	= 0x05
+	USI_SLAVE_END_TRX= 0x01,
 } overflowState_t;
 
 
@@ -221,7 +194,7 @@ ISR( USI_OVF_vect ) {
 				else {
 					PORTA &= ~(1 << ((USIDR & 0x0F) >> 1));
 				} 
-				overflowState = USI_SLAVE_REQUEST_DATA;
+				overflowState = USI_SLAVE_END_TRX;
 				SET_USI_TO_SEND_ACK( );
 			}
 			else {
@@ -230,15 +203,9 @@ ISR( USI_OVF_vect ) {
 			break;
 
 		// master read data mode: set USI to sample data from master, then USI_SLAVE_GET_DATA_AND_SEND_ACK
-		case USI_SLAVE_REQUEST_DATA:
-			overflowState = USI_SLAVE_GET_DATA_AND_SEND_ACK;
+		case USI_SLAVE_END_TRX:
+			overflowState = USI_SLAVE_CHECK_ADDRESS; 
 			SET_USI_TO_READ_DATA( );
-			break;
-
-		// copy data from USIDR and send ACK, then USI_SLAVE_REQUEST_DATA
-		case USI_SLAVE_GET_DATA_AND_SEND_ACK:
-			overflowState = USI_SLAVE_REQUEST_DATA;
-			SET_USI_TO_SEND_ACK( );
 			break;
 
 	} 
