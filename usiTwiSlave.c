@@ -8,12 +8,7 @@ typedef enum
 	USI_SLAVE_END_TRX= 0x01,
 } overflowState_t;
 
-
 static volatile overflowState_t overflowState;
-
-/********************************************************************************
-								public functions
-********************************************************************************/
 
 // initialise USI for TWI slave mode
 
@@ -123,15 +118,6 @@ ISR( USI_STR_vect ) {
 
 }
 
-
-
-/********************************************************************************
-USI Overflow ISR
-
-Handles all the communication.
-
-Only disabled when waiting for a new Start Condition.
-********************************************************************************/
 
 ISR( USI_OVF_vect ) {
 
