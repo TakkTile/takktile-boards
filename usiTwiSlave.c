@@ -17,6 +17,8 @@ static inline void SET_USI_TO_SEND_ACK( ) {
 }
 
 static inline void SET_USI_TO_TWI_START_CONDITION_MODE( ) {
+	/* set SDA as input */
+	SDA_DDR &= ~( 1 << SDA_BIT );
 	USICR =
 		/* enable Start Condition Interrupt, disable Overflow Interrupt */
 		( 1 << USISIE ) | ( 0 << USIOIE ) |
@@ -32,23 +34,6 @@ static inline void SET_USI_TO_TWI_START_CONDITION_MODE( ) {
 		( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
 		( 1 << USIDC ) | ( 0x0 << USICNT0 );
 }
-
-static inline void SET_USI_TO_READ_DATA( ) {
-	/* set SDA as input */
-	SDA_DDR &= ~( 1 << SDA_BIT );
-	/* clear all interrupt flags, except Start Cond */
-	USISR =
-		( 0 << USISIF ) | ( 1 << USIOIF ) |
-		( 1 << USIPF ) | ( 1 << USIDC ) |
-		/* set USI to shift out 8 bits */
-		( 0x0 << USICNT0 );
-}
-
-
-
-/********************************************************************************
-								 typedef's
-********************************************************************************/
 
 typedef enum
 {
@@ -205,7 +190,7 @@ ISR( USI_OVF_vect ) {
 		// master read data mode: set USI to sample data from master, then USI_SLAVE_GET_DATA_AND_SEND_ACK
 		case USI_SLAVE_END_TRX:
 			overflowState = USI_SLAVE_CHECK_ADDRESS; 
-			SET_USI_TO_READ_DATA( );
+			SET_USI_TO_TWI_START_CONDITION_MODE( );
 			break;
 
 	} 
