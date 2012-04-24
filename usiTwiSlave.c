@@ -2,39 +2,6 @@
 #include <avr/interrupt.h>
 #include "usiTwiSlave.h"
 
-static inline void SET_USI_TO_SEND_ACK( ) {
-	/* prepare ACK */
-	USIDR = 0;
-	/* set SDA as output */
-	SDA_DDR |= ( 1 << SDA_BIT );
-	/* clear all interrupt flags, except Start Cond */
-	USISR = 
-		( 0 << USISIF ) |
-		( 1 << USIOIF ) | ( 1 << USIPF ) | 
-		( 1 << USIDC )| 
-		/* set USI counter to shift 1 bit */
-		( 0x0E << USICNT0 );
-}
-
-static inline void SET_USI_TO_TWI_START_CONDITION_MODE( ) {
-	/* set SDA as input */
-	SDA_DDR &= ~( 1 << SDA_BIT );
-	USICR =
-		/* enable Start Condition Interrupt, disable Overflow Interrupt */
-		( 1 << USISIE ) | ( 0 << USIOIE ) |
-		/* set USI in Two-wire mode, no USI Counter overflow hold */
-		( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-		/* Shift Register Clock Source = External, positive edge */
-		/* 4-Bit Counter Source = external, both edges */
-		( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
-		/* no toggle clock-port pin */
-		( 0 << USITC );
-	USISR =
-		/* clear all interrupt flags, except Start Cond */
-		( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
-		( 1 << USIDC ) | ( 0x0 << USICNT0 );
-}
-
 typedef enum
 {
 	USI_SLAVE_CHECK_ADDRESS	= 0x00,
@@ -170,7 +137,6 @@ ISR( USI_OVF_vect ) {
 
 	switch ( overflowState ) {
 
-		// Address mode: check address and send ACK (and then USI_SLAVE_SEND_DATA) if OK, else reset USI
 		case USI_SLAVE_CHECK_ADDRESS:
 			if ( (USIDR&0xF0) == (slaveAddress&0xF0) ) {
 				if ( USIDR & 0x01 ) {
@@ -180,17 +146,36 @@ ISR( USI_OVF_vect ) {
 					PORTA &= ~(1 << ((USIDR & 0x0F) >> 1));
 				} 
 				overflowState = USI_SLAVE_END_TRX;
-				SET_USI_TO_SEND_ACK( );
+				// prep ACK
+				USIDR = 0;
+				// set SDA as an output
+				SDA_DDR |= ( 1 << SDA_BIT );
+				// reset all interrupt flags but start condition
+				// set USI to shift out one bit
+				USISR = ( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) | ( 1 << USIDC ) | ( 0x0E << USICNT0 );
 			}
 			else {
-				SET_USI_TO_TWI_START_CONDITION_MODE( );
+				return;
 			}
 			break;
 
-		// master read data mode: set USI to sample data from master, then USI_SLAVE_GET_DATA_AND_SEND_ACK
 		case USI_SLAVE_END_TRX:
 			overflowState = USI_SLAVE_CHECK_ADDRESS; 
-			SET_USI_TO_TWI_START_CONDITION_MODE( );
+			// SDA as input
+			SDA_DDR &= ~( 1 << SDA_BIT );
+			USICR =
+				/* enable Start Condition Interrupt, disable Overflow Interrupt */
+				( 1 << USISIE ) | ( 0 << USIOIE ) |
+				/* set USI in Two-wire mode, no USI Counter overflow hold */
+				( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
+				/* Shift Register Clock Source = External, positive edge */
+				/* 4-Bit Counter Source = external, both edges */
+				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
+				/* no toggle clock-port pin */
+				( 0 << USITC );
+			// reset all interrupt flags but start condition
+			// set USI to shift out one bit
+			USISR = ( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) | ( 1 << USIDC ) | ( 0x0 << USICNT0 );
 			break;
 
 	} 
