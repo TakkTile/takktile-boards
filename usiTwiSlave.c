@@ -41,9 +41,6 @@ Change Activity:
 #include <avr/interrupt.h>
 #include "usiTwiSlave.h"
 
-#define USI_START_COND_INT USISIF
-
-
 static inline void SET_USI_TO_SEND_ACK( ) {
 	/* prepare ACK */
 	USIDR = 0;
@@ -51,7 +48,7 @@ static inline void SET_USI_TO_SEND_ACK( ) {
 	SDA_DDR |= ( 1 << SDA_BIT );
 	/* clear all interrupt flags, except Start Cond */
 	USISR = 
-		( 0 << USI_START_COND_INT ) |
+		( 0 << USISIF ) |
 		( 1 << USIOIF ) | ( 1 << USIPF ) | 
 		( 1 << USIDC )| 
 		/* set USI counter to shift 1 bit */
@@ -65,7 +62,7 @@ static inline void SET_USI_TO_READ_ACK( ) {
 	USIDR = 0;
 	/* clear all interrupt flags, except Start Cond */
 	USISR =
-		( 0 << USI_START_COND_INT ) |
+		( 0 << USISIF ) |
 		( 1 << USIOIF ) |
 		( 1 << USIPF ) |
 		( 1 << USIDC ) | 
@@ -86,7 +83,7 @@ static inline void SET_USI_TO_TWI_START_CONDITION_MODE( ) {
 		( 0 << USITC );
 	USISR =
 		/* clear all interrupt flags, except Start Cond */
-		( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
+		( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
 		( 1 << USIDC ) | ( 0x0 << USICNT0 );
 }
 
@@ -95,7 +92,7 @@ static inline void SET_USI_TO_SEND_DATA( ) {
 	SDA_DDR |=	( 1 << SDA_BIT );
 	/* clear all interrupt flags, except Start Cond */
 	USISR =
-		( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
+		( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) |
 		( 1 << USIDC) |
 		/* set USI to shift out 8 bits */
 		( 0x0 << USICNT0 );
@@ -106,7 +103,7 @@ static inline void SET_USI_TO_READ_DATA( ) {
 	SDA_DDR &= ~( 1 << SDA_BIT );
 	/* clear all interrupt flags, except Start Cond */
 	USISR =
-		( 0 << USI_START_COND_INT ) | ( 1 << USIOIF ) |
+		( 0 << USISIF ) | ( 1 << USIOIF ) |
 		( 1 << USIPF ) | ( 1 << USIDC ) |
 		/* set USI to shift out 8 bits */
 		( 0x0 << USICNT0 );
@@ -202,9 +199,9 @@ void usiTwiSlaveInit( void ) {
 
 	// clear all interrupt flags and reset overflow counter
 
-	USISR = ( 1 << USI_START_COND_INT ) | ( 1 << USIOIF ) | ( 1 << USIPF ) | ( 1 << USIDC );
+	USISR = ( 1 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) | ( 1 << USIDC );
 
-} // end usiTwiSlaveInit
+} 
 
 
 
@@ -242,7 +239,7 @@ uint8_t usiTwiReceiveByte( void ) {
 	// return data from the buffer.
 	return rxBuf[ rxTail ];
 
-} // end usiTwiReceiveByte
+}
 
 
 // check if there is data in the receive buffer
@@ -252,7 +249,7 @@ bool usiTwiDataInReceiveBuffer( void ) {
 	// return 0 (false) if the receive buffer is empty
 	return rxHead != rxTail;
 
-} // end usiTwiDataInReceiveBuffer
+}
 
 
 /********************************************************************************
@@ -318,23 +315,21 @@ ISR( USI_STR_vect ) {
 
 	USISR =
 			// clear interrupt flags - resetting the Start Condition Flag will release SCL
-			( 1 << USI_START_COND_INT ) | ( 1 << USIOIF ) |
+			( 1 << USISIF ) | ( 1 << USIOIF ) |
 			( 1 << USIPF ) |( 1 << USIDC ) |
 			// set USI to sample 8 bits (count 16 external SCL pin toggles)
 			( 0x0 << USICNT0);
 
-} // end ISR( USI_STR_vect )
+}
 
 
 
 /********************************************************************************
-
 USI Overflow ISR
 
 Handles all the communication.
 
 Only disabled when waiting for a new Start Condition.
-
 ********************************************************************************/
 
 ISR( USI_OVF_vect ) {

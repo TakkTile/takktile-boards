@@ -8,9 +8,7 @@
 #define RST1 1 << PA1
 #define RST2 1 << PA2
 #define RST3 1 << PA3
-#define SCL 1 << PA4
 #define RST4 1 << PA5
-#define SDA 1 << PA6
 #define ADDR3 1 << PA7
 #define ADDR0 1 << PB0
 #define ADDR1 1 << PB1
