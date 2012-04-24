@@ -1,42 +1,3 @@
-/********************************************************************************
-
-USI TWI Slave driver.
-
-Created by Donald R. Blake
-donblake at worldnet.att.net
-
-Heavily modified by Ian Daniher
-it.daniher at gmail.com
----------------------------------------------------------------------------------
-
-Created from Atmel source files for Application Note AVR312: Using the USI Module
-as an I2C slave.
-
-This program is free software; you can redistribute it and/or modify it under the
-terms of the GNU General Public License as published by the Free Software
-Foundation; either version 2 of the License, or (at your option) any later
-version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.	See the GNU General Public License for more details.
-
----------------------------------------------------------------------------------
-
-Change Activity:
-
-	 Date			 Description
-    ------			-------------
-	16 Mar 2007	    Created.
-	27 Mar 2007	    Added support for ATtiny261, 461 and 861.
-	26 Apr 2007	    Fixed ACK of slave address on a read.
-	04 Jul 2007	    Fixed USISIF in ATtiny45 def
-	   Apr 2012		Reformatted
-	   Apr 2012		Changed from device-specific definitions to generics from iotn44a.h
-	   Apr 2012		Heavily modified to contain purpose-specific functionality.
-
-********************************************************************************/
-
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include "usiTwiSlave.h"
@@ -118,43 +79,12 @@ static inline void SET_USI_TO_READ_DATA( ) {
 typedef enum
 {
 	USI_SLAVE_CHECK_ADDRESS	= 0x00,
-	USI_SLAVE_SEND_DATA	= 0x01,
-	USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA = 0x02,
-	USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA = 0x03,
 	USI_SLAVE_REQUEST_DATA = 0x04,
 	USI_SLAVE_GET_DATA_AND_SEND_ACK	= 0x05
 } overflowState_t;
 
 
-/********************************************************************************
-								local variables
-********************************************************************************/
-
 static volatile overflowState_t overflowState;
-
-
-static uint8_t rxBuf[ TWI_RX_BUFFER_SIZE ];
-static volatile uint8_t rxHead;
-static volatile uint8_t rxTail;
-
-static uint8_t txBuf[ TWI_TX_BUFFER_SIZE ];
-static volatile uint8_t txHead;
-static volatile uint8_t txTail;
-
-
-/********************************************************************************
-								local functions
-********************************************************************************/
-
-// flushes the TWI buffers
-
-static void flushTwiBuffers( void ) {
-	rxTail = 0;
-	rxHead = 0;
-	txTail = 0;
-	txHead = 0;
-} // end flushTwiBuffers
-
 
 /********************************************************************************
 								public functions
@@ -163,8 +93,6 @@ static void flushTwiBuffers( void ) {
 // initialise USI for TWI slave mode
 
 void usiTwiSlaveInit( void ) {
-
-	flushTwiBuffers( );
 
 	// In Two Wire mode (USIWM1, USIWM0 = 1X), the slave USI will pull SCL
 	// low when a start condition is detected or a counter overflow (only
@@ -203,58 +131,6 @@ void usiTwiSlaveInit( void ) {
 
 } 
 
-
-
-// put data in the transmission buffer, wait if buffer is full
-
-void usiTwiTransmitByte( uint8_t data ) {
-
-	uint8_t tmphead;
-
-	// calculate buffer index
-	tmphead = ( txHead + 1 ) & TWI_TX_BUFFER_MASK;
-
-	// wait for free space in buffer
-	while ( tmphead == txTail );
-
-	// store data in buffer
-	txBuf[ tmphead ] = data;
-
-	// store new index
-	txHead = tmphead;
-
-} // end usiTwiTransmitByte
-
-
-// return a byte from the receive buffer, wait if buffer is empty
-
-uint8_t usiTwiReceiveByte( void ) {
-
-	// wait for Rx data
-	while ( rxHead == rxTail );
-
-	// calculate buffer index
-	rxTail = ( rxTail + 1 ) & TWI_RX_BUFFER_MASK;
-
-	// return data from the buffer.
-	return rxBuf[ rxTail ];
-
-}
-
-
-// check if there is data in the receive buffer
-
-bool usiTwiDataInReceiveBuffer( void ) {
-
-	// return 0 (false) if the receive buffer is empty
-	return rxHead != rxTail;
-
-}
-
-
-/********************************************************************************
-							USI Start Condition ISR
-********************************************************************************/
 
 ISR( USI_STR_vect ) {
 
@@ -341,7 +217,6 @@ ISR( USI_OVF_vect ) {
 			if ( (USIDR&0xF0) == (slaveAddress&0xF0) ) {
 				if ( USIDR & 0x01 ) {
 					PORTA |= 1 << ((USIDR & 0x0F) >> 1);
-//					overflowState = USI_SLAVE_SEND_DATA;
 				}
 				else {
 					PORTA &= ~(1 << ((USIDR & 0x0F) >> 1));
@@ -354,37 +229,6 @@ ISR( USI_OVF_vect ) {
 			}
 			break;
 
-		// master write data mode: check reply and goto USI_SLAVE_SEND_DATA if OK, else reset USI
-		case USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA:
-			if ( USIDR ) {
-				// if NACK, the master does not want more data
-				SET_USI_TO_TWI_START_CONDITION_MODE( );
-				return;
-			}
-			// from here we just drop straight into USI_SLAVE_SEND_DATA if the master sent an ACK
-
-		// copy data from buffer to USIDR and set USI to shift byte, then USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA
-		case USI_SLAVE_SEND_DATA:
-			// Get data from Buffer
-			if ( txHead != txTail ) {
-				txTail = ( txTail + 1 ) & TWI_TX_BUFFER_MASK;
-				USIDR = txBuf[ txTail ];
-			}
-			else {
-				// the buffer is empty
-				SET_USI_TO_TWI_START_CONDITION_MODE( );
-				return;
-			} // end if
-			overflowState = USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA;
-			SET_USI_TO_SEND_DATA( );
-			break;
-
-		// set USI to sample reply from master, then USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA
-		case USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA:
-			overflowState = USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA;
-			SET_USI_TO_READ_ACK( );
-			break;
-
 		// master read data mode: set USI to sample data from master, then USI_SLAVE_GET_DATA_AND_SEND_ACK
 		case USI_SLAVE_REQUEST_DATA:
 			overflowState = USI_SLAVE_GET_DATA_AND_SEND_ACK;
@@ -393,11 +237,6 @@ ISR( USI_OVF_vect ) {
 
 		// copy data from USIDR and send ACK, then USI_SLAVE_REQUEST_DATA
 		case USI_SLAVE_GET_DATA_AND_SEND_ACK:
-			// put data into buffer
-			// not necessary, but prevents warnings
-			rxHead = ( rxHead + 1 ) & TWI_RX_BUFFER_MASK;
-			rxBuf[ rxHead ] = USIDR;
-			// then USI_SLAVE_REQUEST_DATA
 			overflowState = USI_SLAVE_REQUEST_DATA;
 			SET_USI_TO_SEND_ACK( );
 			break;
