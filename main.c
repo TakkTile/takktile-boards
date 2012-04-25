@@ -1,7 +1,5 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include <avr/pgmspace.h>
-#include <util/delay.h>
 #include "usiTwiSlave.h"
 
 #define RST0 1 << PA0
