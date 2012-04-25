@@ -141,6 +141,7 @@ ISR( USI_OVF_vect ) {
 				USISR = ( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) | ( 1 << USIDC ) | ( 0x0E << USICNT0 );
 			}
 			else {
+				overflowState = USI_SLAVE_END_TRX;
 				return;
 			}
 			break;
