@@ -125,13 +125,10 @@ ISR( USI_OVF_vect ) {
 
 		case USI_SLAVE_CHECK_ADDRESS:
 			if ( (USIDR&0xF0) == (slaveAddress&0xF0) ) {
-				if ( USIDR & 0x01 ) {
-					PORTA |= 1 << ((USIDR & 0x0F) >> 1);
-				}
-				else {
-					PORTA &= ~(1 << ((USIDR & 0x0F) >> 1));
-				} 
-				overflowState = USI_SLAVE_END_TRX;
+				uint8_t pin_bm = 1 << ((USIDR & 0x0F) >> 1);
+				if ( pin_bm == 0x10) pin_bm = 0x20; 
+				if ( USIDR & 0x01 ) PORTA |= pin_bm; 
+				else PORTA &= ~pin_bm;
 				// prep ACK
 				USIDR = 0;
 				// set SDA as an output
@@ -139,6 +136,7 @@ ISR( USI_OVF_vect ) {
 				// reset all interrupt flags but start condition
 				// set USI to shift out one bit
 				USISR = ( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) | ( 1 << USIDC ) | ( 0x0E << USICNT0 );
+				overflowState = USI_SLAVE_END_TRX;
 			}
 			else {
 				overflowState = USI_SLAVE_END_TRX;
