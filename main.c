@@ -18,8 +18,7 @@
 	PINA - port status
 */
 
-void configPins(void) {
-
+int main(void) {
 	// disable all MPL115A2 sensors
 	DDRA |= RST0 | RST1 | RST2 | RST3 | RST4; 
 	PORTA &= ~(RST0 | RST1 | RST2 | RST3 | RST4);
@@ -29,10 +28,7 @@ void configPins(void) {
 	DDRB ^= ADDR0 | ADDR1 | ADDR2;
 	PORTA |= ADDR3;
 	PORTB |= ADDR0 | ADDR1 | ADDR2;
-}
 
-int main(void) {
-	configPins();
 	// calculate slaveAddress from state of ADDR pins, shift
 	slaveAddress = (PINA & ADDR3) << 3 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
 	slaveAddress <<= 4;
