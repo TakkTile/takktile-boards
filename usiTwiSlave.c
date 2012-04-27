@@ -125,10 +125,14 @@ ISR( USI_OVF_vect ) {
 
 		case USI_SLAVE_CHECK_ADDRESS:
 			if ( (USIDR&0xF0) == (slaveAddress&0xF0) ) {
-				// the three LSBs of the address indicates the sensor[s]
-				uint8_t pin_bm = 1 << ((USIDR & 0x0F) >> 1);
-				// RST4 (1<<4) is actually located at PA5
-				if ( pin_bm == 0x10) pin_bm = 0x20; 
+				// pin bit position determined by LSB1..3 inclusive
+				uint8_t pin_bp = (USIDR & 0x0F) >> 1;
+				// pin bitmask defaults to 1 << pin_bp
+				uint8_t pin_bm = 1 << pin_bp;
+				// if you're theoretically writing the state of the "sixth" sensor, set the bitmask to match all of them
+				if ( pin_bp == 6 ) pin_bm = 0x2F;
+				// RST4 is actually located at PA5
+				if ( pin_bp == 4 ) pin_bm = 0x20; 
 				// inverted logic - if transaction is a "read", disable the corresponding sensor
 				if ( USIDR & 0x01 ) PORTA &= ~pin_bm;
 				// otherwise, enable it
@@ -149,6 +153,7 @@ ISR( USI_OVF_vect ) {
 			break;
 
 		case USI_SLAVE_END_TRX:
+			// next time overflow interrupt trips, check the address
 			overflowState = USI_SLAVE_CHECK_ADDRESS; 
 			// SDA as input
 			SDA_DDR &= ~( 1 << SDA_BIT );
