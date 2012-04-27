@@ -29,13 +29,14 @@ int main(void) {
 	PORTA |= ADDR3;
 	PORTB |= ADDR0 | ADDR1 | ADDR2;
 
-	// calculate slaveAddress from state of ADDR pins, shift
+	// calculate slaveAddress from state of ADDR pins
 	slaveAddress = (PINA & ADDR3) << 3 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
 	slaveAddress <<= 4;
 
 	// enable interupts	
 	sei(); 
-	
+
+	// instantiate usiTwiSlave code	
 	usiTwiSlaveInit();
 
 	for(;;) {

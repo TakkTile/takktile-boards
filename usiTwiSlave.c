@@ -125,17 +125,21 @@ ISR( USI_OVF_vect ) {
 
 		case USI_SLAVE_CHECK_ADDRESS:
 			if ( (USIDR&0xF0) == (slaveAddress&0xF0) ) {
+				// the three LSBs of the address indicates the sensor[s]
 				uint8_t pin_bm = 1 << ((USIDR & 0x0F) >> 1);
+				// RST4 (1<<4) is actually located at PA5
 				if ( pin_bm == 0x10) pin_bm = 0x20; 
-				if ( USIDR & 0x01 ) PORTA &= ~pin_bm; 
+				// inverted logic - if transaction is a "read", disable the corresponding sensor
+				if ( USIDR & 0x01 ) PORTA &= ~pin_bm;
+				// otherwise, enable it
 				else PORTA |= pin_bm;
 				// prep ACK
 				USIDR = 0;
 				// set SDA as an output
 				SDA_DDR |= ( 1 << SDA_BIT );
-				// reset all interrupt flags but start condition
-				// set USI to shift out one bit
+				// reset all interrupt flags but start condition and set USI to shift out one bit
 				USISR = ( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) | ( 1 << USIDC ) | ( 0x0E << USICNT0 );
+				// after the oveflow interrupt is triggered after one bit is shifted, go to USI_SLAVE_END_TRX condition
 				overflowState = USI_SLAVE_END_TRX;
 			}
 			else {
