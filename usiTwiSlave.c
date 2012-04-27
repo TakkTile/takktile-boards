@@ -127,8 +127,8 @@ ISR( USI_OVF_vect ) {
 			if ( (USIDR&0xF0) == (slaveAddress&0xF0) ) {
 				uint8_t pin_bm = 1 << ((USIDR & 0x0F) >> 1);
 				if ( pin_bm == 0x10) pin_bm = 0x20; 
-				if ( USIDR & 0x01 ) PORTA |= pin_bm; 
-				else PORTA &= ~pin_bm;
+				if ( USIDR & 0x01 ) PORTA &= ~pin_bm; 
+				else PORTA |= pin_bm;
 				// prep ACK
 				USIDR = 0;
 				// set SDA as an output
