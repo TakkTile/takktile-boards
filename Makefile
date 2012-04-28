@@ -6,7 +6,7 @@ AVRDUDE = avrdude -c avrispmkII -P usb -p attiny44
 
 
 CFLAGS  =  -I. -DDEBUG_LEVEL=0
-OBJECTS = usiTwiSlave.o main.o 
+OBJECTS = main.o 
 
 COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
 COMPILEPP = avr-g++ -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
