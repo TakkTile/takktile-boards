@@ -197,8 +197,8 @@ int main(void) {
 	PORTA &= ~(RST0 | RST1 | RST2 | RST3 | RST4);
 
 	// set all ADDR pins as inputs with pullups
-	DDRA ^= ADDR3;
-	DDRB ^= ADDR0 | ADDR1 | ADDR2;
+	DDRA &= ~(ADDR3);
+	DDRB &= ~(ADDR0 | ADDR1 | ADDR2);
 	PORTA |= ADDR3;
 	PORTB |= ADDR0 | ADDR1 | ADDR2;
 
