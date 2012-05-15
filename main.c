@@ -1,5 +1,5 @@
-// (C) 2011 Biorobotics Lab and Nonolith Labs
-// Written by Ian Daniher, based off usiTwiSlave.c  by Donald R. Blake
+// (C) 2012 Biorobotics Lab and Nonolith Labs
+// Written by Ian Daniher, based off usiTwiSlave.c by Donald R. Blake
 // Licensed under the terms of the GNU GPLv3+
 
 #include <avr/io.h>
