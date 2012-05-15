@@ -1,0 +1,9 @@
+This repository contains the schematics and hardware design files, as well as the firmware for the attiny microcontrollers. 
+
+See also [tactile-xmega-firmware](https://github.com/nonolith/cee-firmware), containing the recommended USB-I2C bridge and host driver.
+
+Development is ongoing.
+
+All schematics and board layouts for this project are released under a [Creative Commons BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/).
+
+All firmware for this project are released under a [GPLv3+ license](http://www.gnu.org/licenses/quick-guide-gplv3.html).
