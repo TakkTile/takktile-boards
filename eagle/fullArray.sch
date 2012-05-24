@@ -560,85 +560,85 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <part name="PROG" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="UC1" library="nonolith" deviceset="ATTINY24" device="QFN"/>
 <part name="S01" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S11" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S21" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S02" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S03" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C5" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C6" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C7" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="S31" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S41" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S04" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S05" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C8" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C9" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="PROG1" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="UC2" library="nonolith" deviceset="ATTINY24" device="QFN"/>
-<part name="S02" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S12" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S22" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S06" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S07" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S08" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C10" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C11" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C12" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="S32" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S42" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S09" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S11" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C13" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C14" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="PROG2" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="UC3" library="nonolith" deviceset="ATTINY24" device="QFN"/>
-<part name="S03" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S12" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="S13" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S23" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S14" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C15" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C16" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C17" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="S33" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S43" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S15" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S16" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C18" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C19" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="PROG3" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="UC4" library="nonolith" deviceset="ATTINY24" device="QFN"/>
-<part name="S04" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S14" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S24" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S17" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S18" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S19" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C20" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C21" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C22" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="S34" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S44" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S21" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S22" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C23" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C24" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="PROG4" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="UC5" library="nonolith" deviceset="ATTINY24" device="QFN"/>
-<part name="S05" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S15" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S23" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S24" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="S25" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C25" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C26" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C27" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="S35" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S45" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S26" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S27" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C28" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C29" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="PROG5" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="UC6" library="nonolith" deviceset="ATTINY24" device="QFN"/>
-<part name="S06" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S16" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S26" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S28" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S29" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S31" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C30" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C31" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C32" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="S36" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S46" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S32" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S33" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C33" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C34" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="PROG6" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="UC7" library="nonolith" deviceset="ATTINY24" device="QFN"/>
-<part name="S07" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S17" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S27" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S34" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S35" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S36" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C35" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C36" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C37" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="S37" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="S47" library="nonolith" deviceset="MPL115A" device=""/>
+<part name="S38" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C38" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C39" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="PROG7" library="nonolith" deviceset="HEADER-2X3" device=""/>
@@ -972,13 +972,13 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <instances>
 <instance part="UC1" gate="G$1" x="30.48" y="17.78"/>
 <instance part="S01" gate="G$1" x="33.02" y="60.96"/>
-<instance part="S11" gate="G$1" x="76.2" y="60.96"/>
-<instance part="S21" gate="G$1" x="114.3" y="60.96"/>
+<instance part="S02" gate="G$1" x="76.2" y="60.96"/>
+<instance part="S03" gate="G$1" x="114.3" y="60.96"/>
 <instance part="C5" gate="G$1" x="15.24" y="58.42"/>
 <instance part="C6" gate="G$1" x="58.42" y="58.42"/>
 <instance part="C7" gate="G$1" x="96.52" y="58.42"/>
-<instance part="S31" gate="G$1" x="152.4" y="60.96"/>
-<instance part="S41" gate="G$1" x="190.5" y="60.96"/>
+<instance part="S04" gate="G$1" x="152.4" y="60.96"/>
+<instance part="S05" gate="G$1" x="190.5" y="60.96"/>
 <instance part="C8" gate="G$1" x="134.62" y="58.42"/>
 <instance part="C9" gate="G$1" x="172.72" y="58.42"/>
 <instance part="PROG1" gate="A" x="121.92" y="7.62"/>
@@ -986,25 +986,25 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="CAP21" class="0">
+<net name="CAP01-2" class="0">
 <segment>
 <wire x1="96.52" y1="63.5" x2="101.6" y2="63.5" width="0" layer="91"/>
 <pinref part="C7" gate="G$1" pin="P$1"/>
-<pinref part="S21" gate="G$1" pin="CAP"/>
+<pinref part="S03" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="CAP31" class="0">
+<net name="CAP02-2" class="0">
 <segment>
 <wire x1="139.7" y1="63.5" x2="134.62" y2="63.5" width="0" layer="91"/>
-<pinref part="S31" gate="G$1" pin="CAP"/>
+<pinref part="S04" gate="G$1" pin="CAP"/>
 <pinref part="C8" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="CAP41" class="0">
+<net name="CAP03-2" class="0">
 <segment>
 <wire x1="172.72" y1="63.5" x2="177.8" y2="63.5" width="0" layer="91"/>
 <pinref part="C9" gate="G$1" pin="P$1"/>
-<pinref part="S41" gate="G$1" pin="CAP"/>
+<pinref part="S05" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1020,28 +1020,28 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="60.96" y1="58.42" x2="63.5" y2="58.42" width="0" layer="91"/>
 <wire x1="60.96" y1="55.88" x2="60.96" y2="58.42" width="0" layer="91"/>
 <wire x1="58.42" y1="55.88" x2="60.96" y2="55.88" width="0" layer="91"/>
-<pinref part="S11" gate="G$1" pin="GND"/>
+<pinref part="S02" gate="G$1" pin="GND"/>
 <pinref part="C6" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="58.42" x2="101.6" y2="58.42" width="0" layer="91"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="58.42" width="0" layer="91"/>
 <wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0" layer="91"/>
-<pinref part="S21" gate="G$1" pin="GND"/>
+<pinref part="S03" gate="G$1" pin="GND"/>
 <pinref part="C7" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="58.42" x2="139.7" y2="58.42" width="0" layer="91"/>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="58.42" width="0" layer="91"/>
 <wire x1="134.62" y1="55.88" x2="137.16" y2="55.88" width="0" layer="91"/>
-<pinref part="S31" gate="G$1" pin="GND"/>
+<pinref part="S04" gate="G$1" pin="GND"/>
 <pinref part="C8" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="58.42" x2="177.8" y2="58.42" width="0" layer="91"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0" layer="91"/>
 <wire x1="172.72" y1="55.88" x2="175.26" y2="55.88" width="0" layer="91"/>
-<pinref part="S41" gate="G$1" pin="GND"/>
+<pinref part="S05" gate="G$1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -1076,7 +1076,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="68.58" x2="60.96" y2="68.58" width="0" layer="91"/>
 <label x="60.96" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S11" gate="G$1" pin="VDD"/>
+<pinref part="S02" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="68.58" x2="17.78" y2="68.58" width="0" layer="91"/>
@@ -1086,17 +1086,17 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0" layer="91"/>
 <label x="99.06" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S21" gate="G$1" pin="VDD"/>
+<pinref part="S03" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="68.58" x2="137.16" y2="68.58" width="0" layer="91"/>
 <label x="137.16" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S31" gate="G$1" pin="VDD"/>
+<pinref part="S04" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="68.58" x2="175.26" y2="68.58" width="0" layer="91"/>
 <label x="175.26" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S41" gate="G$1" pin="VDD"/>
+<pinref part="S05" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="33.02" x2="7.62" y2="33.02" width="0" layer="91"/>
@@ -1106,22 +1106,22 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="53.34" x2="60.96" y2="53.34" width="0" layer="91"/>
 <label x="60.96" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S11" gate="G$1" pin="SHDN"/>
+<pinref part="S02" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0" layer="91"/>
 <label x="99.06" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S21" gate="G$1" pin="SHDN"/>
+<pinref part="S03" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="53.34" x2="137.16" y2="53.34" width="0" layer="91"/>
 <label x="137.16" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S31" gate="G$1" pin="SHDN"/>
+<pinref part="S04" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="53.34" x2="175.26" y2="53.34" width="0" layer="91"/>
 <label x="175.26" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S41" gate="G$1" pin="SHDN"/>
+<pinref part="S05" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0" layer="91"/>
@@ -1134,7 +1134,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="132.08" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAP01" class="0">
+<net name="CAP04-2" class="0">
 <segment>
 <wire x1="15.24" y1="63.5" x2="20.32" y2="63.5" width="0" layer="91"/>
 <pinref part="C5" gate="G$1" pin="P$1"/>
@@ -1166,10 +1166,10 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="55.88" y="73.66"/>
 <label x="58.42" y="17.78" size="1.778" layer="95"/>
 <pinref part="S01" gate="G$1" pin="SDA"/>
-<pinref part="S41" gate="G$1" pin="SDA"/>
-<pinref part="S31" gate="G$1" pin="SDA"/>
-<pinref part="S21" gate="G$1" pin="SDA"/>
-<pinref part="S11" gate="G$1" pin="SDA"/>
+<pinref part="S05" gate="G$1" pin="SDA"/>
+<pinref part="S04" gate="G$1" pin="SDA"/>
+<pinref part="S03" gate="G$1" pin="SDA"/>
+<pinref part="S02" gate="G$1" pin="SDA"/>
 <pinref part="UC1" gate="G$1" pin="PA6/MOSI"/>
 </segment>
 <segment>
@@ -1199,10 +1199,10 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="58.42" y="22.86" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PA4/SCL"/>
 <pinref part="S01" gate="G$1" pin="SCL"/>
-<pinref part="S41" gate="G$1" pin="SCL"/>
-<pinref part="S31" gate="G$1" pin="SCL"/>
-<pinref part="S21" gate="G$1" pin="SCL"/>
-<pinref part="S11" gate="G$1" pin="SCL"/>
+<pinref part="S05" gate="G$1" pin="SCL"/>
+<pinref part="S04" gate="G$1" pin="SCL"/>
+<pinref part="S03" gate="G$1" pin="SCL"/>
+<pinref part="S02" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="PROG1" gate="A" pin="3"/>
@@ -1210,7 +1210,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST01" class="0">
+<net name="RST00-2" class="0">
 <segment>
 <wire x1="50.8" y1="33.02" x2="50.8" y2="53.34" width="0" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="45.72" y2="53.34" width="0" layer="91"/>
@@ -1219,62 +1219,41 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="S01" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST11" class="0">
+<net name="RST10-2" class="0">
 <segment>
 <wire x1="50.8" y1="30.48" x2="88.9" y2="30.48" width="0" layer="91"/>
 <wire x1="88.9" y1="30.48" x2="88.9" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="30.48" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PA1/ADC1"/>
-<pinref part="S11" gate="G$1" pin="RST"/>
+<pinref part="S02" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST21" class="0">
+<net name="RST20-2" class="0">
 <segment>
 <wire x1="50.8" y1="27.94" x2="127" y2="27.94" width="0" layer="91"/>
 <wire x1="127" y1="27.94" x2="127" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="27.94" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PA2/ADC2"/>
-<pinref part="S21" gate="G$1" pin="RST"/>
+<pinref part="S03" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="CAP11" class="0">
-<segment>
-<wire x1="58.42" y1="63.5" x2="63.5" y2="63.5" width="0" layer="91"/>
-<pinref part="C6" gate="G$1" pin="P$1"/>
-<pinref part="S11" gate="G$1" pin="CAP"/>
-</segment>
-</net>
-<net name="ADDR01" class="0">
-<segment>
-<pinref part="UC1" gate="G$1" pin="PB0"/>
-<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
-<label x="53.34" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RST31" class="0">
+<net name="RST30-2" class="0">
 <segment>
 <wire x1="50.8" y1="25.4" x2="165.1" y2="25.4" width="0" layer="91"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="25.4" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PA3/ADC3"/>
-<pinref part="S31" gate="G$1" pin="RST"/>
+<pinref part="S04" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST41" class="0">
+<net name="CAP05-2" class="0">
 <segment>
-<wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
-<wire x1="203.2" y1="20.32" x2="203.2" y2="53.34" width="0" layer="91"/>
-<label x="58.42" y="20.32" size="1.778" layer="95"/>
-<pinref part="UC1" gate="G$1" pin="PA5/MISO"/>
-<pinref part="S41" gate="G$1" pin="RST"/>
-</segment>
-<segment>
-<pinref part="PROG1" gate="A" pin="1"/>
-<wire x1="119.38" y1="10.16" x2="114.3" y2="10.16" width="0" layer="91"/>
-<label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
+<wire x1="58.42" y1="63.5" x2="63.5" y2="63.5" width="0" layer="91"/>
+<pinref part="C6" gate="G$1" pin="P$1"/>
+<pinref part="S02" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET1" class="0">
+<net name="RESET0-2" class="0">
 <segment>
 <wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
 <label x="55.88" y="2.54" size="1.778" layer="95"/>
@@ -1286,6 +1265,27 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
+<net name="RST40-2" class="0">
+<segment>
+<wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
+<wire x1="203.2" y1="20.32" x2="203.2" y2="53.34" width="0" layer="91"/>
+<label x="58.42" y="20.32" size="1.778" layer="95"/>
+<pinref part="UC1" gate="G$1" pin="PA5/MISO"/>
+<pinref part="S05" gate="G$1" pin="RST"/>
+</segment>
+<segment>
+<pinref part="PROG1" gate="A" pin="1"/>
+<wire x1="119.38" y1="10.16" x2="114.3" y2="10.16" width="0" layer="91"/>
+<label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="ADDR00-2" class="0">
+<segment>
+<pinref part="UC1" gate="G$1" pin="PB0"/>
+<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
+<label x="53.34" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -1293,14 +1293,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 </plain>
 <instances>
 <instance part="UC2" gate="G$1" x="30.48" y="17.78"/>
-<instance part="S02" gate="G$1" x="33.02" y="60.96"/>
-<instance part="S12" gate="G$1" x="76.2" y="60.96"/>
-<instance part="S22" gate="G$1" x="114.3" y="60.96"/>
+<instance part="S06" gate="G$1" x="33.02" y="60.96"/>
+<instance part="S07" gate="G$1" x="76.2" y="60.96"/>
+<instance part="S08" gate="G$1" x="114.3" y="60.96"/>
 <instance part="C10" gate="G$1" x="15.24" y="58.42"/>
 <instance part="C11" gate="G$1" x="58.42" y="58.42"/>
 <instance part="C12" gate="G$1" x="96.52" y="58.42"/>
-<instance part="S32" gate="G$1" x="152.4" y="60.96"/>
-<instance part="S42" gate="G$1" x="190.5" y="60.96"/>
+<instance part="S09" gate="G$1" x="152.4" y="60.96"/>
+<instance part="S11" gate="G$1" x="190.5" y="60.96"/>
 <instance part="C13" gate="G$1" x="134.62" y="58.42"/>
 <instance part="C14" gate="G$1" x="172.72" y="58.42"/>
 <instance part="PROG2" gate="A" x="121.92" y="7.62"/>
@@ -1308,25 +1308,25 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="CAP22" class="0">
+<net name="CAP01-3" class="0">
 <segment>
 <wire x1="96.52" y1="63.5" x2="101.6" y2="63.5" width="0" layer="91"/>
 <pinref part="C12" gate="G$1" pin="P$1"/>
-<pinref part="S22" gate="G$1" pin="CAP"/>
+<pinref part="S08" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="CAP32" class="0">
+<net name="CAP02-3" class="0">
 <segment>
 <wire x1="139.7" y1="63.5" x2="134.62" y2="63.5" width="0" layer="91"/>
-<pinref part="S32" gate="G$1" pin="CAP"/>
+<pinref part="S09" gate="G$1" pin="CAP"/>
 <pinref part="C13" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="CAP42" class="0">
+<net name="CAP03-3" class="0">
 <segment>
 <wire x1="172.72" y1="63.5" x2="177.8" y2="63.5" width="0" layer="91"/>
 <pinref part="C14" gate="G$1" pin="P$1"/>
-<pinref part="S42" gate="G$1" pin="CAP"/>
+<pinref part="S11" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1342,35 +1342,35 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="60.96" y1="58.42" x2="63.5" y2="58.42" width="0" layer="91"/>
 <wire x1="60.96" y1="55.88" x2="60.96" y2="58.42" width="0" layer="91"/>
 <wire x1="58.42" y1="55.88" x2="60.96" y2="55.88" width="0" layer="91"/>
-<pinref part="S12" gate="G$1" pin="GND"/>
+<pinref part="S07" gate="G$1" pin="GND"/>
 <pinref part="C11" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="58.42" x2="101.6" y2="58.42" width="0" layer="91"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="58.42" width="0" layer="91"/>
 <wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0" layer="91"/>
-<pinref part="S22" gate="G$1" pin="GND"/>
+<pinref part="S08" gate="G$1" pin="GND"/>
 <pinref part="C12" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="58.42" x2="139.7" y2="58.42" width="0" layer="91"/>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="58.42" width="0" layer="91"/>
 <wire x1="134.62" y1="55.88" x2="137.16" y2="55.88" width="0" layer="91"/>
-<pinref part="S32" gate="G$1" pin="GND"/>
+<pinref part="S09" gate="G$1" pin="GND"/>
 <pinref part="C13" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="58.42" x2="177.8" y2="58.42" width="0" layer="91"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0" layer="91"/>
 <wire x1="172.72" y1="55.88" x2="175.26" y2="55.88" width="0" layer="91"/>
-<pinref part="S42" gate="G$1" pin="GND"/>
+<pinref part="S11" gate="G$1" pin="GND"/>
 <pinref part="C14" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="58.42" x2="20.32" y2="58.42" width="0" layer="91"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="58.42" width="0" layer="91"/>
 <wire x1="15.24" y1="55.88" x2="17.78" y2="55.88" width="0" layer="91"/>
-<pinref part="S02" gate="G$1" pin="GND"/>
+<pinref part="S06" gate="G$1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -1398,27 +1398,27 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="68.58" x2="60.96" y2="68.58" width="0" layer="91"/>
 <label x="60.96" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S12" gate="G$1" pin="VDD"/>
+<pinref part="S07" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="68.58" x2="17.78" y2="68.58" width="0" layer="91"/>
 <label x="17.78" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S02" gate="G$1" pin="VDD"/>
+<pinref part="S06" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0" layer="91"/>
 <label x="99.06" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S22" gate="G$1" pin="VDD"/>
+<pinref part="S08" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="68.58" x2="137.16" y2="68.58" width="0" layer="91"/>
 <label x="137.16" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S32" gate="G$1" pin="VDD"/>
+<pinref part="S09" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="68.58" x2="175.26" y2="68.58" width="0" layer="91"/>
 <label x="175.26" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S42" gate="G$1" pin="VDD"/>
+<pinref part="S11" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="33.02" x2="7.62" y2="33.02" width="0" layer="91"/>
@@ -1428,27 +1428,27 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="53.34" x2="60.96" y2="53.34" width="0" layer="91"/>
 <label x="60.96" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S12" gate="G$1" pin="SHDN"/>
+<pinref part="S07" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0" layer="91"/>
 <label x="99.06" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S22" gate="G$1" pin="SHDN"/>
+<pinref part="S08" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="53.34" x2="137.16" y2="53.34" width="0" layer="91"/>
 <label x="137.16" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S32" gate="G$1" pin="SHDN"/>
+<pinref part="S09" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="53.34" x2="175.26" y2="53.34" width="0" layer="91"/>
 <label x="175.26" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S42" gate="G$1" pin="SHDN"/>
+<pinref part="S11" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0" layer="91"/>
 <label x="17.78" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S02" gate="G$1" pin="SHDN"/>
+<pinref part="S06" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <pinref part="PROG2" gate="A" pin="2"/>
@@ -1456,11 +1456,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="132.08" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAP02" class="0">
+<net name="CAP04-3" class="0">
 <segment>
 <wire x1="15.24" y1="63.5" x2="20.32" y2="63.5" width="0" layer="91"/>
 <pinref part="C10" gate="G$1" pin="P$1"/>
-<pinref part="S02" gate="G$1" pin="CAP"/>
+<pinref part="S06" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -1487,11 +1487,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="167.64" y="73.66"/>
 <junction x="55.88" y="73.66"/>
 <label x="58.42" y="17.78" size="1.778" layer="95"/>
-<pinref part="S02" gate="G$1" pin="SDA"/>
-<pinref part="S42" gate="G$1" pin="SDA"/>
-<pinref part="S32" gate="G$1" pin="SDA"/>
-<pinref part="S22" gate="G$1" pin="SDA"/>
-<pinref part="S12" gate="G$1" pin="SDA"/>
+<pinref part="S06" gate="G$1" pin="SDA"/>
+<pinref part="S11" gate="G$1" pin="SDA"/>
+<pinref part="S09" gate="G$1" pin="SDA"/>
+<pinref part="S08" gate="G$1" pin="SDA"/>
+<pinref part="S07" gate="G$1" pin="SDA"/>
 <pinref part="UC2" gate="G$1" pin="PA6/MOSI"/>
 </segment>
 <segment>
@@ -1520,11 +1520,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="53.34" y="78.74"/>
 <label x="58.42" y="22.86" size="1.778" layer="95"/>
 <pinref part="UC2" gate="G$1" pin="PA4/SCL"/>
-<pinref part="S02" gate="G$1" pin="SCL"/>
-<pinref part="S42" gate="G$1" pin="SCL"/>
-<pinref part="S32" gate="G$1" pin="SCL"/>
-<pinref part="S22" gate="G$1" pin="SCL"/>
-<pinref part="S12" gate="G$1" pin="SCL"/>
+<pinref part="S06" gate="G$1" pin="SCL"/>
+<pinref part="S11" gate="G$1" pin="SCL"/>
+<pinref part="S09" gate="G$1" pin="SCL"/>
+<pinref part="S08" gate="G$1" pin="SCL"/>
+<pinref part="S07" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="PROG2" gate="A" pin="3"/>
@@ -1532,50 +1532,50 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST02" class="0">
+<net name="RST00-3" class="0">
 <segment>
 <wire x1="50.8" y1="33.02" x2="50.8" y2="53.34" width="0" layer="91"/>
+<wire x1="50.8" y1="53.34" x2="45.72" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="33.02" size="1.778" layer="95"/>
 <pinref part="UC2" gate="G$1" pin="PA0/ADC0"/>
-<pinref part="S02" gate="G$1" pin="RST"/>
-<wire x1="45.72" y1="53.34" x2="50.8" y2="53.34" width="0" layer="91"/>
+<pinref part="S06" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST12" class="0">
+<net name="RST10-3" class="0">
 <segment>
 <wire x1="50.8" y1="30.48" x2="88.9" y2="30.48" width="0" layer="91"/>
 <wire x1="88.9" y1="30.48" x2="88.9" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="30.48" size="1.778" layer="95"/>
 <pinref part="UC2" gate="G$1" pin="PA1/ADC1"/>
-<pinref part="S12" gate="G$1" pin="RST"/>
+<pinref part="S07" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST22" class="0">
+<net name="RST20-3" class="0">
 <segment>
 <wire x1="50.8" y1="27.94" x2="127" y2="27.94" width="0" layer="91"/>
 <wire x1="127" y1="27.94" x2="127" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="27.94" size="1.778" layer="95"/>
 <pinref part="UC2" gate="G$1" pin="PA2/ADC2"/>
-<pinref part="S22" gate="G$1" pin="RST"/>
+<pinref part="S08" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST32" class="0">
+<net name="RST30-3" class="0">
 <segment>
 <wire x1="50.8" y1="25.4" x2="165.1" y2="25.4" width="0" layer="91"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="25.4" size="1.778" layer="95"/>
 <pinref part="UC2" gate="G$1" pin="PA3/ADC3"/>
-<pinref part="S32" gate="G$1" pin="RST"/>
+<pinref part="S09" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="CAP12" class="0">
+<net name="CAP05-3" class="0">
 <segment>
 <wire x1="58.42" y1="63.5" x2="63.5" y2="63.5" width="0" layer="91"/>
 <pinref part="C11" gate="G$1" pin="P$1"/>
-<pinref part="S12" gate="G$1" pin="CAP"/>
+<pinref part="S07" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET2" class="0">
+<net name="RESET0-3" class="0">
 <segment>
 <wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
 <label x="55.88" y="2.54" size="1.778" layer="95"/>
@@ -1587,13 +1587,13 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST42" class="0">
+<net name="RST40-3" class="0">
 <segment>
 <wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="20.32" size="1.778" layer="95"/>
 <pinref part="UC2" gate="G$1" pin="PA5/MISO"/>
-<pinref part="S42" gate="G$1" pin="RST"/>
+<pinref part="S11" gate="G$1" pin="RST"/>
 </segment>
 <segment>
 <pinref part="PROG2" gate="A" pin="1"/>
@@ -1601,7 +1601,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR02" class="0">
+<net name="ADDR00-3" class="0">
 <segment>
 <pinref part="UC2" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
@@ -1615,14 +1615,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 </plain>
 <instances>
 <instance part="UC3" gate="G$1" x="30.48" y="17.78"/>
-<instance part="S03" gate="G$1" x="33.02" y="60.96"/>
+<instance part="S12" gate="G$1" x="33.02" y="60.96"/>
 <instance part="S13" gate="G$1" x="76.2" y="60.96"/>
-<instance part="S23" gate="G$1" x="114.3" y="60.96"/>
+<instance part="S14" gate="G$1" x="114.3" y="60.96"/>
 <instance part="C15" gate="G$1" x="15.24" y="58.42"/>
 <instance part="C16" gate="G$1" x="58.42" y="58.42"/>
 <instance part="C17" gate="G$1" x="96.52" y="58.42"/>
-<instance part="S33" gate="G$1" x="152.4" y="60.96"/>
-<instance part="S43" gate="G$1" x="190.5" y="60.96"/>
+<instance part="S15" gate="G$1" x="152.4" y="60.96"/>
+<instance part="S16" gate="G$1" x="190.5" y="60.96"/>
 <instance part="C18" gate="G$1" x="134.62" y="58.42"/>
 <instance part="C19" gate="G$1" x="172.72" y="58.42"/>
 <instance part="PROG3" gate="A" x="121.92" y="7.62"/>
@@ -1630,25 +1630,25 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="CAP23" class="0">
+<net name="CAP01-4" class="0">
 <segment>
 <wire x1="96.52" y1="63.5" x2="101.6" y2="63.5" width="0" layer="91"/>
 <pinref part="C17" gate="G$1" pin="P$1"/>
-<pinref part="S23" gate="G$1" pin="CAP"/>
+<pinref part="S14" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="CAP33" class="0">
+<net name="CAP02-4" class="0">
 <segment>
 <wire x1="139.7" y1="63.5" x2="134.62" y2="63.5" width="0" layer="91"/>
-<pinref part="S33" gate="G$1" pin="CAP"/>
+<pinref part="S15" gate="G$1" pin="CAP"/>
 <pinref part="C18" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="CAP43" class="0">
+<net name="CAP03-4" class="0">
 <segment>
 <wire x1="172.72" y1="63.5" x2="177.8" y2="63.5" width="0" layer="91"/>
 <pinref part="C19" gate="G$1" pin="P$1"/>
-<pinref part="S43" gate="G$1" pin="CAP"/>
+<pinref part="S16" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1671,28 +1671,28 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="99.06" y1="58.42" x2="101.6" y2="58.42" width="0" layer="91"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="58.42" width="0" layer="91"/>
 <wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0" layer="91"/>
-<pinref part="S23" gate="G$1" pin="GND"/>
+<pinref part="S14" gate="G$1" pin="GND"/>
 <pinref part="C17" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="58.42" x2="139.7" y2="58.42" width="0" layer="91"/>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="58.42" width="0" layer="91"/>
 <wire x1="134.62" y1="55.88" x2="137.16" y2="55.88" width="0" layer="91"/>
-<pinref part="S33" gate="G$1" pin="GND"/>
+<pinref part="S15" gate="G$1" pin="GND"/>
 <pinref part="C18" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="58.42" x2="177.8" y2="58.42" width="0" layer="91"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0" layer="91"/>
 <wire x1="172.72" y1="55.88" x2="175.26" y2="55.88" width="0" layer="91"/>
-<pinref part="S43" gate="G$1" pin="GND"/>
+<pinref part="S16" gate="G$1" pin="GND"/>
 <pinref part="C19" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="58.42" x2="20.32" y2="58.42" width="0" layer="91"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="58.42" width="0" layer="91"/>
 <wire x1="15.24" y1="55.88" x2="17.78" y2="55.88" width="0" layer="91"/>
-<pinref part="S03" gate="G$1" pin="GND"/>
+<pinref part="S12" gate="G$1" pin="GND"/>
 <pinref part="C15" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -1725,22 +1725,22 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="20.32" y1="68.58" x2="17.78" y2="68.58" width="0" layer="91"/>
 <label x="17.78" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S03" gate="G$1" pin="VDD"/>
+<pinref part="S12" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0" layer="91"/>
 <label x="99.06" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S23" gate="G$1" pin="VDD"/>
+<pinref part="S14" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="68.58" x2="137.16" y2="68.58" width="0" layer="91"/>
 <label x="137.16" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S33" gate="G$1" pin="VDD"/>
+<pinref part="S15" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="68.58" x2="175.26" y2="68.58" width="0" layer="91"/>
 <label x="175.26" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S43" gate="G$1" pin="VDD"/>
+<pinref part="S16" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="33.02" x2="7.62" y2="33.02" width="0" layer="91"/>
@@ -1755,22 +1755,22 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0" layer="91"/>
 <label x="99.06" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S23" gate="G$1" pin="SHDN"/>
+<pinref part="S14" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="53.34" x2="137.16" y2="53.34" width="0" layer="91"/>
 <label x="137.16" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S33" gate="G$1" pin="SHDN"/>
+<pinref part="S15" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="53.34" x2="175.26" y2="53.34" width="0" layer="91"/>
 <label x="175.26" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S43" gate="G$1" pin="SHDN"/>
+<pinref part="S16" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0" layer="91"/>
 <label x="17.78" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S03" gate="G$1" pin="SHDN"/>
+<pinref part="S12" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <pinref part="PROG3" gate="A" pin="2"/>
@@ -1778,11 +1778,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="132.08" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAP03" class="0">
+<net name="CAP04-4" class="0">
 <segment>
 <wire x1="15.24" y1="63.5" x2="20.32" y2="63.5" width="0" layer="91"/>
 <pinref part="C15" gate="G$1" pin="P$1"/>
-<pinref part="S03" gate="G$1" pin="CAP"/>
+<pinref part="S12" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -1809,10 +1809,10 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="167.64" y="73.66"/>
 <junction x="55.88" y="73.66"/>
 <label x="58.42" y="17.78" size="1.778" layer="95"/>
-<pinref part="S03" gate="G$1" pin="SDA"/>
-<pinref part="S43" gate="G$1" pin="SDA"/>
-<pinref part="S33" gate="G$1" pin="SDA"/>
-<pinref part="S23" gate="G$1" pin="SDA"/>
+<pinref part="S12" gate="G$1" pin="SDA"/>
+<pinref part="S16" gate="G$1" pin="SDA"/>
+<pinref part="S15" gate="G$1" pin="SDA"/>
+<pinref part="S14" gate="G$1" pin="SDA"/>
 <pinref part="S13" gate="G$1" pin="SDA"/>
 <pinref part="UC3" gate="G$1" pin="PA6/MOSI"/>
 </segment>
@@ -1842,10 +1842,10 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="53.34" y="78.74"/>
 <label x="58.42" y="22.86" size="1.778" layer="95"/>
 <pinref part="UC3" gate="G$1" pin="PA4/SCL"/>
-<pinref part="S03" gate="G$1" pin="SCL"/>
-<pinref part="S43" gate="G$1" pin="SCL"/>
-<pinref part="S33" gate="G$1" pin="SCL"/>
-<pinref part="S23" gate="G$1" pin="SCL"/>
+<pinref part="S12" gate="G$1" pin="SCL"/>
+<pinref part="S16" gate="G$1" pin="SCL"/>
+<pinref part="S15" gate="G$1" pin="SCL"/>
+<pinref part="S14" gate="G$1" pin="SCL"/>
 <pinref part="S13" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
@@ -1854,16 +1854,16 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST03" class="0">
+<net name="RST00-4" class="0">
 <segment>
 <wire x1="50.8" y1="33.02" x2="50.8" y2="53.34" width="0" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="45.72" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="33.02" size="1.778" layer="95"/>
 <pinref part="UC3" gate="G$1" pin="PA0/ADC0"/>
-<pinref part="S03" gate="G$1" pin="RST"/>
+<pinref part="S12" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST13" class="0">
+<net name="RST10-4" class="0">
 <segment>
 <wire x1="50.8" y1="30.48" x2="88.9" y2="30.48" width="0" layer="91"/>
 <wire x1="88.9" y1="30.48" x2="88.9" y2="53.34" width="0" layer="91"/>
@@ -1872,32 +1872,32 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="S13" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST23" class="0">
+<net name="RST20-4" class="0">
 <segment>
 <wire x1="50.8" y1="27.94" x2="127" y2="27.94" width="0" layer="91"/>
 <wire x1="127" y1="27.94" x2="127" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="27.94" size="1.778" layer="95"/>
 <pinref part="UC3" gate="G$1" pin="PA2/ADC2"/>
-<pinref part="S23" gate="G$1" pin="RST"/>
+<pinref part="S14" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST33" class="0">
+<net name="RST30-4" class="0">
 <segment>
 <wire x1="50.8" y1="25.4" x2="165.1" y2="25.4" width="0" layer="91"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="25.4" size="1.778" layer="95"/>
 <pinref part="UC3" gate="G$1" pin="PA3/ADC3"/>
-<pinref part="S33" gate="G$1" pin="RST"/>
+<pinref part="S15" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="CAP13" class="0">
+<net name="CAP05-4" class="0">
 <segment>
 <wire x1="58.42" y1="63.5" x2="63.5" y2="63.5" width="0" layer="91"/>
 <pinref part="C16" gate="G$1" pin="P$1"/>
 <pinref part="S13" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET3" class="0">
+<net name="RESET0-4" class="0">
 <segment>
 <wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
 <label x="55.88" y="2.54" size="1.778" layer="95"/>
@@ -1909,13 +1909,13 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST43" class="0">
+<net name="RST40-4" class="0">
 <segment>
 <wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="20.32" size="1.778" layer="95"/>
 <pinref part="UC3" gate="G$1" pin="PA5/MISO"/>
-<pinref part="S43" gate="G$1" pin="RST"/>
+<pinref part="S16" gate="G$1" pin="RST"/>
 </segment>
 <segment>
 <pinref part="PROG3" gate="A" pin="1"/>
@@ -1923,7 +1923,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR03" class="0">
+<net name="ADDR00-4" class="0">
 <segment>
 <pinref part="UC3" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
@@ -1937,14 +1937,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 </plain>
 <instances>
 <instance part="UC4" gate="G$1" x="30.48" y="17.78"/>
-<instance part="S04" gate="G$1" x="33.02" y="60.96"/>
-<instance part="S14" gate="G$1" x="76.2" y="60.96"/>
-<instance part="S24" gate="G$1" x="114.3" y="60.96"/>
+<instance part="S17" gate="G$1" x="33.02" y="60.96"/>
+<instance part="S18" gate="G$1" x="76.2" y="60.96"/>
+<instance part="S19" gate="G$1" x="114.3" y="60.96"/>
 <instance part="C20" gate="G$1" x="15.24" y="58.42"/>
 <instance part="C21" gate="G$1" x="58.42" y="58.42"/>
 <instance part="C22" gate="G$1" x="96.52" y="58.42"/>
-<instance part="S34" gate="G$1" x="152.4" y="60.96"/>
-<instance part="S44" gate="G$1" x="190.5" y="60.96"/>
+<instance part="S21" gate="G$1" x="152.4" y="60.96"/>
+<instance part="S22" gate="G$1" x="190.5" y="60.96"/>
 <instance part="C23" gate="G$1" x="134.62" y="58.42"/>
 <instance part="C24" gate="G$1" x="172.72" y="58.42"/>
 <instance part="PROG4" gate="A" x="121.92" y="7.62"/>
@@ -1952,25 +1952,25 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="CAP24" class="0">
+<net name="CAP01-5" class="0">
 <segment>
 <wire x1="96.52" y1="63.5" x2="101.6" y2="63.5" width="0" layer="91"/>
 <pinref part="C22" gate="G$1" pin="P$1"/>
-<pinref part="S24" gate="G$1" pin="CAP"/>
+<pinref part="S19" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="CAP34" class="0">
+<net name="CAP02-5" class="0">
 <segment>
 <wire x1="139.7" y1="63.5" x2="134.62" y2="63.5" width="0" layer="91"/>
-<pinref part="S34" gate="G$1" pin="CAP"/>
+<pinref part="S21" gate="G$1" pin="CAP"/>
 <pinref part="C23" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="CAP44" class="0">
+<net name="CAP03-5" class="0">
 <segment>
 <wire x1="172.72" y1="63.5" x2="177.8" y2="63.5" width="0" layer="91"/>
 <pinref part="C24" gate="G$1" pin="P$1"/>
-<pinref part="S44" gate="G$1" pin="CAP"/>
+<pinref part="S22" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1986,35 +1986,35 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="60.96" y1="58.42" x2="63.5" y2="58.42" width="0" layer="91"/>
 <wire x1="60.96" y1="55.88" x2="60.96" y2="58.42" width="0" layer="91"/>
 <wire x1="58.42" y1="55.88" x2="60.96" y2="55.88" width="0" layer="91"/>
-<pinref part="S14" gate="G$1" pin="GND"/>
+<pinref part="S18" gate="G$1" pin="GND"/>
 <pinref part="C21" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="58.42" x2="101.6" y2="58.42" width="0" layer="91"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="58.42" width="0" layer="91"/>
 <wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0" layer="91"/>
-<pinref part="S24" gate="G$1" pin="GND"/>
+<pinref part="S19" gate="G$1" pin="GND"/>
 <pinref part="C22" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="58.42" x2="139.7" y2="58.42" width="0" layer="91"/>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="58.42" width="0" layer="91"/>
 <wire x1="134.62" y1="55.88" x2="137.16" y2="55.88" width="0" layer="91"/>
-<pinref part="S34" gate="G$1" pin="GND"/>
+<pinref part="S21" gate="G$1" pin="GND"/>
 <pinref part="C23" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="58.42" x2="177.8" y2="58.42" width="0" layer="91"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0" layer="91"/>
 <wire x1="172.72" y1="55.88" x2="175.26" y2="55.88" width="0" layer="91"/>
-<pinref part="S44" gate="G$1" pin="GND"/>
+<pinref part="S22" gate="G$1" pin="GND"/>
 <pinref part="C24" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="58.42" x2="20.32" y2="58.42" width="0" layer="91"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="58.42" width="0" layer="91"/>
 <wire x1="15.24" y1="55.88" x2="17.78" y2="55.88" width="0" layer="91"/>
-<pinref part="S04" gate="G$1" pin="GND"/>
+<pinref part="S17" gate="G$1" pin="GND"/>
 <pinref part="C20" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -2042,27 +2042,27 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="68.58" x2="60.96" y2="68.58" width="0" layer="91"/>
 <label x="60.96" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S14" gate="G$1" pin="VDD"/>
+<pinref part="S18" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="68.58" x2="17.78" y2="68.58" width="0" layer="91"/>
 <label x="17.78" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S04" gate="G$1" pin="VDD"/>
+<pinref part="S17" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0" layer="91"/>
 <label x="99.06" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S24" gate="G$1" pin="VDD"/>
+<pinref part="S19" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="68.58" x2="137.16" y2="68.58" width="0" layer="91"/>
 <label x="137.16" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S34" gate="G$1" pin="VDD"/>
+<pinref part="S21" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="68.58" x2="175.26" y2="68.58" width="0" layer="91"/>
 <label x="175.26" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S44" gate="G$1" pin="VDD"/>
+<pinref part="S22" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="33.02" x2="7.62" y2="33.02" width="0" layer="91"/>
@@ -2072,27 +2072,27 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="53.34" x2="60.96" y2="53.34" width="0" layer="91"/>
 <label x="60.96" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S14" gate="G$1" pin="SHDN"/>
+<pinref part="S18" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0" layer="91"/>
 <label x="99.06" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S24" gate="G$1" pin="SHDN"/>
+<pinref part="S19" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="53.34" x2="137.16" y2="53.34" width="0" layer="91"/>
 <label x="137.16" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S34" gate="G$1" pin="SHDN"/>
+<pinref part="S21" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="53.34" x2="175.26" y2="53.34" width="0" layer="91"/>
 <label x="175.26" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S44" gate="G$1" pin="SHDN"/>
+<pinref part="S22" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0" layer="91"/>
 <label x="17.78" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S04" gate="G$1" pin="SHDN"/>
+<pinref part="S17" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <pinref part="PROG4" gate="A" pin="2"/>
@@ -2100,11 +2100,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="132.08" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAP04" class="0">
+<net name="CAP04-5" class="0">
 <segment>
 <wire x1="15.24" y1="63.5" x2="20.32" y2="63.5" width="0" layer="91"/>
 <pinref part="C20" gate="G$1" pin="P$1"/>
-<pinref part="S04" gate="G$1" pin="CAP"/>
+<pinref part="S17" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2131,11 +2131,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="167.64" y="73.66"/>
 <junction x="55.88" y="73.66"/>
 <label x="58.42" y="17.78" size="1.778" layer="95"/>
-<pinref part="S04" gate="G$1" pin="SDA"/>
-<pinref part="S44" gate="G$1" pin="SDA"/>
-<pinref part="S34" gate="G$1" pin="SDA"/>
-<pinref part="S24" gate="G$1" pin="SDA"/>
-<pinref part="S14" gate="G$1" pin="SDA"/>
+<pinref part="S17" gate="G$1" pin="SDA"/>
+<pinref part="S22" gate="G$1" pin="SDA"/>
+<pinref part="S21" gate="G$1" pin="SDA"/>
+<pinref part="S19" gate="G$1" pin="SDA"/>
+<pinref part="S18" gate="G$1" pin="SDA"/>
 <pinref part="UC4" gate="G$1" pin="PA6/MOSI"/>
 </segment>
 <segment>
@@ -2164,11 +2164,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="53.34" y="78.74"/>
 <label x="58.42" y="22.86" size="1.778" layer="95"/>
 <pinref part="UC4" gate="G$1" pin="PA4/SCL"/>
-<pinref part="S04" gate="G$1" pin="SCL"/>
-<pinref part="S44" gate="G$1" pin="SCL"/>
-<pinref part="S34" gate="G$1" pin="SCL"/>
-<pinref part="S24" gate="G$1" pin="SCL"/>
-<pinref part="S14" gate="G$1" pin="SCL"/>
+<pinref part="S17" gate="G$1" pin="SCL"/>
+<pinref part="S22" gate="G$1" pin="SCL"/>
+<pinref part="S21" gate="G$1" pin="SCL"/>
+<pinref part="S19" gate="G$1" pin="SCL"/>
+<pinref part="S18" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="PROG4" gate="A" pin="3"/>
@@ -2176,50 +2176,50 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST04" class="0">
+<net name="RST00-5" class="0">
 <segment>
 <wire x1="50.8" y1="33.02" x2="50.8" y2="53.34" width="0" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="45.72" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="33.02" size="1.778" layer="95"/>
 <pinref part="UC4" gate="G$1" pin="PA0/ADC0"/>
-<pinref part="S04" gate="G$1" pin="RST"/>
+<pinref part="S17" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST14" class="0">
+<net name="RST10-5" class="0">
 <segment>
 <wire x1="50.8" y1="30.48" x2="88.9" y2="30.48" width="0" layer="91"/>
 <wire x1="88.9" y1="30.48" x2="88.9" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="30.48" size="1.778" layer="95"/>
 <pinref part="UC4" gate="G$1" pin="PA1/ADC1"/>
-<pinref part="S14" gate="G$1" pin="RST"/>
+<pinref part="S18" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST24" class="0">
+<net name="RST20-5" class="0">
 <segment>
 <wire x1="50.8" y1="27.94" x2="127" y2="27.94" width="0" layer="91"/>
 <wire x1="127" y1="27.94" x2="127" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="27.94" size="1.778" layer="95"/>
 <pinref part="UC4" gate="G$1" pin="PA2/ADC2"/>
-<pinref part="S24" gate="G$1" pin="RST"/>
+<pinref part="S19" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST34" class="0">
+<net name="RST30-5" class="0">
 <segment>
 <wire x1="50.8" y1="25.4" x2="165.1" y2="25.4" width="0" layer="91"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="25.4" size="1.778" layer="95"/>
 <pinref part="UC4" gate="G$1" pin="PA3/ADC3"/>
-<pinref part="S34" gate="G$1" pin="RST"/>
+<pinref part="S21" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="CAP14" class="0">
+<net name="CAP05-5" class="0">
 <segment>
 <wire x1="58.42" y1="63.5" x2="63.5" y2="63.5" width="0" layer="91"/>
 <pinref part="C21" gate="G$1" pin="P$1"/>
-<pinref part="S14" gate="G$1" pin="CAP"/>
+<pinref part="S18" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET4" class="0">
+<net name="RESET0-5" class="0">
 <segment>
 <wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
 <label x="55.88" y="2.54" size="1.778" layer="95"/>
@@ -2231,13 +2231,13 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST44" class="0">
+<net name="RST40-5" class="0">
 <segment>
 <wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="20.32" size="1.778" layer="95"/>
 <pinref part="UC4" gate="G$1" pin="PA5/MISO"/>
-<pinref part="S44" gate="G$1" pin="RST"/>
+<pinref part="S22" gate="G$1" pin="RST"/>
 </segment>
 <segment>
 <pinref part="PROG4" gate="A" pin="1"/>
@@ -2245,7 +2245,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR04" class="0">
+<net name="ADDR00-5" class="0">
 <segment>
 <pinref part="UC4" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
@@ -2259,14 +2259,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 </plain>
 <instances>
 <instance part="UC5" gate="G$1" x="30.48" y="17.78"/>
-<instance part="S05" gate="G$1" x="33.02" y="60.96"/>
-<instance part="S15" gate="G$1" x="76.2" y="60.96"/>
+<instance part="S23" gate="G$1" x="33.02" y="60.96"/>
+<instance part="S24" gate="G$1" x="76.2" y="60.96"/>
 <instance part="S25" gate="G$1" x="114.3" y="60.96"/>
 <instance part="C25" gate="G$1" x="15.24" y="58.42"/>
 <instance part="C26" gate="G$1" x="58.42" y="58.42"/>
 <instance part="C27" gate="G$1" x="96.52" y="58.42"/>
-<instance part="S35" gate="G$1" x="152.4" y="60.96"/>
-<instance part="S45" gate="G$1" x="190.5" y="60.96"/>
+<instance part="S26" gate="G$1" x="152.4" y="60.96"/>
+<instance part="S27" gate="G$1" x="190.5" y="60.96"/>
 <instance part="C28" gate="G$1" x="134.62" y="58.42"/>
 <instance part="C29" gate="G$1" x="172.72" y="58.42"/>
 <instance part="PROG5" gate="A" x="121.92" y="7.62"/>
@@ -2274,25 +2274,25 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="CAP25" class="0">
+<net name="CAP01-6" class="0">
 <segment>
 <wire x1="96.52" y1="63.5" x2="101.6" y2="63.5" width="0" layer="91"/>
 <pinref part="C27" gate="G$1" pin="P$1"/>
 <pinref part="S25" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="CAP35" class="0">
+<net name="CAP02-6" class="0">
 <segment>
 <wire x1="139.7" y1="63.5" x2="134.62" y2="63.5" width="0" layer="91"/>
-<pinref part="S35" gate="G$1" pin="CAP"/>
+<pinref part="S26" gate="G$1" pin="CAP"/>
 <pinref part="C28" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="CAP45" class="0">
+<net name="CAP03-6" class="0">
 <segment>
 <wire x1="172.72" y1="63.5" x2="177.8" y2="63.5" width="0" layer="91"/>
 <pinref part="C29" gate="G$1" pin="P$1"/>
-<pinref part="S45" gate="G$1" pin="CAP"/>
+<pinref part="S27" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2308,7 +2308,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="60.96" y1="58.42" x2="63.5" y2="58.42" width="0" layer="91"/>
 <wire x1="60.96" y1="55.88" x2="60.96" y2="58.42" width="0" layer="91"/>
 <wire x1="58.42" y1="55.88" x2="60.96" y2="55.88" width="0" layer="91"/>
-<pinref part="S15" gate="G$1" pin="GND"/>
+<pinref part="S24" gate="G$1" pin="GND"/>
 <pinref part="C26" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -2322,21 +2322,21 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="137.16" y1="58.42" x2="139.7" y2="58.42" width="0" layer="91"/>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="58.42" width="0" layer="91"/>
 <wire x1="134.62" y1="55.88" x2="137.16" y2="55.88" width="0" layer="91"/>
-<pinref part="S35" gate="G$1" pin="GND"/>
+<pinref part="S26" gate="G$1" pin="GND"/>
 <pinref part="C28" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="58.42" x2="177.8" y2="58.42" width="0" layer="91"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0" layer="91"/>
 <wire x1="172.72" y1="55.88" x2="175.26" y2="55.88" width="0" layer="91"/>
-<pinref part="S45" gate="G$1" pin="GND"/>
+<pinref part="S27" gate="G$1" pin="GND"/>
 <pinref part="C29" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="58.42" x2="20.32" y2="58.42" width="0" layer="91"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="58.42" width="0" layer="91"/>
 <wire x1="15.24" y1="55.88" x2="17.78" y2="55.88" width="0" layer="91"/>
-<pinref part="S05" gate="G$1" pin="GND"/>
+<pinref part="S23" gate="G$1" pin="GND"/>
 <pinref part="C25" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -2364,12 +2364,12 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="68.58" x2="60.96" y2="68.58" width="0" layer="91"/>
 <label x="60.96" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S15" gate="G$1" pin="VDD"/>
+<pinref part="S24" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="68.58" x2="17.78" y2="68.58" width="0" layer="91"/>
 <label x="17.78" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S05" gate="G$1" pin="VDD"/>
+<pinref part="S23" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0" layer="91"/>
@@ -2379,12 +2379,12 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="139.7" y1="68.58" x2="137.16" y2="68.58" width="0" layer="91"/>
 <label x="137.16" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S35" gate="G$1" pin="VDD"/>
+<pinref part="S26" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="68.58" x2="175.26" y2="68.58" width="0" layer="91"/>
 <label x="175.26" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S45" gate="G$1" pin="VDD"/>
+<pinref part="S27" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="33.02" x2="7.62" y2="33.02" width="0" layer="91"/>
@@ -2394,7 +2394,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="53.34" x2="60.96" y2="53.34" width="0" layer="91"/>
 <label x="60.96" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S15" gate="G$1" pin="SHDN"/>
+<pinref part="S24" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0" layer="91"/>
@@ -2404,17 +2404,17 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="139.7" y1="53.34" x2="137.16" y2="53.34" width="0" layer="91"/>
 <label x="137.16" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S35" gate="G$1" pin="SHDN"/>
+<pinref part="S26" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="53.34" x2="175.26" y2="53.34" width="0" layer="91"/>
 <label x="175.26" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S45" gate="G$1" pin="SHDN"/>
+<pinref part="S27" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0" layer="91"/>
 <label x="17.78" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S05" gate="G$1" pin="SHDN"/>
+<pinref part="S23" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <pinref part="PROG5" gate="A" pin="2"/>
@@ -2422,11 +2422,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="132.08" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAP05" class="0">
+<net name="CAP04-6" class="0">
 <segment>
 <wire x1="15.24" y1="63.5" x2="20.32" y2="63.5" width="0" layer="91"/>
 <pinref part="C25" gate="G$1" pin="P$1"/>
-<pinref part="S05" gate="G$1" pin="CAP"/>
+<pinref part="S23" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2453,11 +2453,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="167.64" y="73.66"/>
 <junction x="55.88" y="73.66"/>
 <label x="58.42" y="17.78" size="1.778" layer="95"/>
-<pinref part="S05" gate="G$1" pin="SDA"/>
-<pinref part="S45" gate="G$1" pin="SDA"/>
-<pinref part="S35" gate="G$1" pin="SDA"/>
+<pinref part="S23" gate="G$1" pin="SDA"/>
+<pinref part="S27" gate="G$1" pin="SDA"/>
+<pinref part="S26" gate="G$1" pin="SDA"/>
 <pinref part="S25" gate="G$1" pin="SDA"/>
-<pinref part="S15" gate="G$1" pin="SDA"/>
+<pinref part="S24" gate="G$1" pin="SDA"/>
 <pinref part="UC5" gate="G$1" pin="PA6/MOSI"/>
 </segment>
 <segment>
@@ -2486,11 +2486,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="53.34" y="78.74"/>
 <label x="58.42" y="22.86" size="1.778" layer="95"/>
 <pinref part="UC5" gate="G$1" pin="PA4/SCL"/>
-<pinref part="S05" gate="G$1" pin="SCL"/>
-<pinref part="S45" gate="G$1" pin="SCL"/>
-<pinref part="S35" gate="G$1" pin="SCL"/>
+<pinref part="S23" gate="G$1" pin="SCL"/>
+<pinref part="S27" gate="G$1" pin="SCL"/>
+<pinref part="S26" gate="G$1" pin="SCL"/>
 <pinref part="S25" gate="G$1" pin="SCL"/>
-<pinref part="S15" gate="G$1" pin="SCL"/>
+<pinref part="S24" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="PROG5" gate="A" pin="3"/>
@@ -2498,25 +2498,25 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST05" class="0">
+<net name="RST00-6" class="0">
 <segment>
 <wire x1="50.8" y1="33.02" x2="50.8" y2="53.34" width="0" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="45.72" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="33.02" size="1.778" layer="95"/>
 <pinref part="UC5" gate="G$1" pin="PA0/ADC0"/>
-<pinref part="S05" gate="G$1" pin="RST"/>
+<pinref part="S23" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST15" class="0">
+<net name="RST10-6" class="0">
 <segment>
 <wire x1="50.8" y1="30.48" x2="88.9" y2="30.48" width="0" layer="91"/>
 <wire x1="88.9" y1="30.48" x2="88.9" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="30.48" size="1.778" layer="95"/>
 <pinref part="UC5" gate="G$1" pin="PA1/ADC1"/>
-<pinref part="S15" gate="G$1" pin="RST"/>
+<pinref part="S24" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST25" class="0">
+<net name="RST20-6" class="0">
 <segment>
 <wire x1="50.8" y1="27.94" x2="127" y2="27.94" width="0" layer="91"/>
 <wire x1="127" y1="27.94" x2="127" y2="53.34" width="0" layer="91"/>
@@ -2525,23 +2525,23 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="S25" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST35" class="0">
+<net name="RST30-6" class="0">
 <segment>
 <wire x1="50.8" y1="25.4" x2="165.1" y2="25.4" width="0" layer="91"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="25.4" size="1.778" layer="95"/>
 <pinref part="UC5" gate="G$1" pin="PA3/ADC3"/>
-<pinref part="S35" gate="G$1" pin="RST"/>
+<pinref part="S26" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="CAP15" class="0">
+<net name="CAP05-6" class="0">
 <segment>
 <wire x1="58.42" y1="63.5" x2="63.5" y2="63.5" width="0" layer="91"/>
 <pinref part="C26" gate="G$1" pin="P$1"/>
-<pinref part="S15" gate="G$1" pin="CAP"/>
+<pinref part="S24" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET5" class="0">
+<net name="RESET0-6" class="0">
 <segment>
 <wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
 <label x="55.88" y="2.54" size="1.778" layer="95"/>
@@ -2553,13 +2553,13 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST45" class="0">
+<net name="RST40-6" class="0">
 <segment>
 <wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="20.32" size="1.778" layer="95"/>
 <pinref part="UC5" gate="G$1" pin="PA5/MISO"/>
-<pinref part="S45" gate="G$1" pin="RST"/>
+<pinref part="S27" gate="G$1" pin="RST"/>
 </segment>
 <segment>
 <pinref part="PROG5" gate="A" pin="1"/>
@@ -2567,7 +2567,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR05" class="0">
+<net name="ADDR00-6" class="0">
 <segment>
 <pinref part="UC5" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
@@ -2581,14 +2581,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 </plain>
 <instances>
 <instance part="UC6" gate="G$1" x="30.48" y="17.78"/>
-<instance part="S06" gate="G$1" x="33.02" y="60.96"/>
-<instance part="S16" gate="G$1" x="76.2" y="60.96"/>
-<instance part="S26" gate="G$1" x="114.3" y="60.96"/>
+<instance part="S28" gate="G$1" x="33.02" y="60.96"/>
+<instance part="S29" gate="G$1" x="76.2" y="60.96"/>
+<instance part="S31" gate="G$1" x="114.3" y="60.96"/>
 <instance part="C30" gate="G$1" x="15.24" y="58.42"/>
 <instance part="C31" gate="G$1" x="58.42" y="58.42"/>
 <instance part="C32" gate="G$1" x="96.52" y="58.42"/>
-<instance part="S36" gate="G$1" x="152.4" y="60.96"/>
-<instance part="S46" gate="G$1" x="190.5" y="60.96"/>
+<instance part="S32" gate="G$1" x="152.4" y="60.96"/>
+<instance part="S33" gate="G$1" x="190.5" y="60.96"/>
 <instance part="C33" gate="G$1" x="134.62" y="58.42"/>
 <instance part="C34" gate="G$1" x="172.72" y="58.42"/>
 <instance part="PROG6" gate="A" x="121.92" y="7.62"/>
@@ -2596,25 +2596,25 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="CAP26" class="0">
+<net name="CAP01-7" class="0">
 <segment>
 <wire x1="96.52" y1="63.5" x2="101.6" y2="63.5" width="0" layer="91"/>
 <pinref part="C32" gate="G$1" pin="P$1"/>
-<pinref part="S26" gate="G$1" pin="CAP"/>
+<pinref part="S31" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="CAP36" class="0">
+<net name="CAP02-7" class="0">
 <segment>
 <wire x1="139.7" y1="63.5" x2="134.62" y2="63.5" width="0" layer="91"/>
-<pinref part="S36" gate="G$1" pin="CAP"/>
+<pinref part="S32" gate="G$1" pin="CAP"/>
 <pinref part="C33" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="CAP46" class="0">
+<net name="CAP03-7" class="0">
 <segment>
 <wire x1="172.72" y1="63.5" x2="177.8" y2="63.5" width="0" layer="91"/>
 <pinref part="C34" gate="G$1" pin="P$1"/>
-<pinref part="S46" gate="G$1" pin="CAP"/>
+<pinref part="S33" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2630,35 +2630,35 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="60.96" y1="58.42" x2="63.5" y2="58.42" width="0" layer="91"/>
 <wire x1="60.96" y1="55.88" x2="60.96" y2="58.42" width="0" layer="91"/>
 <wire x1="58.42" y1="55.88" x2="60.96" y2="55.88" width="0" layer="91"/>
-<pinref part="S16" gate="G$1" pin="GND"/>
+<pinref part="S29" gate="G$1" pin="GND"/>
 <pinref part="C31" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="58.42" x2="101.6" y2="58.42" width="0" layer="91"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="58.42" width="0" layer="91"/>
 <wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0" layer="91"/>
-<pinref part="S26" gate="G$1" pin="GND"/>
+<pinref part="S31" gate="G$1" pin="GND"/>
 <pinref part="C32" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="58.42" x2="139.7" y2="58.42" width="0" layer="91"/>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="58.42" width="0" layer="91"/>
 <wire x1="134.62" y1="55.88" x2="137.16" y2="55.88" width="0" layer="91"/>
-<pinref part="S36" gate="G$1" pin="GND"/>
+<pinref part="S32" gate="G$1" pin="GND"/>
 <pinref part="C33" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="58.42" x2="177.8" y2="58.42" width="0" layer="91"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0" layer="91"/>
 <wire x1="172.72" y1="55.88" x2="175.26" y2="55.88" width="0" layer="91"/>
-<pinref part="S46" gate="G$1" pin="GND"/>
+<pinref part="S33" gate="G$1" pin="GND"/>
 <pinref part="C34" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="58.42" x2="20.32" y2="58.42" width="0" layer="91"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="58.42" width="0" layer="91"/>
 <wire x1="15.24" y1="55.88" x2="17.78" y2="55.88" width="0" layer="91"/>
-<pinref part="S06" gate="G$1" pin="GND"/>
+<pinref part="S28" gate="G$1" pin="GND"/>
 <pinref part="C30" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -2686,27 +2686,27 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="68.58" x2="60.96" y2="68.58" width="0" layer="91"/>
 <label x="60.96" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S16" gate="G$1" pin="VDD"/>
+<pinref part="S29" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="68.58" x2="17.78" y2="68.58" width="0" layer="91"/>
 <label x="17.78" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S06" gate="G$1" pin="VDD"/>
+<pinref part="S28" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0" layer="91"/>
 <label x="99.06" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S26" gate="G$1" pin="VDD"/>
+<pinref part="S31" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="68.58" x2="137.16" y2="68.58" width="0" layer="91"/>
 <label x="137.16" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S36" gate="G$1" pin="VDD"/>
+<pinref part="S32" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="68.58" x2="175.26" y2="68.58" width="0" layer="91"/>
 <label x="175.26" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S46" gate="G$1" pin="VDD"/>
+<pinref part="S33" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="33.02" x2="7.62" y2="33.02" width="0" layer="91"/>
@@ -2716,27 +2716,27 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="53.34" x2="60.96" y2="53.34" width="0" layer="91"/>
 <label x="60.96" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S16" gate="G$1" pin="SHDN"/>
+<pinref part="S29" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0" layer="91"/>
 <label x="99.06" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S26" gate="G$1" pin="SHDN"/>
+<pinref part="S31" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="53.34" x2="137.16" y2="53.34" width="0" layer="91"/>
 <label x="137.16" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S36" gate="G$1" pin="SHDN"/>
+<pinref part="S32" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="177.8" y1="53.34" x2="175.26" y2="53.34" width="0" layer="91"/>
 <label x="175.26" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S46" gate="G$1" pin="SHDN"/>
+<pinref part="S33" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0" layer="91"/>
 <label x="17.78" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S06" gate="G$1" pin="SHDN"/>
+<pinref part="S28" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <pinref part="PROG6" gate="A" pin="2"/>
@@ -2744,11 +2744,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="132.08" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAP06" class="0">
+<net name="CAP04-7" class="0">
 <segment>
 <wire x1="15.24" y1="63.5" x2="20.32" y2="63.5" width="0" layer="91"/>
 <pinref part="C30" gate="G$1" pin="P$1"/>
-<pinref part="S06" gate="G$1" pin="CAP"/>
+<pinref part="S28" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2775,11 +2775,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="167.64" y="73.66"/>
 <junction x="55.88" y="73.66"/>
 <label x="58.42" y="17.78" size="1.778" layer="95"/>
-<pinref part="S06" gate="G$1" pin="SDA"/>
-<pinref part="S46" gate="G$1" pin="SDA"/>
-<pinref part="S36" gate="G$1" pin="SDA"/>
-<pinref part="S26" gate="G$1" pin="SDA"/>
-<pinref part="S16" gate="G$1" pin="SDA"/>
+<pinref part="S28" gate="G$1" pin="SDA"/>
+<pinref part="S33" gate="G$1" pin="SDA"/>
+<pinref part="S32" gate="G$1" pin="SDA"/>
+<pinref part="S31" gate="G$1" pin="SDA"/>
+<pinref part="S29" gate="G$1" pin="SDA"/>
 <pinref part="UC6" gate="G$1" pin="PA6/MOSI"/>
 </segment>
 <segment>
@@ -2808,11 +2808,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="53.34" y="78.74"/>
 <label x="58.42" y="22.86" size="1.778" layer="95"/>
 <pinref part="UC6" gate="G$1" pin="PA4/SCL"/>
-<pinref part="S06" gate="G$1" pin="SCL"/>
-<pinref part="S46" gate="G$1" pin="SCL"/>
-<pinref part="S36" gate="G$1" pin="SCL"/>
-<pinref part="S26" gate="G$1" pin="SCL"/>
-<pinref part="S16" gate="G$1" pin="SCL"/>
+<pinref part="S28" gate="G$1" pin="SCL"/>
+<pinref part="S33" gate="G$1" pin="SCL"/>
+<pinref part="S32" gate="G$1" pin="SCL"/>
+<pinref part="S31" gate="G$1" pin="SCL"/>
+<pinref part="S29" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="PROG6" gate="A" pin="3"/>
@@ -2820,50 +2820,50 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST06" class="0">
+<net name="RST00-7" class="0">
 <segment>
 <wire x1="50.8" y1="33.02" x2="50.8" y2="53.34" width="0" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="45.72" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="33.02" size="1.778" layer="95"/>
 <pinref part="UC6" gate="G$1" pin="PA0/ADC0"/>
-<pinref part="S06" gate="G$1" pin="RST"/>
+<pinref part="S28" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST16" class="0">
+<net name="RST10-7" class="0">
 <segment>
 <wire x1="50.8" y1="30.48" x2="88.9" y2="30.48" width="0" layer="91"/>
 <wire x1="88.9" y1="30.48" x2="88.9" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="30.48" size="1.778" layer="95"/>
 <pinref part="UC6" gate="G$1" pin="PA1/ADC1"/>
-<pinref part="S16" gate="G$1" pin="RST"/>
+<pinref part="S29" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST26" class="0">
+<net name="RST20-7" class="0">
 <segment>
 <wire x1="50.8" y1="27.94" x2="127" y2="27.94" width="0" layer="91"/>
 <wire x1="127" y1="27.94" x2="127" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="27.94" size="1.778" layer="95"/>
 <pinref part="UC6" gate="G$1" pin="PA2/ADC2"/>
-<pinref part="S26" gate="G$1" pin="RST"/>
+<pinref part="S31" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST36" class="0">
+<net name="RST30-7" class="0">
 <segment>
 <wire x1="50.8" y1="25.4" x2="165.1" y2="25.4" width="0" layer="91"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="25.4" size="1.778" layer="95"/>
 <pinref part="UC6" gate="G$1" pin="PA3/ADC3"/>
-<pinref part="S36" gate="G$1" pin="RST"/>
+<pinref part="S32" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="CAP16" class="0">
+<net name="CAP05-7" class="0">
 <segment>
 <wire x1="58.42" y1="63.5" x2="63.5" y2="63.5" width="0" layer="91"/>
 <pinref part="C31" gate="G$1" pin="P$1"/>
-<pinref part="S16" gate="G$1" pin="CAP"/>
+<pinref part="S29" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET6" class="0">
+<net name="RESET0-7" class="0">
 <segment>
 <wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
 <label x="55.88" y="2.54" size="1.778" layer="95"/>
@@ -2875,13 +2875,13 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST46" class="0">
+<net name="RST40-7" class="0">
 <segment>
 <wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="20.32" size="1.778" layer="95"/>
 <pinref part="UC6" gate="G$1" pin="PA5/MISO"/>
-<pinref part="S46" gate="G$1" pin="RST"/>
+<pinref part="S33" gate="G$1" pin="RST"/>
 </segment>
 <segment>
 <pinref part="PROG6" gate="A" pin="1"/>
@@ -2889,7 +2889,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR06" class="0">
+<net name="ADDR00-7" class="0">
 <segment>
 <pinref part="UC6" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
@@ -2903,14 +2903,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 </plain>
 <instances>
 <instance part="UC7" gate="G$1" x="30.48" y="17.78"/>
-<instance part="S07" gate="G$1" x="33.02" y="60.96"/>
-<instance part="S17" gate="G$1" x="76.2" y="60.96"/>
-<instance part="S27" gate="G$1" x="114.3" y="60.96"/>
+<instance part="S34" gate="G$1" x="33.02" y="60.96"/>
+<instance part="S35" gate="G$1" x="76.2" y="60.96"/>
+<instance part="S36" gate="G$1" x="114.3" y="60.96"/>
 <instance part="C35" gate="G$1" x="15.24" y="58.42"/>
 <instance part="C36" gate="G$1" x="58.42" y="58.42"/>
 <instance part="C37" gate="G$1" x="96.52" y="58.42"/>
 <instance part="S37" gate="G$1" x="152.4" y="60.96"/>
-<instance part="S47" gate="G$1" x="190.5" y="60.96"/>
+<instance part="S38" gate="G$1" x="190.5" y="60.96"/>
 <instance part="C38" gate="G$1" x="134.62" y="58.42"/>
 <instance part="C39" gate="G$1" x="172.72" y="58.42"/>
 <instance part="PROG7" gate="A" x="121.92" y="7.62"/>
@@ -2918,25 +2918,25 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <busses>
 </busses>
 <nets>
-<net name="CAP27" class="0">
+<net name="CAP01-8" class="0">
 <segment>
 <wire x1="96.52" y1="63.5" x2="101.6" y2="63.5" width="0" layer="91"/>
 <pinref part="C37" gate="G$1" pin="P$1"/>
-<pinref part="S27" gate="G$1" pin="CAP"/>
+<pinref part="S36" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="CAP37" class="0">
+<net name="CAP02-8" class="0">
 <segment>
 <wire x1="139.7" y1="63.5" x2="134.62" y2="63.5" width="0" layer="91"/>
 <pinref part="S37" gate="G$1" pin="CAP"/>
 <pinref part="C38" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="CAP47" class="0">
+<net name="CAP03-8" class="0">
 <segment>
 <wire x1="172.72" y1="63.5" x2="177.8" y2="63.5" width="0" layer="91"/>
 <pinref part="C39" gate="G$1" pin="P$1"/>
-<pinref part="S47" gate="G$1" pin="CAP"/>
+<pinref part="S38" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2952,14 +2952,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="60.96" y1="58.42" x2="63.5" y2="58.42" width="0" layer="91"/>
 <wire x1="60.96" y1="55.88" x2="60.96" y2="58.42" width="0" layer="91"/>
 <wire x1="58.42" y1="55.88" x2="60.96" y2="55.88" width="0" layer="91"/>
-<pinref part="S17" gate="G$1" pin="GND"/>
+<pinref part="S35" gate="G$1" pin="GND"/>
 <pinref part="C36" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="58.42" x2="101.6" y2="58.42" width="0" layer="91"/>
 <wire x1="99.06" y1="55.88" x2="99.06" y2="58.42" width="0" layer="91"/>
 <wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0" layer="91"/>
-<pinref part="S27" gate="G$1" pin="GND"/>
+<pinref part="S36" gate="G$1" pin="GND"/>
 <pinref part="C37" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -2973,14 +2973,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <wire x1="175.26" y1="58.42" x2="177.8" y2="58.42" width="0" layer="91"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0" layer="91"/>
 <wire x1="172.72" y1="55.88" x2="175.26" y2="55.88" width="0" layer="91"/>
-<pinref part="S47" gate="G$1" pin="GND"/>
+<pinref part="S38" gate="G$1" pin="GND"/>
 <pinref part="C39" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <wire x1="17.78" y1="58.42" x2="20.32" y2="58.42" width="0" layer="91"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="58.42" width="0" layer="91"/>
 <wire x1="15.24" y1="55.88" x2="17.78" y2="55.88" width="0" layer="91"/>
-<pinref part="S07" gate="G$1" pin="GND"/>
+<pinref part="S34" gate="G$1" pin="GND"/>
 <pinref part="C35" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -3008,17 +3008,17 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="68.58" x2="60.96" y2="68.58" width="0" layer="91"/>
 <label x="60.96" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S17" gate="G$1" pin="VDD"/>
+<pinref part="S35" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="68.58" x2="17.78" y2="68.58" width="0" layer="91"/>
 <label x="17.78" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S07" gate="G$1" pin="VDD"/>
+<pinref part="S34" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0" layer="91"/>
 <label x="99.06" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S27" gate="G$1" pin="VDD"/>
+<pinref part="S36" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="68.58" x2="137.16" y2="68.58" width="0" layer="91"/>
@@ -3028,7 +3028,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="177.8" y1="68.58" x2="175.26" y2="68.58" width="0" layer="91"/>
 <label x="175.26" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="S47" gate="G$1" pin="VDD"/>
+<pinref part="S38" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="33.02" x2="7.62" y2="33.02" width="0" layer="91"/>
@@ -3038,12 +3038,12 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="63.5" y1="53.34" x2="60.96" y2="53.34" width="0" layer="91"/>
 <label x="60.96" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S17" gate="G$1" pin="SHDN"/>
+<pinref part="S35" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="53.34" x2="99.06" y2="53.34" width="0" layer="91"/>
 <label x="99.06" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S27" gate="G$1" pin="SHDN"/>
+<pinref part="S36" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="53.34" x2="137.16" y2="53.34" width="0" layer="91"/>
@@ -3053,12 +3053,12 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <segment>
 <wire x1="177.8" y1="53.34" x2="175.26" y2="53.34" width="0" layer="91"/>
 <label x="175.26" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S47" gate="G$1" pin="SHDN"/>
+<pinref part="S38" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0" layer="91"/>
 <label x="17.78" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="S07" gate="G$1" pin="SHDN"/>
+<pinref part="S34" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
 <pinref part="PROG7" gate="A" pin="2"/>
@@ -3066,11 +3066,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="132.08" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CAP07" class="0">
+<net name="CAP04-8" class="0">
 <segment>
 <wire x1="15.24" y1="63.5" x2="20.32" y2="63.5" width="0" layer="91"/>
 <pinref part="C35" gate="G$1" pin="P$1"/>
-<pinref part="S07" gate="G$1" pin="CAP"/>
+<pinref part="S34" gate="G$1" pin="CAP"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -3097,11 +3097,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="167.64" y="73.66"/>
 <junction x="55.88" y="73.66"/>
 <label x="58.42" y="17.78" size="1.778" layer="95"/>
-<pinref part="S07" gate="G$1" pin="SDA"/>
-<pinref part="S47" gate="G$1" pin="SDA"/>
+<pinref part="S34" gate="G$1" pin="SDA"/>
+<pinref part="S38" gate="G$1" pin="SDA"/>
 <pinref part="S37" gate="G$1" pin="SDA"/>
-<pinref part="S27" gate="G$1" pin="SDA"/>
-<pinref part="S17" gate="G$1" pin="SDA"/>
+<pinref part="S36" gate="G$1" pin="SDA"/>
+<pinref part="S35" gate="G$1" pin="SDA"/>
 <pinref part="UC7" gate="G$1" pin="PA6/MOSI"/>
 </segment>
 <segment>
@@ -3130,11 +3130,11 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <junction x="53.34" y="78.74"/>
 <label x="58.42" y="22.86" size="1.778" layer="95"/>
 <pinref part="UC7" gate="G$1" pin="PA4/SCL"/>
-<pinref part="S07" gate="G$1" pin="SCL"/>
-<pinref part="S47" gate="G$1" pin="SCL"/>
+<pinref part="S34" gate="G$1" pin="SCL"/>
+<pinref part="S38" gate="G$1" pin="SCL"/>
 <pinref part="S37" gate="G$1" pin="SCL"/>
-<pinref part="S27" gate="G$1" pin="SCL"/>
-<pinref part="S17" gate="G$1" pin="SCL"/>
+<pinref part="S36" gate="G$1" pin="SCL"/>
+<pinref part="S35" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="PROG7" gate="A" pin="3"/>
@@ -3142,34 +3142,34 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST07" class="0">
+<net name="RST00-8" class="0">
 <segment>
 <wire x1="50.8" y1="33.02" x2="50.8" y2="53.34" width="0" layer="91"/>
 <wire x1="50.8" y1="53.34" x2="45.72" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="33.02" size="1.778" layer="95"/>
 <pinref part="UC7" gate="G$1" pin="PA0/ADC0"/>
-<pinref part="S07" gate="G$1" pin="RST"/>
+<pinref part="S34" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST17" class="0">
+<net name="RST10-8" class="0">
 <segment>
 <wire x1="50.8" y1="30.48" x2="88.9" y2="30.48" width="0" layer="91"/>
 <wire x1="88.9" y1="30.48" x2="88.9" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="30.48" size="1.778" layer="95"/>
 <pinref part="UC7" gate="G$1" pin="PA1/ADC1"/>
-<pinref part="S17" gate="G$1" pin="RST"/>
+<pinref part="S35" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST27" class="0">
+<net name="RST20-8" class="0">
 <segment>
 <wire x1="50.8" y1="27.94" x2="127" y2="27.94" width="0" layer="91"/>
 <wire x1="127" y1="27.94" x2="127" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="27.94" size="1.778" layer="95"/>
 <pinref part="UC7" gate="G$1" pin="PA2/ADC2"/>
-<pinref part="S27" gate="G$1" pin="RST"/>
+<pinref part="S36" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="RST37" class="0">
+<net name="RST30-8" class="0">
 <segment>
 <wire x1="50.8" y1="25.4" x2="165.1" y2="25.4" width="0" layer="91"/>
 <wire x1="165.1" y1="25.4" x2="165.1" y2="53.34" width="0" layer="91"/>
@@ -3178,14 +3178,14 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="S37" gate="G$1" pin="RST"/>
 </segment>
 </net>
-<net name="CAP17" class="0">
+<net name="CAP05-8" class="0">
 <segment>
 <wire x1="58.42" y1="63.5" x2="63.5" y2="63.5" width="0" layer="91"/>
 <pinref part="C36" gate="G$1" pin="P$1"/>
-<pinref part="S17" gate="G$1" pin="CAP"/>
+<pinref part="S35" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET7" class="0">
+<net name="RESET0-8" class="0">
 <segment>
 <wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
 <label x="55.88" y="2.54" size="1.778" layer="95"/>
@@ -3197,13 +3197,13 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RST47" class="0">
+<net name="RST40-8" class="0">
 <segment>
 <wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
 <wire x1="203.2" y1="20.32" x2="203.2" y2="53.34" width="0" layer="91"/>
 <label x="58.42" y="20.32" size="1.778" layer="95"/>
 <pinref part="UC7" gate="G$1" pin="PA5/MISO"/>
-<pinref part="S47" gate="G$1" pin="RST"/>
+<pinref part="S38" gate="G$1" pin="RST"/>
 </segment>
 <segment>
 <pinref part="PROG7" gate="A" pin="1"/>
@@ -3211,7 +3211,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR07" class="0">
+<net name="ADDR00-8" class="0">
 <segment>
 <pinref part="UC7" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
