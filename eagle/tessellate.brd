@@ -134,6 +134,10 @@
 <wire x1="5.461" y1="5.715" x2="5.461" y2="0.381" width="0.254" layer="21" style="shortdash"/>
 <wire x1="28.067" y1="5.588" x2="28.067" y2="0.381" width="0.254" layer="21" style="shortdash"/>
 <wire x1="0" y1="5.588" x2="0" y2="0.381" width="0.254" layer="21" style="shortdash"/>
+<text x="4.318" y="4.572" size="0.7" layer="27" font="vector" ratio="12">V</text>
+<text x="4.318" y="3.556" size="0.7" layer="27" font="vector" ratio="12">D</text>
+<text x="4.318" y="2.032" size="0.7" layer="27" font="vector" ratio="12">G</text>
+<text x="4.318" y="0.127" size="0.7" layer="27" font="vector" ratio="12">C</text>
 </plain>
 <libraries>
 <library name="nonolith">
@@ -196,8 +200,8 @@
 <wire x1="1.5" y1="2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="2.5" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
-<circle x="0" y="-1.025" radius="0.7071" width="0.127" layer="51"/>
-<circle x="-2.92" y="2.14" radius="0.254" width="0.254" layer="21"/>
+<circle x="0" y="-1.025" radius="0.7071" width="0.254" layer="21"/>
+<circle x="-1.65" y="2.14" radius="0.254" width="0.254" layer="21"/>
 <smd name="1" x="-1.2" y="1.875" dx="1.2" dy="0.5" layer="1"/>
 <smd name="2" x="-1.2" y="0.625" dx="1.2" dy="0.5" layer="1"/>
 <smd name="3" x="-1.2" y="-0.625" dx="1.2" dy="0.5" layer="1"/>
@@ -645,13 +649,12 @@ design rules under a new name.</description>
 <wire x1="20.955" y1="2.54" x2="21.463" y2="2.54" width="0.254" layer="16"/>
 <wire x1="21.463" y1="2.159" x2="21.463" y2="2.54" width="0.254" layer="16"/>
 <wire x1="21.463" y1="2.54" x2="22.479" y2="2.54" width="0.254" layer="16"/>
-<via x="5.461" y="2.794" extent="1-16" drill="0.4" shape="octagon" alwaysstop="yes"/>
-<wire x1="5.461" y1="2.794" x2="4.445" y2="2.794" width="0.254" layer="16"/>
-<wire x1="4.445" y1="2.794" x2="3.175" y2="4.064" width="0.254" layer="16"/>
-<wire x1="6.477" y1="2.444" x2="5.938" y2="2.444" width="0.254" layer="1"/>
-<wire x1="5.938" y1="2.444" x2="5.461" y2="2.794" width="0.254" layer="1"/>
-<wire x1="7.366" y1="2.413" x2="5.969" y2="2.413" width="0.254" layer="16"/>
-<wire x1="5.969" y1="2.413" x2="5.461" y2="2.794" width="0.254" layer="16"/>
+<via x="5.461" y="2.413" extent="1-16" drill="0.4" shape="octagon" alwaysstop="yes"/>
+<wire x1="5.461" y1="2.413" x2="4.445" y2="2.413" width="0.254" layer="16"/>
+<wire x1="4.445" y1="2.413" x2="3.175" y2="4.064" width="0.254" layer="16"/>
+<wire x1="6.477" y1="2.444" x2="5.43" y2="2.444" width="0.254" layer="1"/>
+<wire x1="5.43" y1="2.444" x2="5.461" y2="2.413" width="0.254" layer="1"/>
+<wire x1="7.366" y1="2.413" x2="5.461" y2="2.413" width="0.254" layer="16"/>
 <wire x1="12.787" y1="4.358" x2="12.787" y2="4.886" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="3.3V">
