@@ -134,8 +134,8 @@
 <wire x1="1.5" y1="2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="2.5" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
-<circle x="0" y="-1.025" radius="0.7071" width="0.127" layer="51"/>
-<circle x="-2.92" y="2.14" radius="0.254" width="0.254" layer="21"/>
+<circle x="0" y="-1.025" radius="0.7071" width="0.254" layer="21"/>
+<circle x="-1.65" y="2.14" radius="0.254" width="0.254" layer="21"/>
 <smd name="1" x="-1.2" y="1.875" dx="1.2" dy="0.5" layer="1"/>
 <smd name="2" x="-1.2" y="0.625" dx="1.2" dy="0.5" layer="1"/>
 <smd name="3" x="-1.2" y="-0.625" dx="1.2" dy="0.5" layer="1"/>
