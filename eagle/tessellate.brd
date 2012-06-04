@@ -125,10 +125,6 @@
 </layers>
 <board>
 <plain>
-<wire x1="-0.5" y1="0" x2="39.271" y2="0" width="0" layer="20"/>
-<wire x1="39.271" y1="0" x2="39.271" y2="6" width="0" layer="20"/>
-<wire x1="39.271" y1="6" x2="-0.5" y2="6" width="0" layer="20"/>
-<wire x1="-0.5" y1="6" x2="-0.5" y2="0" width="0" layer="20"/>
 <hole x="10.668" y="4.699" drill="0.8"/>
 <wire x1="22.479" y1="5.588" x2="22.479" y2="0.381" width="0.254" layer="21" style="shortdash"/>
 <wire x1="5.461" y1="5.715" x2="5.461" y2="0.381" width="0.254" layer="21" style="shortdash"/>
