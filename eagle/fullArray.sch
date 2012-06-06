@@ -1821,12 +1821,12 @@ Parts Updated:
 <part name="C11" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value=".1uF"/>
 <part name="C12" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value=".01uF"/>
 <part name="PROG" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="R1" library="nonolith" deviceset="RESISTOR" device="0603"/>
+<part name="R1" library="nonolith" deviceset="RESISTOR" device="0603" value="120o"/>
 <part name="LED1" library="microbuilder" deviceset="LED" device="0603"/>
-<part name="R2" library="nonolith" deviceset="RESISTOR" device="0603"/>
-<part name="R3" library="nonolith" deviceset="RESISTOR" device="0603"/>
+<part name="R2" library="nonolith" deviceset="RESISTOR" device="0603" value="4.7K"/>
+<part name="R3" library="nonolith" deviceset="RESISTOR" device="0603" value="4.7K"/>
 <part name="DAISY" library="nonolith" deviceset="HEADER-1X6" device="2MM"/>
-<part name="R4" library="nonolith" deviceset="RESISTOR" device="0603"/>
+<part name="R4" library="nonolith" deviceset="RESISTOR" device="0603" value="4.7k"/>
 <part name="SCL" library="nonolith" deviceset="HEADER-1X1" device="2MM"/>
 <part name="SDA" library="nonolith" deviceset="HEADER-1X1" device="2MM"/>
 <part name="JP1" library="nonolith" deviceset="HEADER-1X1" device="2MM"/>
@@ -2173,6 +2173,7 @@ Parts Updated:
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="48.26" x2="127" y2="48.26" width="0" layer="91"/>
 <pinref part="SCL" gate="G$1" pin="1"/>
+<junction x="114.3" y="48.26"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2183,6 +2184,7 @@ Parts Updated:
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="45.72" x2="127" y2="45.72" width="0" layer="91"/>
 <pinref part="SDA" gate="G$1" pin="1"/>
+<junction x="119.38" y="45.72"/>
 </segment>
 </net>
 <net name="PE0" class="0">
@@ -2523,13 +2525,6 @@ Parts Updated:
 <pinref part="(1,2)" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET0" class="0">
-<segment>
-<wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
-<label x="55.88" y="2.54" size="1.778" layer="95"/>
-<pinref part="AT1" gate="G$1" pin="PB3/RESET"/>
-</segment>
-</net>
 <net name="ADDR1" class="0">
 <segment>
 <pinref part="AT1" gate="G$1" pin="PB0"/>
@@ -2556,6 +2551,11 @@ Parts Updated:
 <pinref part="PROG1" gate="A" pin="5"/>
 <wire x1="119.38" y1="5.08" x2="114.3" y2="5.08" width="0" layer="91"/>
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
+<label x="55.88" y="2.54" size="1.778" layer="95"/>
+<pinref part="AT1" gate="G$1" pin="PB3/RESET"/>
 </segment>
 </net>
 </nets>
