@@ -1294,7 +1294,6 @@ design rules under a new name.</description>
 <contactref element="(2,1)" pad="3"/>
 <contactref element="C5" pad="2"/>
 <contactref element="AT2" pad="15"/>
-<contactref element="AT2" pad="12"/>
 <contactref element="AT2" pad="14"/>
 <wire x1="-5.213" y1="26.386" x2="-5.713" y2="26.386" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="25.125" x2="-4.242" y2="25.183" width="0.254" layer="1"/>
@@ -1424,7 +1423,6 @@ design rules under a new name.</description>
 <contactref element="(3,1)" pad="3"/>
 <contactref element="C13" pad="2"/>
 <contactref element="AT3" pad="15"/>
-<contactref element="AT3" pad="12"/>
 <contactref element="AT3" pad="14"/>
 <wire x1="-5.213" y1="32.386" x2="-5.713" y2="32.386" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="31.125" x2="-4.242" y2="31.183" width="0.254" layer="1"/>
@@ -1555,8 +1553,6 @@ design rules under a new name.</description>
 <contactref element="C18" pad="2"/>
 <contactref element="AT4" pad="15"/>
 <contactref element="AT4" pad="12"/>
-<contactref element="AT4" pad="14"/>
-<wire x1="-5.213" y1="38.386" x2="-5.713" y2="38.386" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="37.125" x2="-4.242" y2="37.183" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="37.125" x2="-4.133" y2="37.056" width="0.254" layer="1"/>
 <wire x1="-4.133" y1="37.056" x2="-3.117" y2="37.056" width="0.254" layer="1"/>
@@ -1685,8 +1681,6 @@ design rules under a new name.</description>
 <contactref element="C23" pad="2"/>
 <contactref element="AT5" pad="15"/>
 <contactref element="AT5" pad="12"/>
-<contactref element="AT5" pad="14"/>
-<wire x1="-5.213" y1="44.386" x2="-5.713" y2="44.386" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="43.125" x2="-4.242" y2="43.183" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="43.125" x2="-4.133" y2="43.056" width="0.254" layer="1"/>
 <wire x1="-4.133" y1="43.056" x2="-3.117" y2="43.056" width="0.254" layer="1"/>
@@ -1814,9 +1808,6 @@ design rules under a new name.</description>
 <contactref element="(6,1)" pad="3"/>
 <contactref element="C28" pad="2"/>
 <contactref element="AT6" pad="15"/>
-<contactref element="AT6" pad="12"/>
-<contactref element="AT6" pad="14"/>
-<wire x1="-5.213" y1="50.386" x2="-5.713" y2="50.386" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="49.125" x2="-4.242" y2="49.183" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="49.125" x2="-4.133" y2="49.056" width="0.254" layer="1"/>
 <wire x1="-4.133" y1="49.056" x2="-3.117" y2="49.056" width="0.254" layer="1"/>
@@ -1944,9 +1935,6 @@ design rules under a new name.</description>
 <contactref element="(7,1)" pad="3"/>
 <contactref element="C33" pad="2"/>
 <contactref element="AT7" pad="15"/>
-<contactref element="AT7" pad="12"/>
-<contactref element="AT7" pad="14"/>
-<wire x1="-5.213" y1="56.386" x2="-5.713" y2="56.386" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="55.125" x2="-4.242" y2="55.183" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="55.125" x2="-4.133" y2="55.056" width="0.254" layer="1"/>
 <wire x1="-4.133" y1="55.056" x2="-3.117" y2="55.056" width="0.254" layer="1"/>
@@ -2073,10 +2061,7 @@ design rules under a new name.</description>
 <contactref element="C42" pad="2"/>
 <contactref element="(8,1)" pad="3"/>
 <contactref element="C38" pad="2"/>
-<contactref element="AT8" pad="15"/>
 <contactref element="AT8" pad="12"/>
-<contactref element="AT8" pad="14"/>
-<wire x1="-5.213" y1="62.386" x2="-5.713" y2="62.386" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="61.125" x2="-4.242" y2="61.183" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="61.125" x2="-4.133" y2="61.056" width="0.254" layer="1"/>
 <wire x1="-4.133" y1="61.056" x2="-3.117" y2="61.056" width="0.254" layer="1"/>
@@ -2098,7 +2083,6 @@ design rules under a new name.</description>
 <wire x1="-6.221" y1="61.691" x2="-5.276" y2="61.691" width="0.254" layer="16"/>
 <wire x1="-5.276" y1="61.691" x2="-5.403" y2="61.564" width="0.254" layer="16"/>
 <wire x1="-5.403" y1="61.564" x2="-5.213" y2="61.754" width="0.254" layer="16"/>
-<wire x1="-5.213" y1="61.754" x2="-5.213" y2="62.386" width="0.254" layer="16"/>
 <wire x1="-17.5" y1="61.35" x2="-17.341" y2="61.509" width="0.254" layer="16"/>
 <wire x1="-17.341" y1="61.509" x2="-17.341" y2="61.564" width="0.254" layer="16"/>
 <wire x1="-17.341" y1="61.564" x2="-17.214" y2="61.564" width="0.254" layer="16"/>
@@ -2189,6 +2173,40 @@ design rules under a new name.</description>
 <vertex x="-20.5" y="64.5"/>
 </polygon>
 <via x="10" y="12.5" extent="1-16" drill="0.475" shape="octagon"/>
+<contactref element="AT8" pad="11"/>
+<contactref element="AT8" pad="14"/>
+<contactref element="AT6" pad="11"/>
+<contactref element="AT4" pad="11"/>
+<contactref element="AT2" pad="11"/>
+<wire x1="-5.713" y1="62.386" x2="-4.26" y2="63.342" width="0" layer="19" extent="16-16"/>
+<wire x1="-5.213" y1="61.754" x2="-5.713" y2="62.386" width="0" layer="19" extent="16-16"/>
+<wire x1="1.963" y1="59.882" x2="1.963" y2="60.04" width="0" layer="19" extent="16-16"/>
+<wire x1="1.963" y1="53.882" x2="1.963" y2="54.04" width="0" layer="19" extent="16-16"/>
+<wire x1="1.963" y1="47.882" x2="1.963" y2="48.04" width="0" layer="19" extent="16-16"/>
+<wire x1="1.963" y1="41.882" x2="1.963" y2="42.04" width="0" layer="19" extent="16-16"/>
+<wire x1="1.963" y1="35.882" x2="1.963" y2="36.04" width="0" layer="19" extent="16-16"/>
+<wire x1="1.963" y1="29.882" x2="1.963" y2="30.04" width="0" layer="19" extent="16-16"/>
+<wire x1="1.963" y1="23.882" x2="1.963" y2="24.04" width="0" layer="19" extent="16-16"/>
+<wire x1="-6.713" y1="62.386" x2="-6.713" y2="61.858" width="0" layer="19" extent="16-16"/>
+<wire x1="-7.213" y1="62.386" x2="-6.713" y2="62.386" width="0" layer="19" extent="16-16"/>
+<wire x1="-6.713" y1="44.386" x2="-6.713" y2="43.858" width="0" layer="19" extent="16-16"/>
+<wire x1="-6.713" y1="38.386" x2="-6.713" y2="37.858" width="0" layer="19" extent="16-16"/>
+<wire x1="-7.213" y1="38.386" x2="-6.713" y2="38.386" width="0" layer="19" extent="16-16"/>
+<wire x1="-6.713" y1="20.386" x2="-6.713" y2="19.858" width="0" layer="19" extent="16-16"/>
+<wire x1="-7.213" y1="50.386" x2="-6.713" y2="49.858" width="0" layer="19" extent="16-16"/>
+<wire x1="-7.213" y1="26.386" x2="-6.713" y2="25.858" width="0" layer="19" extent="16-16"/>
+<wire x1="1" y1="13.5" x2="-0.784" y2="17.111" width="0" layer="19" extent="16-16"/>
+<wire x1="-0.5" y1="12.5" x2="1" y2="13.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-1" y1="7.5" x2="-1" y2="11.4" width="0" layer="19" extent="1-1"/>
+<wire x1="6" y1="7.75" x2="3.4" y2="7.5" width="0" layer="19" extent="1-1"/>
+<wire x1="10" y1="12.5" x2="12.552" y2="17.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.55" y1="10.05" x2="-3.4" y2="7.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.15" y1="10.25" x2="-8.55" y2="10.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.15" y1="8.25" x2="-14.15" y2="10.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.15" y1="6.25" x2="-14.15" y2="8.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.2" y1="4.175" x2="-14.15" y2="6.25" width="0" layer="19" extent="1-1"/>
+<wire x1="6.84" y1="1.5" x2="6" y2="7.75" width="0" layer="19" extent="1-1"/>
+<wire x1="12.96" y1="6.73" x2="10" y2="12.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="IC1" pad="31"/>
@@ -4383,7 +4401,7 @@ design rules under a new name.</description>
 <wire x1="-4.006" y1="20.707" x2="-3.625" y2="21.088" width="0.254" layer="16"/>
 <wire x1="-3.625" y1="21.088" x2="11.615" y2="21.088" width="0.254" layer="16"/>
 </signal>
-<signal name="ADDR00">
+<signal name="ADDR1">
 <contactref element="AT1" pad="11"/>
 </signal>
 <signal name="CAP01">
@@ -4532,9 +4550,6 @@ design rules under a new name.</description>
 <wire x1="-4.006" y1="26.707" x2="-3.625" y2="27.088" width="0.254" layer="16"/>
 <wire x1="-3.625" y1="27.088" x2="11.615" y2="27.088" width="0.254" layer="16"/>
 </signal>
-<signal name="ADDR01">
-<contactref element="AT2" pad="11"/>
-</signal>
 <signal name="CAP06">
 <contactref element="C15" pad="1"/>
 <contactref element="(3,3)" pad="2"/>
@@ -4681,8 +4696,10 @@ design rules under a new name.</description>
 <wire x1="-4.006" y1="32.707" x2="-3.625" y2="33.088" width="0.254" layer="16"/>
 <wire x1="-3.625" y1="33.088" x2="11.615" y2="33.088" width="0.254" layer="16"/>
 </signal>
-<signal name="ADDR02">
+<signal name="ADDR3">
 <contactref element="AT3" pad="11"/>
+<contactref element="AT3" pad="12"/>
+<wire x1="-6.713" y1="32.386" x2="-7.213" y2="32.386" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CAP12">
 <contactref element="C20" pad="1"/>
@@ -4802,9 +4819,6 @@ design rules under a new name.</description>
 <wire x1="-12.134" y1="37.056" x2="-12.134" y2="37.437" width="0.254" layer="16"/>
 <wire x1="-12.134" y1="37.437" x2="-12.057" y2="37.437" width="0.254" layer="16"/>
 <wire x1="-12.057" y1="37.437" x2="-12.32" y2="37.7" width="0.254" layer="16"/>
-</signal>
-<signal name="ADDR03">
-<contactref element="AT4" pad="11"/>
 </signal>
 <signal name="CAP17">
 <contactref element="C25" pad="1"/>
@@ -4952,8 +4966,10 @@ design rules under a new name.</description>
 <wire x1="-4.006" y1="44.707" x2="-3.625" y2="45.088" width="0.254" layer="16"/>
 <wire x1="-3.625" y1="45.088" x2="11.615" y2="45.088" width="0.254" layer="16"/>
 </signal>
-<signal name="ADDR04">
+<signal name="ADDR5">
 <contactref element="AT5" pad="11"/>
+<contactref element="AT5" pad="14"/>
+<wire x1="-5.713" y1="44.386" x2="-7.213" y2="44.386" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CAP23">
 <contactref element="C30" pad="1"/>
@@ -5100,9 +5116,6 @@ design rules under a new name.</description>
 <wire x1="-4.641" y1="50.707" x2="-4.006" y2="50.707" width="0.254" layer="16"/>
 <wire x1="-4.006" y1="50.707" x2="-3.625" y2="51.088" width="0.254" layer="16"/>
 <wire x1="-3.625" y1="51.088" x2="11.615" y2="51.088" width="0.254" layer="16"/>
-</signal>
-<signal name="ADDR05">
-<contactref element="AT6" pad="11"/>
 </signal>
 <signal name="CAP28">
 <contactref element="C35" pad="1"/>
@@ -5278,8 +5291,12 @@ design rules under a new name.</description>
 <wire x1="9.964" y1="56.326" x2="9.995" y2="56.357" width="0.254" layer="16"/>
 <wire x1="9.995" y1="56.357" x2="10" y2="56.357" width="0.254" layer="16"/>
 </signal>
-<signal name="ADDR06">
+<signal name="ADDR7">
 <contactref element="AT7" pad="11"/>
+<contactref element="AT7" pad="12"/>
+<contactref element="AT7" pad="14"/>
+<wire x1="-6.713" y1="56.386" x2="-7.213" y2="56.386" width="0" layer="19" extent="16-16"/>
+<wire x1="-5.713" y1="56.386" x2="-6.713" y2="56.386" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CAP34">
 <contactref element="C40" pad="1"/>
@@ -5454,9 +5471,6 @@ design rules under a new name.</description>
 <wire x1="10" y1="62.357" x2="10.731" y2="63.088" width="0.254" layer="1"/>
 <wire x1="9.964" y1="62.326" x2="9.995" y2="62.357" width="0.254" layer="16"/>
 <wire x1="9.995" y1="62.357" x2="10" y2="62.357" width="0.254" layer="16"/>
-</signal>
-<signal name="ADDR07">
-<contactref element="AT8" pad="11"/>
 </signal>
 <signal name="RST56">
 <contactref element="PROG6" pad="1"/>
@@ -5656,15 +5670,21 @@ design rules under a new name.</description>
 <signal name="RESET1">
 <contactref element="PROG1" pad="5"/>
 </signal>
+<signal name="ADDR8">
+<contactref element="AT8" pad="15"/>
+</signal>
+<signal name="ADDR6">
+<contactref element="AT6" pad="12"/>
+<contactref element="AT6" pad="14"/>
+<wire x1="-5.713" y1="50.386" x2="-6.713" y2="50.386" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="ADDR4">
+<contactref element="AT4" pad="14"/>
+</signal>
+<signal name="ADDR2">
+<contactref element="AT2" pad="12"/>
+</signal>
 </signals>
-<errors>
-<approved hash="19,1,3f11f9e4d820f560"/>
-<approved hash="19,1,60a701c8f0a93a59"/>
-<approved hash="19,1,0d43b082378b21e1"/>
-<approved hash="19,1,d3f882a2f7ab9d1c"/>
-<approved hash="19,1,b83221d821e2b808"/>
-<approved hash="19,1,7597476359338072"/>
-</errors>
 </board>
 </drawing>
 </eagle>

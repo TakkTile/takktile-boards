@@ -2530,7 +2530,7 @@ Parts Updated:
 <pinref part="AT1" gate="G$1" pin="PB3/RESET"/>
 </segment>
 </net>
-<net name="ADDR00" class="0">
+<net name="ADDR1" class="0">
 <segment>
 <pinref part="AT1" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
@@ -2651,11 +2651,6 @@ Parts Updated:
 <label x="53.34" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="AT2" gate="G$1" pin="PB1"/>
-<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
-<label x="53.34" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="AT2" gate="G$1" pin="PB2"/>
 <wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
 <label x="53.34" y="5.08" size="1.778" layer="95"/>
@@ -2664,6 +2659,11 @@ Parts Updated:
 <pinref part="PROG2" gate="A" pin="6"/>
 <wire x1="127" y1="5.08" x2="132.08" y2="5.08" width="0" layer="91"/>
 <label x="132.08" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT2" gate="G$1" pin="PB0"/>
+<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
+<label x="53.34" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -2859,13 +2859,6 @@ Parts Updated:
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR01" class="0">
-<segment>
-<pinref part="AT2" gate="G$1" pin="PB0"/>
-<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
-<label x="53.34" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RST52" class="0">
 <segment>
 <pinref part="PROG2" gate="A" pin="1"/>
@@ -2878,6 +2871,13 @@ Parts Updated:
 <label x="58.42" y="20.32" size="1.778" layer="95"/>
 <pinref part="AT2" gate="G$1" pin="PA5/MISO"/>
 <pinref part="(2,5)" gate="G$1" pin="RST"/>
+</segment>
+</net>
+<net name="ADDR2" class="0">
+<segment>
+<pinref part="AT2" gate="G$1" pin="PB1"/>
+<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
+<label x="53.34" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -2971,11 +2971,6 @@ Parts Updated:
 <pinref part="AT3" gate="G$1" pin="PA7/ADC7"/>
 <wire x1="50.8" y1="15.24" x2="53.34" y2="15.24" width="0" layer="91"/>
 <label x="53.34" y="15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="AT3" gate="G$1" pin="PB1"/>
-<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
-<label x="53.34" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="AT3" gate="G$1" pin="PB2"/>
@@ -3181,11 +3176,16 @@ Parts Updated:
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR02" class="0">
+<net name="ADDR3" class="0">
 <segment>
 <pinref part="AT3" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
 <label x="53.34" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT3" gate="G$1" pin="PB1"/>
+<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
+<label x="53.34" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST53" class="0">
@@ -3300,14 +3300,14 @@ Parts Updated:
 <label x="53.34" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="AT4" gate="G$1" pin="PB2"/>
-<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
-<label x="53.34" y="5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PROG4" gate="A" pin="6"/>
 <wire x1="127" y1="5.08" x2="132.08" y2="5.08" width="0" layer="91"/>
 <label x="132.08" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT4" gate="G$1" pin="PB0"/>
+<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
+<label x="53.34" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -3482,13 +3482,6 @@ Parts Updated:
 <pinref part="(4,2)" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="ADDR03" class="0">
-<segment>
-<pinref part="AT4" gate="G$1" pin="PB0"/>
-<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
-<label x="53.34" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RESET4" class="0">
 <segment>
 <wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
@@ -3522,6 +3515,13 @@ Parts Updated:
 <pinref part="PROG4" gate="A" pin="1"/>
 <wire x1="119.38" y1="10.16" x2="114.3" y2="10.16" width="0" layer="91"/>
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="ADDR4" class="0">
+<segment>
+<pinref part="AT4" gate="G$1" pin="PB2"/>
+<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
+<label x="53.34" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -3620,11 +3620,6 @@ Parts Updated:
 <pinref part="AT5" gate="G$1" pin="PB1"/>
 <wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
 <label x="53.34" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="AT5" gate="G$1" pin="PB2"/>
-<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
-<label x="53.34" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PROG5" gate="A" pin="6"/>
@@ -3825,11 +3820,16 @@ Parts Updated:
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR04" class="0">
+<net name="ADDR5" class="0">
 <segment>
 <pinref part="AT5" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
 <label x="53.34" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT5" gate="G$1" pin="PB2"/>
+<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
+<label x="53.34" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST55" class="0">
@@ -3939,19 +3939,14 @@ Parts Updated:
 <label x="53.34" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="AT6" gate="G$1" pin="PB1"/>
-<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
-<label x="53.34" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="AT6" gate="G$1" pin="PB2"/>
-<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
-<label x="53.34" y="5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PROG6" gate="A" pin="6"/>
 <wire x1="127" y1="5.08" x2="132.08" y2="5.08" width="0" layer="91"/>
 <label x="132.08" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT6" gate="G$1" pin="PB0"/>
+<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
+<label x="53.34" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -4147,13 +4142,6 @@ Parts Updated:
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR05" class="0">
-<segment>
-<pinref part="AT6" gate="G$1" pin="PB0"/>
-<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
-<label x="53.34" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RST56" class="0">
 <segment>
 <pinref part="PROG6" gate="A" pin="1"/>
@@ -4166,6 +4154,18 @@ Parts Updated:
 <label x="58.42" y="20.32" size="1.778" layer="95"/>
 <pinref part="AT6" gate="G$1" pin="PA5/MISO"/>
 <pinref part="(6,5)" gate="G$1" pin="RST"/>
+</segment>
+</net>
+<net name="ADDR6" class="0">
+<segment>
+<pinref part="AT6" gate="G$1" pin="PB1"/>
+<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
+<label x="53.34" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT6" gate="G$1" pin="PB2"/>
+<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
+<label x="53.34" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -4259,16 +4259,6 @@ Parts Updated:
 <pinref part="AT7" gate="G$1" pin="PA7/ADC7"/>
 <wire x1="50.8" y1="15.24" x2="53.34" y2="15.24" width="0" layer="91"/>
 <label x="53.34" y="15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="AT7" gate="G$1" pin="PB1"/>
-<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
-<label x="53.34" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="AT7" gate="G$1" pin="PB2"/>
-<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
-<label x="53.34" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PROG7" gate="A" pin="6"/>
@@ -4483,11 +4473,21 @@ Parts Updated:
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR06" class="0">
+<net name="ADDR7" class="0">
 <segment>
 <pinref part="AT7" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
 <label x="53.34" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT7" gate="G$1" pin="PB1"/>
+<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
+<label x="53.34" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT7" gate="G$1" pin="PB2"/>
+<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
+<label x="53.34" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -4578,24 +4578,24 @@ Parts Updated:
 <pinref part="C38" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="AT8" gate="G$1" pin="PA7/ADC7"/>
-<wire x1="50.8" y1="15.24" x2="53.34" y2="15.24" width="0" layer="91"/>
-<label x="53.34" y="15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="AT8" gate="G$1" pin="PB1"/>
 <wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0" layer="91"/>
 <label x="53.34" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="AT8" gate="G$1" pin="PB2"/>
-<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
-<label x="53.34" y="5.08" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="PROG8" gate="A" pin="6"/>
 <wire x1="127" y1="5.08" x2="132.08" y2="5.08" width="0" layer="91"/>
 <label x="132.08" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT8" gate="G$1" pin="PB0"/>
+<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
+<label x="53.34" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT8" gate="G$1" pin="PB2"/>
+<wire x1="50.8" y1="5.08" x2="53.34" y2="5.08" width="0" layer="91"/>
+<label x="53.34" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -4805,11 +4805,11 @@ Parts Updated:
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="ADDR07" class="0">
+<net name="ADDR8" class="0">
 <segment>
-<pinref part="AT8" gate="G$1" pin="PB0"/>
-<wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
-<label x="53.34" y="10.16" size="1.778" layer="95"/>
+<pinref part="AT8" gate="G$1" pin="PA7/ADC7"/>
+<wire x1="50.8" y1="15.24" x2="53.34" y2="15.24" width="0" layer="91"/>
+<label x="53.34" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
