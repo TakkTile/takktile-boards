@@ -129,37 +129,24 @@
 <text x="2" y="12" size="0.8128" layer="21" font="vector" ratio="12" rot="R45">GND</text>
 <text x="-4.5" y="11" size="0.8128" layer="21" font="vector" ratio="12" rot="R45">SCL</text>
 <hole x="-8.832" y="20.199" drill="0.8"/>
-<wire x1="2.979" y1="21.088" x2="2.979" y2="15.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="-14.039" y1="21.215" x2="-14.039" y2="15.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="8.567" y1="21.088" x2="8.567" y2="15.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="-19.5" y1="21.088" x2="-19.5" y2="15.881" width="0.254" layer="21" style="shortdash"/>
 <text x="-15.182" y="20.072" size="0.7" layer="27" font="vector" ratio="12">V</text>
 <text x="-15.182" y="19.056" size="0.7" layer="27" font="vector" ratio="12">D</text>
 <text x="-15.182" y="17.532" size="0.7" layer="27" font="vector" ratio="12">G</text>
 <text x="-15.182" y="15.627" size="0.7" layer="27" font="vector" ratio="12">C</text>
 <hole x="-8.832" y="26.199" drill="0.8"/>
-<wire x1="2.979" y1="27.088" x2="2.979" y2="21.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="-14.039" y1="27.215" x2="-14.039" y2="21.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="8.567" y1="27.088" x2="8.567" y2="21.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="-19.5" y1="27.088" x2="-19.5" y2="21.881" width="0.254" layer="21" style="shortdash"/>
 <text x="-15.182" y="26.072" size="0.7" layer="27" font="vector" ratio="12">V</text>
 <text x="-15.182" y="25.056" size="0.7" layer="27" font="vector" ratio="12">D</text>
 <text x="-15.182" y="23.532" size="0.7" layer="27" font="vector" ratio="12">G</text>
 <text x="-15.182" y="21.627" size="0.7" layer="27" font="vector" ratio="12">C</text>
 <hole x="-8.832" y="32.199" drill="0.8"/>
-<wire x1="2.979" y1="33.088" x2="2.979" y2="27.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="-14.039" y1="33.215" x2="-14.039" y2="27.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="8.567" y1="33.088" x2="8.567" y2="27.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="-19.5" y1="33.088" x2="-19.5" y2="27.881" width="0.254" layer="21" style="shortdash"/>
 <text x="-15.182" y="32.072" size="0.7" layer="27" font="vector" ratio="12">V</text>
 <text x="-15.182" y="31.056" size="0.7" layer="27" font="vector" ratio="12">D</text>
 <text x="-15.182" y="29.532" size="0.7" layer="27" font="vector" ratio="12">G</text>
 <text x="-15.182" y="27.627" size="0.7" layer="27" font="vector" ratio="12">C</text>
 <hole x="-8.832" y="38.199" drill="0.8"/>
-<wire x1="2.979" y1="39.088" x2="2.979" y2="33.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="-14.039" y1="39.215" x2="-14.039" y2="33.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="8.567" y1="39.088" x2="8.567" y2="33.881" width="0.254" layer="21" style="shortdash"/>
-<wire x1="-19.5" y1="39.088" x2="-19.5" y2="33.881" width="0.254" layer="21" style="shortdash"/>
+<wire x1="4.129" y1="39.288" x2="4.129" y2="15" width="0.254" layer="21" style="shortdash"/>
+<wire x1="-14.039" y1="39.215" x2="-14.039" y2="16" width="0.254" layer="21" style="shortdash"/>
+<wire x1="10" y1="70" x2="10" y2="0" width="0.254" layer="21"/>
 <text x="-15.182" y="38.072" size="0.7" layer="27" font="vector" ratio="12">V</text>
 <text x="-15.182" y="37.056" size="0.7" layer="27" font="vector" ratio="12">D</text>
 <text x="-15.182" y="35.532" size="0.7" layer="27" font="vector" ratio="12">G</text>
@@ -2050,7 +2037,6 @@ design rules under a new name.</description>
 <wire x1="-5.784" y1="17.913" x2="-5.2125" y2="18.4845" width="0.254" layer="1"/>
 <wire x1="2.598" y1="18.548" x2="2.598" y2="16.516" width="0.254" layer="1"/>
 <wire x1="-3.244" y1="20.453" x2="-2.482" y2="20.453" width="0.254" layer="16"/>
-<wire x1="2.598" y1="23.247" x2="2.598" y2="21.977" width="0.254" layer="1"/>
 <wire x1="2.598" y1="21.977" x2="2.09" y2="21.469" width="0.254" layer="1"/>
 <wire x1="2.09" y1="21.469" x2="-1.466" y2="21.469" width="0.254" layer="1"/>
 <wire x1="-1.466" y1="21.469" x2="-2.482" y2="20.453" width="0.254" layer="1"/>
@@ -2119,7 +2105,6 @@ design rules under a new name.</description>
 <wire x1="-5.784" y1="23.913" x2="-5.2125" y2="24.4845" width="0.254" layer="1"/>
 <wire x1="2.598" y1="24.548" x2="2.598" y2="22.516" width="0.254" layer="1"/>
 <wire x1="-3.244" y1="26.453" x2="-2.482" y2="26.453" width="0.254" layer="16"/>
-<wire x1="2.598" y1="29.247" x2="2.598" y2="27.977" width="0.254" layer="1"/>
 <wire x1="2.598" y1="27.977" x2="2.09" y2="27.469" width="0.254" layer="1"/>
 <wire x1="2.09" y1="27.469" x2="-1.466" y2="27.469" width="0.254" layer="1"/>
 <wire x1="-1.466" y1="27.469" x2="-2.482" y2="26.453" width="0.254" layer="1"/>
@@ -2188,7 +2173,7 @@ design rules under a new name.</description>
 <wire x1="-5.784" y1="29.913" x2="-5.2125" y2="30.4845" width="0.254" layer="1"/>
 <wire x1="2.598" y1="30.548" x2="2.598" y2="28.516" width="0.254" layer="1"/>
 <wire x1="-3.244" y1="32.453" x2="-2.482" y2="32.453" width="0.254" layer="16"/>
-<wire x1="2.598" y1="35.247" x2="2.598" y2="33.977" width="0.254" layer="1"/>
+<wire x1="2.598" y1="35.247" x2="2.598" y2="34.516" width="0.254" layer="1"/>
 <wire x1="2.598" y1="33.977" x2="2.09" y2="33.469" width="0.254" layer="1"/>
 <wire x1="2.09" y1="33.469" x2="-1.466" y2="33.469" width="0.254" layer="1"/>
 <wire x1="-1.466" y1="33.469" x2="-2.482" y2="32.453" width="0.254" layer="1"/>
@@ -2255,7 +2240,7 @@ design rules under a new name.</description>
 <wire x1="-7.6255" y1="35.2145" x2="-9.3654" y2="35.2145" width="0.254" layer="1"/>
 <wire x1="-5.2125" y1="36.4845" x2="-5.2125" y2="36.929" width="0.2032" layer="16"/>
 <wire x1="-5.784" y1="35.913" x2="-5.2125" y2="36.4845" width="0.254" layer="1"/>
-<wire x1="2.598" y1="36.548" x2="2.598" y2="34.516" width="0.254" layer="1"/>
+<wire x1="2.598" y1="36.548" x2="2.598" y2="35.247" width="0.254" layer="1"/>
 <wire x1="-3.244" y1="38.453" x2="-2.482" y2="38.453" width="0.254" layer="16"/>
 <wire x1="2.598" y1="41.247" x2="2.598" y2="39.977" width="0.254" layer="1"/>
 <wire x1="2.598" y1="39.977" x2="2.09" y2="39.469" width="0.254" layer="1"/>
@@ -2271,9 +2256,9 @@ design rules under a new name.</description>
 <wire x1="-5" y1="14.5" x2="-4.5" y2="15" width="0.254" layer="16"/>
 <wire x1="-4.5" y1="15" x2="2.606" y2="15" width="0.254" layer="16"/>
 <wire x1="2.606" y1="15" x2="4.122" y2="16.516" width="0.254" layer="16"/>
-<wire x1="2.598" y1="33.977" x2="2.598" y2="34.516" width="0" layer="19" extent="1-1"/>
-<wire x1="2.598" y1="27.977" x2="2.598" y2="28.516" width="0" layer="19" extent="1-1"/>
-<wire x1="2.598" y1="21.977" x2="2.598" y2="22.516" width="0" layer="19" extent="1-1"/>
+<wire x1="2.598" y1="21.977" x2="2.598" y2="22.516" width="0.254" layer="1"/>
+<wire x1="2.598" y1="27.977" x2="2.598" y2="28.516" width="0.254" layer="1"/>
+<wire x1="2.598" y1="33.977" x2="2.598" y2="34.516" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="IC1" pad="11"/>
@@ -2847,9 +2832,9 @@ design rules under a new name.</description>
 <wire x1="-3.244" y1="19.818" x2="0.312" y2="19.818" width="0.254" layer="16"/>
 <wire x1="0.312" y1="19.818" x2="1.455" y2="18.675" width="0.254" layer="16"/>
 <wire x1="1.455" y1="18.675" x2="2.852" y2="18.675" width="0.254" layer="16"/>
-<wire x1="2.852" y1="18.675" x2="4.249" y2="20.072" width="0.254" layer="16"/>
-<via x="4.249" y="20.072" extent="1-16" drill="0.305" shape="octagon"/>
-<wire x1="4.249" y1="20.072" x2="4.503" y2="20.326" width="0.254" layer="1"/>
+<wire x1="2.852" y1="18.675" x2="4.129" y2="20.072" width="0.254" layer="16"/>
+<via x="4.129" y="20.072" extent="1-16" drill="0.305" shape="octagon"/>
+<wire x1="4.129" y1="20.072" x2="4.503" y2="20.326" width="0.254" layer="1"/>
 <wire x1="4.503" y1="20.326" x2="5.251" y2="20.326" width="0.254" layer="1"/>
 <wire x1="5.251" y1="20.326" x2="5.3" y2="20.375" width="0.254" layer="1"/>
 <contactref element="PROG0" pad="1"/>
@@ -2859,7 +2844,7 @@ design rules under a new name.</description>
 <wire x1="17.965" y1="19.945" x2="16.822" y2="21.088" width="0.254" layer="1"/>
 <wire x1="16.822" y1="21.088" x2="10.731" y2="21.088" width="0.254" layer="1"/>
 <via x="10" y="20.357" extent="1-16" drill="0.475" shape="octagon"/>
-<wire x1="4.249" y1="20.072" x2="4.503" y2="20.326" width="0.254" layer="16"/>
+<wire x1="4.129" y1="20.072" x2="4.503" y2="20.326" width="0.254" layer="16"/>
 <wire x1="4.503" y1="20.326" x2="9.964" y2="20.326" width="0.254" layer="16"/>
 <wire x1="10" y1="20.357" x2="10.731" y2="21.088" width="0.254" layer="1"/>
 <wire x1="9.964" y1="20.326" x2="9.995" y2="20.357" width="0.254" layer="16"/>
@@ -3024,9 +3009,9 @@ design rules under a new name.</description>
 <wire x1="-3.244" y1="25.818" x2="0.312" y2="25.818" width="0.254" layer="16"/>
 <wire x1="0.312" y1="25.818" x2="1.455" y2="24.675" width="0.254" layer="16"/>
 <wire x1="1.455" y1="24.675" x2="2.852" y2="24.675" width="0.254" layer="16"/>
-<wire x1="2.852" y1="24.675" x2="4.249" y2="26.072" width="0.254" layer="16"/>
-<via x="4.249" y="26.072" extent="1-16" drill="0.305" shape="octagon"/>
-<wire x1="4.249" y1="26.072" x2="4.503" y2="26.326" width="0.254" layer="1"/>
+<wire x1="2.852" y1="24.675" x2="4.129" y2="26.072" width="0.254" layer="16"/>
+<via x="4.129" y="26.072" extent="1-16" drill="0.305" shape="octagon"/>
+<wire x1="4.129" y1="26.072" x2="4.503" y2="26.326" width="0.254" layer="1"/>
 <wire x1="4.503" y1="26.326" x2="5.251" y2="26.326" width="0.254" layer="1"/>
 <wire x1="5.251" y1="26.326" x2="5.3" y2="26.375" width="0.254" layer="1"/>
 <contactref element="PROG1" pad="1"/>
@@ -3036,7 +3021,7 @@ design rules under a new name.</description>
 <wire x1="17.965" y1="25.945" x2="16.822" y2="27.088" width="0.254" layer="1"/>
 <wire x1="16.822" y1="27.088" x2="10.731" y2="27.088" width="0.254" layer="1"/>
 <via x="10" y="26.357" extent="1-16" drill="0.475" shape="octagon"/>
-<wire x1="4.249" y1="26.072" x2="4.503" y2="26.326" width="0.254" layer="16"/>
+<wire x1="4.129" y1="26.072" x2="4.503" y2="26.326" width="0.254" layer="16"/>
 <wire x1="4.503" y1="26.326" x2="9.964" y2="26.326" width="0.254" layer="16"/>
 <wire x1="10" y1="26.357" x2="10.731" y2="27.088" width="0.254" layer="1"/>
 <wire x1="9.964" y1="26.326" x2="9.995" y2="26.357" width="0.254" layer="16"/>
@@ -3201,9 +3186,9 @@ design rules under a new name.</description>
 <wire x1="-3.244" y1="31.818" x2="0.312" y2="31.818" width="0.254" layer="16"/>
 <wire x1="0.312" y1="31.818" x2="1.455" y2="30.675" width="0.254" layer="16"/>
 <wire x1="1.455" y1="30.675" x2="2.852" y2="30.675" width="0.254" layer="16"/>
-<wire x1="2.852" y1="30.675" x2="4.249" y2="32.072" width="0.254" layer="16"/>
-<via x="4.249" y="32.072" extent="1-16" drill="0.305" shape="octagon"/>
-<wire x1="4.249" y1="32.072" x2="4.503" y2="32.326" width="0.254" layer="1"/>
+<wire x1="2.852" y1="30.675" x2="4.129" y2="32.072" width="0.254" layer="16"/>
+<via x="4.129" y="32.072" extent="1-16" drill="0.305" shape="octagon"/>
+<wire x1="4.129" y1="32.072" x2="4.503" y2="32.326" width="0.254" layer="1"/>
 <wire x1="4.503" y1="32.326" x2="5.251" y2="32.326" width="0.254" layer="1"/>
 <wire x1="5.251" y1="32.326" x2="5.3" y2="32.375" width="0.254" layer="1"/>
 <contactref element="PROG2" pad="1"/>
@@ -3213,7 +3198,7 @@ design rules under a new name.</description>
 <wire x1="17.965" y1="31.945" x2="16.822" y2="33.088" width="0.254" layer="1"/>
 <wire x1="16.822" y1="33.088" x2="10.731" y2="33.088" width="0.254" layer="1"/>
 <via x="10" y="32.357" extent="1-16" drill="0.475" shape="octagon"/>
-<wire x1="4.249" y1="32.072" x2="4.503" y2="32.326" width="0.254" layer="16"/>
+<wire x1="4.129" y1="32.072" x2="4.503" y2="32.326" width="0.254" layer="16"/>
 <wire x1="4.503" y1="32.326" x2="9.964" y2="32.326" width="0.254" layer="16"/>
 <wire x1="10" y1="32.357" x2="10.731" y2="33.088" width="0.254" layer="1"/>
 <wire x1="9.964" y1="32.326" x2="9.995" y2="32.357" width="0.254" layer="16"/>
@@ -3378,9 +3363,9 @@ design rules under a new name.</description>
 <wire x1="-3.244" y1="37.818" x2="0.312" y2="37.818" width="0.254" layer="16"/>
 <wire x1="0.312" y1="37.818" x2="1.455" y2="36.675" width="0.254" layer="16"/>
 <wire x1="1.455" y1="36.675" x2="2.852" y2="36.675" width="0.254" layer="16"/>
-<wire x1="2.852" y1="36.675" x2="4.249" y2="38.072" width="0.254" layer="16"/>
-<via x="4.249" y="38.072" extent="1-16" drill="0.305" shape="octagon"/>
-<wire x1="4.249" y1="38.072" x2="4.503" y2="38.326" width="0.254" layer="1"/>
+<wire x1="2.852" y1="36.675" x2="4.129" y2="38.072" width="0.254" layer="16"/>
+<via x="4.129" y="38.072" extent="1-16" drill="0.305" shape="octagon"/>
+<wire x1="4.129" y1="38.072" x2="4.503" y2="38.326" width="0.254" layer="1"/>
 <wire x1="4.503" y1="38.326" x2="5.251" y2="38.326" width="0.254" layer="1"/>
 <wire x1="5.251" y1="38.326" x2="5.3" y2="38.375" width="0.254" layer="1"/>
 <contactref element="PROG3" pad="1"/>
@@ -3390,7 +3375,7 @@ design rules under a new name.</description>
 <wire x1="17.965" y1="37.945" x2="16.822" y2="39.088" width="0.254" layer="1"/>
 <wire x1="16.822" y1="39.088" x2="10.731" y2="39.088" width="0.254" layer="1"/>
 <via x="10" y="38.357" extent="1-16" drill="0.475" shape="octagon"/>
-<wire x1="4.249" y1="38.072" x2="4.503" y2="38.326" width="0.254" layer="16"/>
+<wire x1="4.129" y1="38.072" x2="4.503" y2="38.326" width="0.254" layer="16"/>
 <wire x1="4.503" y1="38.326" x2="9.964" y2="38.326" width="0.254" layer="16"/>
 <wire x1="10" y1="38.357" x2="10.731" y2="39.088" width="0.254" layer="1"/>
 <wire x1="9.964" y1="38.326" x2="9.995" y2="38.357" width="0.254" layer="16"/>
