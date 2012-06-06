@@ -638,12 +638,12 @@ Mouser P/N - 649-10118192-0001LF</description>
 <smd name="5" x="1.2" y="-1.875" dx="1.2" dy="0.5" layer="1"/>
 <text x="-1.524" y="2.667" size="0.8128" layer="25" font="vector" ratio="10">&gt;Name</text>
 </package>
-<package name="QFN20">
+<package name="QFN-20">
 <wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="-2" y1="2" x2="2" y2="2" width="0.0762" layer="51"/>
-<wire x1="2" y1="2" x2="2" y2="-2" width="0.0762" layer="51"/>
-<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.0762" layer="51"/>
-<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.0762" layer="51"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.2032" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.2032" layer="21"/>
 <smd name="0" x="0" y="0" dx="1" dy="1" layer="1" rot="R180" cream="no"/>
 <smd name="16" x="1" y="1.9" dx="0.65" dy="0.3" layer="1" rot="R90" cream="no"/>
 <smd name="15" x="1.9" y="1" dx="0.65" dy="0.3" layer="1" cream="no"/>
@@ -1376,7 +1376,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <gate name="G$1" symbol="ATTINY24" x="0" y="0"/>
 </gates>
 <devices>
-<device name="QFN" package="QFN20">
+<device name="QFN" package="QFN-20">
 <connects>
 <connect gate="G$1" pin="GND" pad="8"/>
 <connect gate="G$1" pin="GND@0" pad="0"/>
