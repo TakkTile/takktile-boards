@@ -557,7 +557,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <part name="S40" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C3" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="C4" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="PROG" library="nonolith" deviceset="HEADER-2X3" device=""/>
+<part name="PROG0" library="nonolith" deviceset="HEADER-2X3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -575,7 +575,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <instance part="S40" gate="G$1" x="190.5" y="60.96"/>
 <instance part="C3" gate="G$1" x="134.62" y="58.42"/>
 <instance part="C4" gate="G$1" x="172.72" y="58.42"/>
-<instance part="PROG" gate="A" x="121.92" y="7.62"/>
+<instance part="PROG0" gate="A" x="121.92" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -661,7 +661,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <label x="53.34" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="6"/>
+<pinref part="PROG0" gate="A" pin="6"/>
 <wire x1="127" y1="5.08" x2="132.08" y2="5.08" width="0" layer="91"/>
 <label x="132.08" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -723,7 +723,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="S00" gate="G$1" pin="SHDN"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="2"/>
+<pinref part="PROG0" gate="A" pin="2"/>
 <wire x1="127" y1="10.16" x2="132.08" y2="10.16" width="0" layer="91"/>
 <label x="132.08" y="10.16" size="1.778" layer="95"/>
 </segment>
@@ -767,7 +767,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="UC0" gate="G$1" pin="PA6/MOSI"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="4"/>
+<pinref part="PROG0" gate="A" pin="4"/>
 <wire x1="127" y1="7.62" x2="132.08" y2="7.62" width="0" layer="91"/>
 <label x="132.08" y="7.62" size="1.778" layer="95"/>
 </segment>
@@ -799,7 +799,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="S10" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="3"/>
+<pinref part="PROG0" gate="A" pin="3"/>
 <wire x1="119.38" y1="7.62" x2="114.3" y2="7.62" width="0" layer="91"/>
 <label x="114.3" y="7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -854,7 +854,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="UC0" gate="G$1" pin="PB3/RESET"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="5"/>
+<pinref part="PROG0" gate="A" pin="5"/>
 <wire x1="119.38" y1="5.08" x2="114.3" y2="5.08" width="0" layer="91"/>
 <label x="114.3" y="5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -868,7 +868,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <pinref part="S40" gate="G$1" pin="RST"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="1"/>
+<pinref part="PROG0" gate="A" pin="1"/>
 <wire x1="119.38" y1="10.16" x2="114.3" y2="10.16" width="0" layer="91"/>
 <label x="114.3" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>

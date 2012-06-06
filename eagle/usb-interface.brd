@@ -820,8 +820,8 @@ design rules under a new name.</description>
 <polygon width="0.254" layer="1">
 <vertex x="-20" y="0"/>
 <vertex x="20" y="0"/>
-<vertex x="20" y="15"/>
-<vertex x="-20" y="15"/>
+<vertex x="20" y="70"/>
+<vertex x="-20" y="70"/>
 </polygon>
 <wire x1="-1" y1="11.4" x2="-1" y2="12" width="0.254" layer="1"/>
 <wire x1="-1" y1="12" x2="-0.5" y2="12.5" width="0.254" layer="1"/>
@@ -1018,8 +1018,8 @@ design rules under a new name.</description>
 <errors>
 <approved hash="19,1,3f11f9e4d820f560"/>
 <approved hash="19,1,60a701c8f0a93a59"/>
-<approved hash="19,1,0d43b082378b21e1"/>
 <approved hash="19,1,d3f882a2f7ab9d1c"/>
+<approved hash="19,1,0d43b082378b21e1"/>
 <approved hash="19,1,b83221d821e2b808"/>
 <approved hash="19,1,7597476359338072"/>
 </errors>
