@@ -767,7 +767,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="100mil"/>
+<param name="mlViaStopLimit" value="0.306mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -1300,7 +1300,6 @@ design rules under a new name.</description>
 <wire x1="-1.974" y1="23.913" x2="-1.339" y2="23.913" width="0.254" layer="1"/>
 <wire x1="-6.221" y1="25.691" x2="-6.221" y2="24.732" width="0.254" layer="16"/>
 <wire x1="-6.221" y1="24.732" x2="-6.213" y2="24.486" width="0.254" layer="16"/>
-<wire x1="-6.713" y1="25.858" x2="-6.546" y2="25.691" width="0.254" layer="16"/>
 <wire x1="-6.546" y1="25.691" x2="-6.221" y2="25.691" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="25.125" x2="-4.202" y2="25.125" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="25.125" x2="-4.26" y2="25.183" width="0.254" layer="1"/>
@@ -1428,7 +1427,7 @@ design rules under a new name.</description>
 <wire x1="-1.974" y1="29.913" x2="-1.339" y2="29.913" width="0.254" layer="1"/>
 <wire x1="-6.221" y1="31.691" x2="-6.221" y2="30.732" width="0.254" layer="16"/>
 <wire x1="-6.221" y1="30.732" x2="-6.213" y2="30.486" width="0.254" layer="16"/>
-<wire x1="-6.713" y1="31.858" x2="-6.546" y2="31.691" width="0.254" layer="16"/>
+<wire x1="-6.713" y1="31.858" x2="-6.546" y2="31.691" width="0" layer="19" extent="1-16"/>
 <wire x1="-6.546" y1="31.691" x2="-6.221" y2="31.691" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="31.125" x2="-4.202" y2="31.125" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="31.125" x2="-4.26" y2="31.183" width="0.254" layer="1"/>
@@ -1808,7 +1807,7 @@ design rules under a new name.</description>
 <wire x1="-1.974" y1="47.913" x2="-1.339" y2="47.913" width="0.254" layer="1"/>
 <wire x1="-6.221" y1="49.691" x2="-6.221" y2="48.732" width="0.254" layer="16"/>
 <wire x1="-6.221" y1="48.732" x2="-6.213" y2="48.486" width="0.254" layer="16"/>
-<wire x1="-6.713" y1="49.858" x2="-6.546" y2="49.691" width="0.254" layer="16"/>
+<wire x1="-6.713" y1="49.858" x2="-6.546" y2="49.691" width="0" layer="19" extent="1-16"/>
 <wire x1="-6.546" y1="49.691" x2="-6.221" y2="49.691" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="49.125" x2="-4.202" y2="49.125" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="49.125" x2="-4.26" y2="49.183" width="0.254" layer="1"/>
@@ -1934,7 +1933,6 @@ design rules under a new name.</description>
 <wire x1="-1.974" y1="53.913" x2="-1.339" y2="53.913" width="0.254" layer="1"/>
 <wire x1="-6.221" y1="55.691" x2="-6.221" y2="54.732" width="0.254" layer="16"/>
 <wire x1="-6.221" y1="54.732" x2="-6.213" y2="54.486" width="0.254" layer="16"/>
-<wire x1="-6.713" y1="55.858" x2="-6.546" y2="55.691" width="0.254" layer="16"/>
 <wire x1="-6.546" y1="55.691" x2="-6.221" y2="55.691" width="0.254" layer="16"/>
 <wire x1="-4.3" y1="55.125" x2="-4.202" y2="55.125" width="0.254" layer="1"/>
 <wire x1="-4.202" y1="55.125" x2="-4.26" y2="55.183" width="0.254" layer="1"/>
@@ -5651,6 +5649,14 @@ design rules under a new name.</description>
 <contactref element="AT2" pad="12"/>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,3f11f9e4d820f560"/>
+<approved hash="19,1,60a701c8f0a93a59"/>
+<approved hash="19,1,0d43b082378b21e1"/>
+<approved hash="19,1,d3f882a2f7ab9d1c"/>
+<approved hash="19,1,7597476359338072"/>
+<approved hash="19,1,b83221d821e2b808"/>
+</errors>
 </board>
 </drawing>
 </eagle>
