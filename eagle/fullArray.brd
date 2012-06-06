@@ -144,7 +144,7 @@
 <text x="-15.182" y="29.532" size="0.7" layer="27" font="vector" ratio="12">G</text>
 <text x="-15.182" y="27.627" size="0.7" layer="27" font="vector" ratio="12">C</text>
 <hole x="-8.832" y="38.199" drill="0.8"/>
-<wire x1="4.129" y1="39.288" x2="4.129" y2="15" width="0.254" layer="21" style="shortdash"/>
+<wire x1="4.129" y1="64" x2="4.129" y2="16" width="0.254" layer="21"/>
 <wire x1="-14.039" y1="64" x2="-14.039" y2="16" width="0.254" layer="21"/>
 <wire x1="10" y1="64" x2="10" y2="0" width="0.254" layer="21"/>
 <text x="-15.182" y="38.072" size="0.7" layer="27" font="vector" ratio="12">V</text>
@@ -5652,14 +5652,6 @@ design rules under a new name.</description>
 <contactref element="AT2" pad="12"/>
 </signal>
 </signals>
-<errors>
-<approved hash="19,1,3f11f9e4d820f560"/>
-<approved hash="19,1,60a701c8f0a93a59"/>
-<approved hash="19,1,0d43b082378b21e1"/>
-<approved hash="19,1,d3f882a2f7ab9d1c"/>
-<approved hash="19,1,b83221d821e2b808"/>
-<approved hash="19,1,7597476359338072"/>
-</errors>
 </board>
 </drawing>
 </eagle>
