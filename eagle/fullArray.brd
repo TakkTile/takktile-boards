@@ -865,17 +865,17 @@ design rules under a new name.</description>
 <element name="PROG" library="nonolith" package="2X03" value="" x="15.5" y="8" smashed="yes" rot="R180">
 <attribute name="VALUE" x="19.31" y="12.445" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R1" library="nonolith" package="0603" value="" x="7" y="8.55" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.246" y="7.828" size="0.762" layer="25" font="vector" ratio="10" rot="R90"/>
+<element name="R1" library="nonolith" package="0603" value="" x="7.5" y="8.55" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.746" y="7.828" size="0.762" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="LED1" library="microbuilder" package="CHIPLED_0603" value="" x="7" y="12" smashed="yes">
-<attribute name="NAME" x="8.65" y="13.1" size="0.8128" layer="25" font="vector" ratio="12" rot="R270"/>
-<attribute name="VALUE" x="8.143" y="10.73" size="0.4064" layer="27" rot="R90"/>
+<element name="LED1" library="microbuilder" package="CHIPLED_0603" value="" x="6" y="8.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="4.35" y="7.4" size="0.8128" layer="25" font="vector" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="4.857" y="9.77" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="R2" library="nonolith" package="0603" value="" x="-9.5" y="11.5" rot="R180"/>
 <element name="R3" library="nonolith" package="0603" value="" x="-9.5" y="13.5" rot="R180"/>
-<element name="U$1" library="nonolith" package="STAND-OFF" value="" x="-17.5" y="2.5"/>
-<element name="U$2" library="nonolith" package="STAND-OFF" value="" x="18" y="2.5"/>
+<element name="U$1" library="nonolith" package="STAND-OFF" value="" x="-17.5" y="3"/>
+<element name="U$2" library="nonolith" package="STAND-OFF" value="" x="14" y="3"/>
 <element name="DAISY" library="nonolith" package="1X06_ROUND_2MM" value="" x="7" y="1.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="4.1162" y="3.1712" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
 <attribute name="VALUE" x="7.54" y="4.675" size="1.27" layer="27" rot="R180"/>
@@ -889,8 +889,8 @@ design rules under a new name.</description>
 <element name="SDA" library="nonolith" package="1X01_2MM" value="" x="-5" y="13.5" smashed="yes">
 <attribute name="VALUE" x="-6.27" y="10.325" size="1.27" layer="27"/>
 </element>
-<element name="U$3" library="nonolith" package="STAND-OFF" value="" x="-15" y="13.5" smashed="yes"/>
-<element name="U$4" library="nonolith" package="STAND-OFF" value="" x="17.5" y="13.5"/>
+<element name="U$3" library="nonolith" package="STAND-OFF" value="" x="-17.5" y="13" smashed="yes"/>
+<element name="U$4" library="nonolith" package="STAND-OFF" value="" x="6.5" y="13"/>
 <element name="JP1" library="nonolith" package="1X01_2MM" value="" x="1" y="13.5" smashed="yes">
 <attribute name="VALUE" x="-0.27" y="10.325" size="1.27" layer="27"/>
 </element>
@@ -1960,13 +1960,15 @@ design rules under a new name.</description>
 <wire x1="-15.85" y1="10.25" x2="-15.85" y2="9.25" width="0.254" layer="1"/>
 <wire x1="-15.85" y1="9.25" x2="-10.45" y2="9.25" width="0.254" layer="1"/>
 <wire x1="-10.45" y1="9.25" x2="-10.45" y2="10.05" width="0.254" layer="1"/>
-<wire x1="18.04" y1="6.73" x2="16.31" y2="5" width="0.254" layer="16"/>
-<wire x1="16.31" y1="5" x2="6.5" y2="5" width="0.254" layer="16"/>
+<wire x1="18.04" y1="6.73" x2="16.81" y2="5.5" width="0.254" layer="16"/>
+<wire x1="16.81" y1="5.5" x2="12.5" y2="5.5" width="0.254" layer="16"/>
+<wire x1="12.5" y1="5.5" x2="12" y2="5" width="0.254" layer="16"/>
+<wire x1="12" y1="5" x2="6.5" y2="5" width="0.254" layer="16"/>
 <wire x1="6.5" y1="5" x2="4.5" y2="7" width="0.254" layer="16"/>
 <wire x1="4.5" y1="7" x2="4.5" y2="8" width="0.254" layer="16"/>
-<wire x1="-1" y1="13.5" x2="-1" y2="15" width="0.254" layer="1"/>
-<wire x1="-1" y1="15" x2="10" y2="15" width="0.254" layer="1"/>
-<wire x1="10" y1="15" x2="11" y2="16" width="0.254" layer="1"/>
+<wire x1="-1" y1="13.5" x2="-1" y2="15.5" width="0.254" layer="1"/>
+<wire x1="-1" y1="15.5" x2="10" y2="15.5" width="0.254" layer="1"/>
+<wire x1="10" y1="15.5" x2="11" y2="16" width="0.254" layer="1"/>
 <wire x1="11.107" y1="16.008" x2="11" y2="16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
@@ -2599,15 +2601,15 @@ design rules under a new name.</description>
 <wire x1="10" y1="10.5" x2="15" y2="10.5" width="0.254" layer="1"/>
 <wire x1="15" y1="10.5" x2="15.5" y2="10" width="0.254" layer="1"/>
 <wire x1="15.5" y1="10" x2="15.5" y2="9.27" width="0.254" layer="1"/>
-<wire x1="7" y1="7.7" x2="9.8" y2="10.5" width="0.254" layer="1"/>
+<wire x1="7.5" y1="7.7" x2="9.8" y2="10.5" width="0.254" layer="1"/>
 <via x="10" y="10.5" extent="1-16" drill="0.475" shape="octagon"/>
 <wire x1="6.5" y1="7" x2="7" y2="7.5" width="0.254" layer="1"/>
-<wire x1="7" y1="7.7" x2="7" y2="7.5" width="0.254" layer="1"/>
+<wire x1="7.5" y1="7.7" x2="7" y2="7.5" width="0.254" layer="1"/>
 </signal>
 <signal name="PR1-P">
 <contactref element="R1" pad="2"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="7" y1="11.25" x2="7" y2="9.4" width="0.254" layer="1"/>
+<wire x1="6" y1="9.25" x2="7.5" y2="9.4" width="0.254" layer="1"/>
 </signal>
 <signal name="BOOTLOAD">
 <contactref element="IC1" pad="36"/>
@@ -2626,16 +2628,19 @@ design rules under a new name.</description>
 <wire x1="19.5" y1="8.5" x2="18.73" y2="9.27" width="0.254" layer="1"/>
 <wire x1="18.73" y1="9.27" x2="18.04" y2="9.27" width="0.254" layer="1"/>
 <wire x1="3.4" y1="5.5" x2="4.9" y2="4" width="0.254" layer="1"/>
-<wire x1="4.9" y1="4" x2="16.5" y2="4" width="0.254" layer="1"/>
-<wire x1="16.5" y1="4" x2="17" y2="4.5" width="0.254" layer="1"/>
-<wire x1="17" y1="4.5" x2="18.5" y2="4.5" width="0.254" layer="1"/>
-<wire x1="18.5" y1="4.5" x2="19.5" y2="5.5" width="0.254" layer="1"/>
+<wire x1="4.9" y1="4" x2="10" y2="4" width="0.254" layer="1"/>
+<wire x1="10" y1="4" x2="11" y2="4" width="0.254" layer="1"/>
+<wire x1="11" y1="4" x2="12.5" y2="5.5" width="0.254" layer="1"/>
+<wire x1="12.5" y1="5.5" x2="19.5" y2="5.5" width="0.254" layer="1"/>
+<via x="10" y="4" extent="1-16" drill="0.475" shape="octagon"/>
 </signal>
 <signal name="PDI-CLK">
 <contactref element="IC1" pad="35"/>
 <contactref element="PROG" pad="5"/>
 <wire x1="12.96" y1="9.27" x2="9.69" y2="6" width="0.254" layer="1"/>
 <wire x1="9.69" y1="6" x2="3.4" y2="6" width="0.254" layer="1"/>
+<via x="10" y="6" extent="1-16" drill="0.475" shape="octagon"/>
+<wire x1="9.69" y1="6" x2="10" y2="6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="3.3V" pad="3"/>
@@ -3384,12 +3389,6 @@ design rules under a new name.</description>
 <signal name="ADDR03">
 <contactref element="UC3" pad="11"/>
 </signal>
-<signal name="N$1">
-<via x="10" y="6" extent="1-16" drill="0.475" shape="octagon"/>
-</signal>
-<signal name="N$2">
-<via x="10" y="4" extent="1-16" drill="0.475" shape="octagon"/>
-</signal>
 <signal name="N$3">
 <via x="10" y="12.5" extent="1-16" drill="0.475" shape="octagon"/>
 </signal>
@@ -3397,8 +3396,8 @@ design rules under a new name.</description>
 <errors>
 <approved hash="19,1,3f11f9e4d820f560"/>
 <approved hash="19,1,60a701c8f0a93a59"/>
-<approved hash="19,1,0d43b082378b21e1"/>
 <approved hash="19,1,d3f882a2f7ab9d1c"/>
+<approved hash="19,1,0d43b082378b21e1"/>
 <approved hash="19,1,7597476359338072"/>
 <approved hash="19,1,b83221d821e2b808"/>
 </errors>
