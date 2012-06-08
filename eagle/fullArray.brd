@@ -178,6 +178,7 @@
 <text x="3.5" y="21" size="1.016" layer="21" font="vector" ratio="12" rot="R90">www.takktile.com</text>
 <text x="3.5" y="45.5" size="1.016" layer="21" font="fixed" ratio="12" rot="R90">www.takktile.com</text>
 <wire x1="-20" y1="15.5" x2="20" y2="15.5" width="0.4064" layer="22"/>
+<text x="-2" y="24.5" size="1.016" layer="21" font="fixed" ratio="12" rot="R90">www.biorobotics.harvard.edu/takktile </text>
 </plain>
 <libraries>
 <library name="nonolith">
