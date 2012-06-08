@@ -1820,7 +1820,7 @@ Parts Updated:
 <part name="C10" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C11" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value=".1uF"/>
 <part name="C12" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value=".01uF"/>
-<part name="PROG" library="nonolith" deviceset="HEADER-2X3" device="" value="PROGX"/>
+<part name="PROGX" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="R1" library="nonolith" deviceset="RESISTOR" device="0603" value="120o"/>
 <part name="LED1" library="microbuilder" deviceset="LED" device="0603"/>
 <part name="R2" library="nonolith" deviceset="RESISTOR" device="0603" value="4.7K"/>
@@ -1861,7 +1861,7 @@ Parts Updated:
 <part name="(3,3)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C13" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C14" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
-<part name="C15" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C15" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="(3,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(3,5)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="C16" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
@@ -1939,7 +1939,7 @@ Parts Updated:
 <instance part="C10" gate="G$1" x="12.7" y="60.96"/>
 <instance part="C11" gate="G$1" x="22.86" y="60.96"/>
 <instance part="C12" gate="G$1" x="33.02" y="60.96"/>
-<instance part="PROG" gate="A" x="149.86" y="63.5" rot="R90"/>
+<instance part="PROGX" gate="A" x="149.86" y="63.5" rot="R90"/>
 <instance part="R1" gate="G$1" x="116.84" y="81.28"/>
 <instance part="LED1" gate="G$1" x="129.54" y="81.28"/>
 <instance part="R2" gate="G$1" x="114.3" y="53.34" rot="R90"/>
@@ -1998,7 +1998,7 @@ Parts Updated:
 <label x="134.62" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="6"/>
+<pinref part="PROGX" gate="A" pin="6"/>
 <wire x1="152.4" y1="68.58" x2="152.4" y2="73.66" width="0" layer="91"/>
 <label x="152.4" y="73.66" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -2048,7 +2048,7 @@ Parts Updated:
 <label x="2.54" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="2"/>
+<pinref part="PROGX" gate="A" pin="2"/>
 <wire x1="147.32" y1="68.58" x2="147.32" y2="73.66" width="0" layer="91"/>
 <label x="147.32" y="73.66" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -2102,7 +2102,7 @@ Parts Updated:
 <wire x1="106.68" y1="81.28" x2="111.76" y2="81.28" width="0" layer="91"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="3"/>
+<pinref part="PROGX" gate="A" pin="3"/>
 <wire x1="149.86" y1="60.96" x2="149.86" y2="55.88" width="0" layer="91"/>
 <label x="149.86" y="55.88" size="1.778" layer="95" rot="R270"/>
 </segment>
@@ -2121,7 +2121,7 @@ Parts Updated:
 <label x="111.76" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="4"/>
+<pinref part="PROGX" gate="A" pin="4"/>
 <wire x1="149.86" y1="68.58" x2="149.86" y2="73.66" width="0" layer="91"/>
 <label x="149.86" y="73.66" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -2133,7 +2133,7 @@ Parts Updated:
 <label x="111.76" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="1"/>
+<pinref part="PROGX" gate="A" pin="1"/>
 <wire x1="147.32" y1="60.96" x2="147.32" y2="55.88" width="0" layer="91"/>
 <label x="147.32" y="55.88" size="1.778" layer="95" rot="R270"/>
 </segment>
@@ -2145,7 +2145,7 @@ Parts Updated:
 <label x="111.76" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PROG" gate="A" pin="5"/>
+<pinref part="PROGX" gate="A" pin="5"/>
 <wire x1="152.4" y1="60.96" x2="152.4" y2="55.88" width="0" layer="91"/>
 <label x="152.4" y="55.88" size="1.778" layer="95" rot="R270"/>
 </segment>
