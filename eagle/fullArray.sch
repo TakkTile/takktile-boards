@@ -1814,13 +1814,13 @@ Parts Updated:
 </class>
 </classes>
 <parts>
-<part name="IC1" library="nonolith" deviceset="ATXMEGAXXA4U" device="-MH"/>
+<part name="XM1" library="nonolith" deviceset="ATXMEGAXXA4U" device="-MH"/>
 <part name="CN1" library="nonolith" deviceset="USB" device="MICROB"/>
 <part name="3.3V" library="nonolith" deviceset="VREG" device=""/>
 <part name="C10" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C11" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value=".1uF"/>
 <part name="C12" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value=".01uF"/>
-<part name="PROG" library="nonolith" deviceset="HEADER-2X3" device=""/>
+<part name="PROG" library="nonolith" deviceset="HEADER-2X3" device="" value="PROGX"/>
 <part name="R1" library="nonolith" deviceset="RESISTOR" device="0603" value="120o"/>
 <part name="LED1" library="microbuilder" deviceset="LED" device="0603"/>
 <part name="R2" library="nonolith" deviceset="RESISTOR" device="0603" value="4.7K"/>
@@ -1835,97 +1835,97 @@ Parts Updated:
 <part name="(1,1)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(1,2)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(1,3)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C0" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C1" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C2" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C0" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C1" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C2" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="(1,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(1,5)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C3" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C4" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C3" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C4" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG1" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="AT2" library="nonolith" deviceset="ATTINY24" device="QFN"/>
 <part name="(2,1)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(2,2)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(2,3)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C5" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C6" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C7" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C5" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C6" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C7" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="(2,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(2,5)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C8" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C9" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C8" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C9" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG2" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="AT3" library="nonolith" deviceset="ATTINY24" device="QFN"/>
 <part name="(3,1)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(3,2)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(3,3)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C13" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C14" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C13" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C14" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C15" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="(3,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(3,5)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C16" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C17" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C16" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C17" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG3" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="AT4" library="nonolith" deviceset="ATTINY24" device="QFN"/>
 <part name="(4,1)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(4,2)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(4,3)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C18" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C19" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C20" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C18" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C19" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C20" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="(4,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(4,5)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C21" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C22" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C21" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C22" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG4" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="AT5" library="nonolith" deviceset="ATTINY24" device="QFN"/>
 <part name="(5,1)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(5,2)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(5,3)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C23" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C24" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C25" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C23" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C24" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C25" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="(5,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(5,5)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C26" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C27" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C26" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C27" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG5" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="AT6" library="nonolith" deviceset="ATTINY24" device="QFN"/>
 <part name="(6,1)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(6,2)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(6,3)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C28" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C29" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C30" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C28" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C29" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C30" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="(6,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(6,5)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C31" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C32" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C31" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C32" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG6" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="AT7" library="nonolith" deviceset="ATTINY24" device="QFN"/>
 <part name="(7,1)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(7,2)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(7,3)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C33" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C34" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C35" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C33" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C34" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C35" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="(7,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(7,5)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C36" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C37" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C36" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C37" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG7" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="AT8" library="nonolith" deviceset="ATTINY24" device="QFN"/>
 <part name="(8,1)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(8,2)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(8,3)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C38" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C39" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C40" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C38" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C39" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C40" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="(8,4)" library="nonolith" deviceset="MPL115A" device=""/>
 <part name="(8,5)" library="nonolith" deviceset="MPL115A" device=""/>
-<part name="C41" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C42" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C41" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C42" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG8" library="nonolith" deviceset="HEADER-2X3" device=""/>
 </parts>
 <sheets>
@@ -1933,7 +1933,7 @@ Parts Updated:
 <plain>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="76.2" y="43.18" rot="R180"/>
+<instance part="XM1" gate="G$1" x="76.2" y="43.18" rot="R180"/>
 <instance part="CN1" gate="G$1" x="10.16" y="7.62"/>
 <instance part="3.3V" gate="G$1" x="15.24" y="38.1" rot="R180"/>
 <instance part="C10" gate="G$1" x="12.7" y="60.96"/>
@@ -1956,16 +1956,16 @@ Parts Updated:
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="GND@4"/>
+<pinref part="XM1" gate="G$1" pin="GND@4"/>
 <wire x1="45.72" y1="81.28" x2="43.18" y2="81.28" width="0" layer="91"/>
 <wire x1="43.18" y1="81.28" x2="43.18" y2="78.74" width="0" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND@3"/>
+<pinref part="XM1" gate="G$1" pin="GND@3"/>
 <wire x1="45.72" y1="78.74" x2="43.18" y2="78.74" width="0" layer="91"/>
 <wire x1="43.18" y1="78.74" x2="43.18" y2="76.2" width="0" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND@2"/>
+<pinref part="XM1" gate="G$1" pin="GND@2"/>
 <wire x1="45.72" y1="76.2" x2="43.18" y2="76.2" width="0" layer="91"/>
 <wire x1="43.18" y1="76.2" x2="43.18" y2="73.66" width="0" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND@1"/>
+<pinref part="XM1" gate="G$1" pin="GND@1"/>
 <pinref part="3.3V" gate="G$1" pin="GND"/>
 <wire x1="45.72" y1="73.66" x2="43.18" y2="73.66" width="0" layer="91"/>
 <wire x1="43.18" y1="73.66" x2="33.02" y2="73.66" width="0" layer="91"/>
@@ -2015,16 +2015,16 @@ Parts Updated:
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="VCC@3"/>
+<pinref part="XM1" gate="G$1" pin="VCC@3"/>
 <wire x1="45.72" y1="63.5" x2="43.18" y2="63.5" width="0" layer="91"/>
 <wire x1="43.18" y1="63.5" x2="43.18" y2="60.96" width="0" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VCC@2"/>
+<pinref part="XM1" gate="G$1" pin="VCC@2"/>
 <wire x1="45.72" y1="60.96" x2="43.18" y2="60.96" width="0" layer="91"/>
 <wire x1="43.18" y1="60.96" x2="43.18" y2="58.42" width="0" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VCC@1"/>
+<pinref part="XM1" gate="G$1" pin="VCC@1"/>
 <wire x1="45.72" y1="58.42" x2="43.18" y2="58.42" width="0" layer="91"/>
 <wire x1="43.18" y1="58.42" x2="43.18" y2="50.8" width="0" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="AVCC"/>
+<pinref part="XM1" gate="G$1" pin="AVCC"/>
 <wire x1="45.72" y1="50.8" x2="43.18" y2="50.8" width="0" layer="91"/>
 <wire x1="43.18" y1="50.8" x2="33.02" y2="50.8" width="0" layer="91"/>
 <wire x1="33.02" y1="50.8" x2="22.86" y2="50.8" width="0" layer="91"/>
@@ -2080,7 +2080,7 @@ Parts Updated:
 <pinref part="CN1" gate="G$1" pin="D+"/>
 <wire x1="20.32" y1="10.16" x2="30.48" y2="10.16" width="0" layer="91"/>
 <wire x1="30.48" y1="10.16" x2="30.48" y2="25.4" width="0" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="TXD1/USB+/PD7"/>
+<pinref part="XM1" gate="G$1" pin="TXD1/USB+/PD7"/>
 <wire x1="30.48" y1="25.4" x2="45.72" y2="25.4" width="0" layer="91"/>
 <label x="38.1" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -2090,14 +2090,14 @@ Parts Updated:
 <pinref part="CN1" gate="G$1" pin="D-"/>
 <wire x1="20.32" y1="7.62" x2="33.02" y2="7.62" width="0" layer="91"/>
 <wire x1="33.02" y1="7.62" x2="33.02" y2="22.86" width="0" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="RXD1/MISO/USB-/PD6"/>
+<pinref part="XM1" gate="G$1" pin="RXD1/MISO/USB-/PD6"/>
 <wire x1="33.02" y1="22.86" x2="45.72" y2="22.86" width="0" layer="91"/>
 <label x="38.1" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PR1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PR1/XTAL1"/>
+<pinref part="XM1" gate="G$1" pin="PR1/XTAL1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="81.28" x2="111.76" y2="81.28" width="0" layer="91"/>
 </segment>
@@ -2116,7 +2116,7 @@ Parts Updated:
 </net>
 <net name="BOOTLOAD" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PR0/XTAL2"/>
+<pinref part="XM1" gate="G$1" pin="PR0/XTAL2"/>
 <wire x1="106.68" y1="76.2" x2="111.76" y2="76.2" width="0" layer="91"/>
 <label x="111.76" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -2128,7 +2128,7 @@ Parts Updated:
 </net>
 <net name="PDI-DATA" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PDI-DATA"/>
+<pinref part="XM1" gate="G$1" pin="PDI-DATA"/>
 <wire x1="106.68" y1="68.58" x2="111.76" y2="68.58" width="0" layer="91"/>
 <label x="111.76" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -2140,7 +2140,7 @@ Parts Updated:
 </net>
 <net name="PDI-CLK" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RESET/PDI-CLK"/>
+<pinref part="XM1" gate="G$1" pin="RESET/PDI-CLK"/>
 <wire x1="106.68" y1="2.54" x2="111.76" y2="2.54" width="0" layer="91"/>
 <label x="111.76" y="2.54" size="1.778" layer="95"/>
 </segment>
@@ -2167,7 +2167,7 @@ Parts Updated:
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PC1/OC0B/XCK0/SCL"/>
+<pinref part="XM1" gate="G$1" pin="PC1/OC0B/XCK0/SCL"/>
 <wire x1="106.68" y1="48.26" x2="114.3" y2="48.26" width="0" layer="91"/>
 <label x="109.22" y="48.26" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -2178,7 +2178,7 @@ Parts Updated:
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PC0/OC0A/SDA"/>
+<pinref part="XM1" gate="G$1" pin="PC0/OC0A/SDA"/>
 <label x="109.22" y="45.72" size="1.778" layer="95"/>
 <wire x1="106.68" y1="45.72" x2="119.38" y2="45.72" width="0" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -2189,7 +2189,7 @@ Parts Updated:
 </net>
 <net name="PE0" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="OC0A/SDA/PE0"/>
+<pinref part="XM1" gate="G$1" pin="OC0A/SDA/PE0"/>
 <wire x1="45.72" y1="33.02" x2="43.18" y2="33.02" width="0" layer="91"/>
 <label x="43.18" y="33.02" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -2202,7 +2202,7 @@ Parts Updated:
 </net>
 <net name="PE1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="XCK0/OC0B/SCL/PE1"/>
+<pinref part="XM1" gate="G$1" pin="XCK0/OC0B/SCL/PE1"/>
 <wire x1="45.72" y1="35.56" x2="43.18" y2="35.56" width="0" layer="91"/>
 <label x="43.18" y="35.56" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -2214,7 +2214,7 @@ Parts Updated:
 </net>
 <net name="PE2" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RXD0/OC0C/PE2"/>
+<pinref part="XM1" gate="G$1" pin="RXD0/OC0C/PE2"/>
 <wire x1="45.72" y1="38.1" x2="43.18" y2="38.1" width="0" layer="91"/>
 <label x="43.18" y="38.1" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -2226,7 +2226,7 @@ Parts Updated:
 </net>
 <net name="PE3" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="TXD0/OC0D/PE3"/>
+<pinref part="XM1" gate="G$1" pin="TXD0/OC0D/PE3"/>
 <wire x1="45.72" y1="40.64" x2="43.18" y2="40.64" width="0" layer="91"/>
 <label x="43.18" y="40.64" size="1.778" layer="95" rot="R180"/>
 </segment>
