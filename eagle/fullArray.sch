@@ -1376,7 +1376,7 @@ Miniature Digital Barometer&lt;br&gt;&lt;br&gt;
 <gate name="G$1" symbol="ATTINY24" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MMH" package="QFN-20">
+<device name="MH" package="QFN-20">
 <connects>
 <connect gate="G$1" pin="GND" pad="8"/>
 <connect gate="G$1" pin="GND@0" pad="0"/>
@@ -1831,7 +1831,7 @@ Parts Updated:
 <part name="SDA" library="nonolith" deviceset="HEADER-1X1" device="2MM"/>
 <part name="JP1" library="nonolith" deviceset="HEADER-1X1" device="2MM"/>
 <part name="JP2" library="nonolith" deviceset="HEADER-1X1" device="2MM"/>
-<part name="AT1" library="nonolith" deviceset="ATTINYX4A" device="MMH"/>
+<part name="AT1" library="nonolith" deviceset="ATTINYX4A" device="MH"/>
 <part name="(1,1)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(1,2)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(1,3)" library="nonolith" deviceset="MPL115A2" device=""/>
@@ -1843,7 +1843,7 @@ Parts Updated:
 <part name="C3" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C4" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG1" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="AT2" library="nonolith" deviceset="ATTINYX4A" device="MMH"/>
+<part name="AT2" library="nonolith" deviceset="ATTINYX4A" device="MH"/>
 <part name="(2,1)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(2,2)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(2,3)" library="nonolith" deviceset="MPL115A2" device=""/>
@@ -1855,7 +1855,7 @@ Parts Updated:
 <part name="C8" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C9" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG2" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="AT3" library="nonolith" deviceset="ATTINYX4A" device="MMH"/>
+<part name="AT3" library="nonolith" deviceset="ATTINYX4A" device="MH"/>
 <part name="(3,1)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(3,2)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(3,3)" library="nonolith" deviceset="MPL115A2" device=""/>
@@ -1867,7 +1867,7 @@ Parts Updated:
 <part name="C16" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C17" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG3" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="AT4" library="nonolith" deviceset="ATTINYX4A" device="MMH"/>
+<part name="AT4" library="nonolith" deviceset="ATTINYX4A" device="MH"/>
 <part name="(4,1)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(4,2)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(4,3)" library="nonolith" deviceset="MPL115A2" device=""/>
@@ -1879,7 +1879,7 @@ Parts Updated:
 <part name="C21" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C22" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG4" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="AT5" library="nonolith" deviceset="ATTINYX4A" device="MMH"/>
+<part name="AT5" library="nonolith" deviceset="ATTINYX4A" device="MH"/>
 <part name="(5,1)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(5,2)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(5,3)" library="nonolith" deviceset="MPL115A2" device=""/>
@@ -1891,7 +1891,7 @@ Parts Updated:
 <part name="C26" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C27" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG5" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="AT6" library="nonolith" deviceset="ATTINYX4A" device="MMH"/>
+<part name="AT6" library="nonolith" deviceset="ATTINYX4A" device="MH"/>
 <part name="(6,1)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(6,2)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(6,3)" library="nonolith" deviceset="MPL115A2" device=""/>
@@ -1903,7 +1903,7 @@ Parts Updated:
 <part name="C31" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C32" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG6" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="AT7" library="nonolith" deviceset="ATTINYX4A" device="MMH"/>
+<part name="AT7" library="nonolith" deviceset="ATTINYX4A" device="MH"/>
 <part name="(7,1)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(7,2)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(7,3)" library="nonolith" deviceset="MPL115A2" device=""/>
@@ -1915,7 +1915,7 @@ Parts Updated:
 <part name="C36" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C37" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG7" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="AT8" library="nonolith" deviceset="ATTINYX4A" device="MMH"/>
+<part name="AT8" library="nonolith" deviceset="ATTINYX4A" device="MH"/>
 <part name="(8,1)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(8,2)" library="nonolith" deviceset="MPL115A2" device=""/>
 <part name="(8,3)" library="nonolith" deviceset="MPL115A2" device=""/>

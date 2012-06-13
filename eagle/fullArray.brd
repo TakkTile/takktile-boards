@@ -2187,7 +2187,7 @@ design rules under a new name.</description>
 <element name="JP2" library="nonolith" package="1X01_2MM" value="" x="-1" y="13.5" smashed="yes">
 <attribute name="VALUE" x="-2.27" y="10.325" size="1.27" layer="27"/>
 </element>
-<element name="AT1" library="nonolith" package="QFN-20" value="ATTINYX4AMMH" x="-6.213" y="18.486" rot="MR90"/>
+<element name="AT1" library="nonolith" package="QFN-20" value="ATTINYX4AMH" x="-6.213" y="18.486" rot="MR90"/>
 <element name="(1,1)" library="nonolith" package="LGA-8" value="MPL115A2" x="-17.5" y="18.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-18.516" y="15" size="0.75" layer="25" font="vector"/>
 </element>
@@ -2212,7 +2212,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.849" y="15" size="0.75" layer="25" ratio="10"/>
 <attribute name="VALUE" x="19.31" y="22.945" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="AT2" library="nonolith" package="QFN-20" value="ATTINYX4AMMH" x="-6.213" y="24.486" rot="MR90"/>
+<element name="AT2" library="nonolith" package="QFN-20" value="ATTINYX4AMH" x="-6.213" y="24.486" rot="MR90"/>
 <element name="(2,1)" library="nonolith" package="LGA-8" value="MPL115A2" x="-17.5" y="24.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-18.516" y="21" size="0.75" layer="25" font="vector"/>
 </element>
@@ -2237,7 +2237,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.849" y="21" size="0.75" layer="25" ratio="10"/>
 <attribute name="VALUE" x="19.31" y="28.945" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="AT3" library="nonolith" package="QFN-20" value="ATTINYX4AMMH" x="-6.213" y="30.486" rot="MR90"/>
+<element name="AT3" library="nonolith" package="QFN-20" value="ATTINYX4AMH" x="-6.213" y="30.486" rot="MR90"/>
 <element name="(3,1)" library="nonolith" package="LGA-8" value="MPL115A2" x="-17.5" y="30.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-18.516" y="27" size="0.75" layer="25" font="vector"/>
 </element>
@@ -2262,7 +2262,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.849" y="27" size="0.75" layer="25" ratio="10"/>
 <attribute name="VALUE" x="19.31" y="34.945" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="AT4" library="nonolith" package="QFN-20" value="ATTINYX4AMMH" x="-6.213" y="36.486" rot="MR90"/>
+<element name="AT4" library="nonolith" package="QFN-20" value="ATTINYX4AMH" x="-6.213" y="36.486" rot="MR90"/>
 <element name="(4,1)" library="nonolith" package="LGA-8" value="MPL115A2" x="-17.5" y="36.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-18.516" y="33" size="0.75" layer="25" font="vector"/>
 </element>
@@ -2287,7 +2287,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.849" y="33" size="0.75" layer="25" ratio="10"/>
 <attribute name="VALUE" x="19.31" y="40.945" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="AT5" library="nonolith" package="QFN-20" value="ATTINYX4AMMH" x="-6.213" y="42.486" rot="MR90"/>
+<element name="AT5" library="nonolith" package="QFN-20" value="ATTINYX4AMH" x="-6.213" y="42.486" rot="MR90"/>
 <element name="(5,1)" library="nonolith" package="LGA-8" value="MPL115A2" x="-17.5" y="42.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-18.516" y="39" size="0.75" layer="25" font="vector"/>
 </element>
@@ -2312,7 +2312,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.849" y="39" size="0.75" layer="25" ratio="10"/>
 <attribute name="VALUE" x="19.31" y="46.945" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="AT6" library="nonolith" package="QFN-20" value="ATTINYX4AMMH" x="-6.213" y="48.486" rot="MR90"/>
+<element name="AT6" library="nonolith" package="QFN-20" value="ATTINYX4AMH" x="-6.213" y="48.486" rot="MR90"/>
 <element name="(6,1)" library="nonolith" package="LGA-8" value="MPL115A2" x="-17.5" y="48.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-18.516" y="45" size="0.75" layer="25" font="vector"/>
 </element>
@@ -2337,7 +2337,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.849" y="45" size="0.75" layer="25" ratio="10"/>
 <attribute name="VALUE" x="19.31" y="52.945" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="AT7" library="nonolith" package="QFN-20" value="ATTINYX4AMMH" x="-6.213" y="54.486" rot="MR90"/>
+<element name="AT7" library="nonolith" package="QFN-20" value="ATTINYX4AMH" x="-6.213" y="54.486" rot="MR90"/>
 <element name="(7,1)" library="nonolith" package="LGA-8" value="MPL115A2" x="-17.5" y="54.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-18.516" y="51" size="0.75" layer="25" font="vector"/>
 </element>
@@ -2362,7 +2362,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.849" y="51" size="0.75" layer="25" ratio="10"/>
 <attribute name="VALUE" x="19.31" y="58.945" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="AT8" library="nonolith" package="QFN-20" value="ATTINYX4AMMH" x="-6.213" y="60.486" rot="MR90"/>
+<element name="AT8" library="nonolith" package="QFN-20" value="ATTINYX4AMH" x="-6.213" y="60.486" rot="MR90"/>
 <element name="(8,1)" library="nonolith" package="LGA-8" value="MPL115A2" x="-17.5" y="60.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-18.516" y="57" size="0.75" layer="25" font="vector"/>
 </element>
