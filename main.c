@@ -1,6 +1,6 @@
 // (C) 2012 Biorobotics Lab and Nonolith Labs
-// Written by Ian Daniher, based off usiTwiSlave.c by Donald R. Blake
-// Licensed under the terms of the GNU GPLv3+
+// written by Ian Daniher, based off usiTwiSlave.c by Donald R. Blake
+// licensed under the terms of the GNU GPLv3+
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -15,12 +15,6 @@
 #define ADDR1 1 << PB1
 #define ADDR2 1 << PB2
 
-/*
-	DDRA - port direction configuration
-	PORTA - port output configuration
-	PINA - port status
-*/
-
 typedef enum
 {
 	USI_SLAVE_CHECK_ADDRESS	= 0x00,
@@ -33,12 +27,7 @@ uint8_t slaveAddress;
 
 void usiTwiSlaveInit( void ) {
 
-	// In Two Wire mode (USIWM1, USIWM0 = 1X), the slave USI will pull SCL
-	// low when a start condition is detected or a counter overflow (only
-	// for USIWM1, USIWM0 = 11).	This inserts a wait state.	SCL is released
-	// by the ISRs (USI_START_vect and USI_OVERFLOW_vect).
-
-	// Set SCL and SDA as output
+	// set SCL and SDA as output
 	SDA_DDR |= ( 1 << SDA_BIT );
 	SCL_DDR |= ( 1 << SCL_BIT );
 
@@ -79,11 +68,6 @@ ISR( USI_STR_vect ) {
 	// set SDA as input
 	SDA_DDR &= ~( 1 << SDA_BIT );
 
-	// wait for SCL to go low to ensure the Start Condition has completed (the
-	// start detector will hold SCL low ) - if a Stop Condition arises then leave
-	// the interrupt to prevent waiting forever - don't use USISR to test for Stop
-	// Condition as in Application Note AVR312 because the Stop Condition Flag is
-	// going to be set from the last TWI sequence
 	while (
 			// SCL is high
 			( SCL_PIN & ( 1 << SCL_BIT ) ) &&
@@ -103,7 +87,7 @@ ISR( USI_STR_vect ) {
 				( 1 << USIOIE ) |
 				// set USI in Two-wire mode, hold SCL low on USI Counter overflow
 				( 1 << USIWM1 ) | ( 1 << USIWM0 ) |
-				// Shift Register Clock Source = External, positive edge
+				// shift Register Clock Source = External, positive edge
 				// 4-Bit Counter Source = external, both edges
 				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
 				// no toggle clock-port pin
@@ -120,7 +104,7 @@ ISR( USI_STR_vect ) {
 				( 0 << USIOIE ) |
 				// set USI in Two-wire mode, no USI Counter overflow hold
 				( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-				// Shift Register Clock Source = external, positive edge
+				// shift Register Clock Source = external, positive edge
 				// 4-Bit Counter Source = external, both edges
 				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
 				// no toggle clock-port pin
@@ -177,14 +161,14 @@ ISR( USI_OVF_vect ) {
 			// SDA as input
 			SDA_DDR &= ~( 1 << SDA_BIT );
 			USICR =
-				/* enable Start Condition Interrupt, disable Overflow Interrupt */
+				// enable Start Condition Interrupt, disable Overflow Interrupt
 				( 1 << USISIE ) | ( 0 << USIOIE ) |
-				/* set USI in Two-wire mode, no USI Counter overflow hold */
+				// set USI in Two-wire mode, no USI Counter overflow hold
 				( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-				/* Shift Register Clock Source = External, positive edge */
-				/* 4-Bit Counter Source = external, both edges */
+				// shift Register Clock Source = External, positive edge
+				// 4-Bit Counter Source = external, both edges
 				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
-				/* no toggle clock-port pin */
+				// no toggle clock-port pin
 				( 0 << USITC );
 			// reset all interrupt flags but start condition
 			// set USI to shift out one bit
