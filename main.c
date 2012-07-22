@@ -24,6 +24,7 @@ typedef enum
 static volatile overflowState_t overflowState;
 
 uint8_t slaveAddress;
+uint8_t ADDR;
 
 void usiTwiSlaveInit( void ) {
 
@@ -124,12 +125,14 @@ ISR( USI_STR_vect ) {
 
 ISR( USI_OVF_vect ) {
 
+	ADDR = USIDR;
+
 	switch ( overflowState ) {
 
 		case USI_SLAVE_CHECK_ADDRESS:
-			if ( (USIDR&0xF0) == (slaveAddress&0xF0) ) {
+			if ( (ADDR&0xF0) == (slaveAddress&0xF0) ) {
 				// pin bit position determined by LSB1..3 inclusive
-				uint8_t pin_bp = (USIDR & 0x0F) >> 1;
+				uint8_t pin_bp = (ADDR & 0x0F) >> 1;
 				// pin bitmask defaults to 1 << pin_bp
 				uint8_t pin_bm = 1 << pin_bp;
 				// if you're theoretically writing the state of the "sixth" sensor, set the bitmask to match all of them
@@ -137,7 +140,7 @@ ISR( USI_OVF_vect ) {
 				// RST4 is actually located at PA5
 				if ( pin_bp == 4 ) pin_bm = 0x20; 
 				// inverted logic - if transaction is a "read", disable the corresponding sensor
-				if ( USIDR & 0x01 ) PORTA &= ~pin_bm;
+				if ( ADDR & 0x01 ) PORTA &= ~pin_bm;
 				// otherwise, enable it
 				else PORTA |= pin_bm;
 				// prep ACK
