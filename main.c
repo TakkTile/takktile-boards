@@ -24,7 +24,6 @@ typedef enum
 static volatile overflowState_t overflowState;
 
 uint8_t slaveAddress;
-uint8_t ADDR;
 
 void usiTwiSlaveInit( void ) {
 
@@ -41,18 +40,17 @@ void usiTwiSlaveInit( void ) {
 	// set SDA as input
 	SDA_DDR &= ~( 1 << SDA_BIT );
 
-	USICR =
-			 // enable Start Condition Interrupt
-			 ( 1 << USISIE ) |
-			 // disable Overflow Interrupt
-			 ( 0 << USIOIE ) |
-			 // set USI in Two-wire mode, no USI Counter overflow hold
-			 ( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-			 // shift Register Clock Source = external, positive edge
-			 // 4-Bit Counter Source = external, both edges
-			 ( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
-			 // no toggle clock-port pin
-			 ( 0 << USITC );
+	// enable Start Condition Interrupt
+	// disable Overflow Interrupt
+	// set USI in Two-wire mode, no USI Counter overflow hold
+	// shift Register Clock Source = external, positive edge
+	// 4-Bit Counter Source = external, both edges
+	// no toggle clock-port pin
+	USICR = ( 1 << USISIE ) |
+			( 0 << USIOIE ) |
+			( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
+			( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
+			( 0 << USITC );
 
 	// clear all interrupt flags and reset overflow counter
 
@@ -69,55 +67,48 @@ ISR( USI_STR_vect ) {
 	// set SDA as input
 	SDA_DDR &= ~( 1 << SDA_BIT );
 
-	while (
-			// SCL is high
-			( SCL_PIN & ( 1 << SCL_BIT ) ) &&
-			// and SDA is low
-			!( ( SDA_PIN & ( 1 << SDA_BIT ) ) )
-	);
+	// wait for SCL to be high and SDA to be low
+	while ( ( SCL_PIN & ( 1 << SCL_BIT ) ) && !( ( SDA_PIN & ( 1 << SDA_BIT ) ) ) );
 
 
 	if ( !( SDA_PIN & ( 1 << SDA_BIT ) ) ) {
 
 		// a Stop Condition did not occur
 
-		USICR =
-				// keep Start Condition Interrupt enabled to detect RESTART
-				( 1 << USISIE ) |
+		// keep Start Condition Interrupt enabled to detect RESTART
 				// enable Overflow Interrupt
-				( 1 << USIOIE ) |
 				// set USI in Two-wire mode, hold SCL low on USI Counter overflow
-				( 1 << USIWM1 ) | ( 1 << USIWM0 ) |
 				// shift Register Clock Source = External, positive edge
 				// 4-Bit Counter Source = external, both edges
-				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
 				// no toggle clock-port pin
+		USICR = ( 1 << USISIE ) |
+				( 1 << USIOIE ) |
+				( 1 << USIWM1 ) | ( 1 << USIWM0 ) |
+				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
 				( 0 << USITC );
 
 	}
 	else {
 
 		// a Stop Condition did occur
-		USICR =
-				// enable Start Condition Interrupt
-				( 1 << USISIE ) |
-				// disable Overflow Interrupt
+		// enable Start Condition Interrupt
+		// disable Overflow Interrupt
+		// set USI in Two-wire mode, no USI Counter overflow hold
+		// shift Register Clock Source = external, positive edge
+		// 4-Bit Counter Source = external, both edges
+		// no toggle clock-port pin
+		USICR = ( 1 << USISIE ) |
 				( 0 << USIOIE ) |
-				// set USI in Two-wire mode, no USI Counter overflow hold
 				( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-				// shift Register Clock Source = external, positive edge
-				// 4-Bit Counter Source = external, both edges
 				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
-				// no toggle clock-port pin
 				( 0 << USITC );
 
-	} // end if
+	}
 
-	USISR =
-			// clear interrupt flags - resetting the Start Condition Flag will release SCL
-			( 1 << USISIF ) | ( 1 << USIOIF ) |
+	// clear interrupt flags - resetting the Start Condition Flag will release SCL
+	// set USI to sample 8 bits (count 16 external SCL pin toggles)
+	USISR = ( 1 << USISIF ) | ( 1 << USIOIF ) |
 			( 1 << USIPF ) |( 1 << USIDC ) |
-			// set USI to sample 8 bits (count 16 external SCL pin toggles)
 			( 0x0 << USICNT0);
 
 }
@@ -125,12 +116,13 @@ ISR( USI_STR_vect ) {
 
 ISR( USI_OVF_vect ) {
 
-	ADDR = USIDR;
-
 	switch ( overflowState ) {
 
-		case USI_SLAVE_CHECK_ADDRESS:
-			if ( (ADDR&0xF0) == (slaveAddress&0xF0) ) {
+		case USI_SLAVE_CHECK_ADDRESS: {
+
+			uint8_t ADDR = USIDR;
+			
+			if ( ( ADDR == 0x0E ) || ( (ADDR&0xF0) == (slaveAddress&0xF0) ) ) {
 				// pin bit position determined by LSB1..3 inclusive
 				uint8_t pin_bp = (ADDR & 0x0F) >> 1;
 				// pin bitmask defaults to 1 << pin_bp
@@ -156,26 +148,30 @@ ISR( USI_OVF_vect ) {
 				overflowState = USI_SLAVE_END_TRX;
 				return;
 			}
+			}
 			break;
 
-		case USI_SLAVE_END_TRX:
+		case USI_SLAVE_END_TRX: {
 			// next time overflow interrupt trips, check the address
 			overflowState = USI_SLAVE_CHECK_ADDRESS; 
 			// SDA as input
 			SDA_DDR &= ~( 1 << SDA_BIT );
-			USICR =
-				// enable Start Condition Interrupt, disable Overflow Interrupt
-				( 1 << USISIE ) | ( 0 << USIOIE ) |
-				// set USI in Two-wire mode, no USI Counter overflow hold
+
+			// enable Start Condition Interrupt, disable Overflow Interrupt
+			// set USI in Two-wire mode, no USI Counter overflow hold
+			// shift Register Clock Source = External, positive edge
+			// 4-Bit Counter Source = external, both edges
+			// no toggle clock-port pin
+
+			USICR = ( 1 << USISIE ) | ( 0 << USIOIE ) |
 				( 1 << USIWM1 ) | ( 0 << USIWM0 ) |
-				// shift Register Clock Source = External, positive edge
-				// 4-Bit Counter Source = external, both edges
 				( 1 << USICS1 ) | ( 0 << USICS0 ) | ( 0 << USICLK ) |
-				// no toggle clock-port pin
 				( 0 << USITC );
+
 			// reset all interrupt flags but start condition
 			// set USI to shift out one bit
 			USISR = ( 0 << USISIF ) | ( 1 << USIOIF ) | ( 1 << USIPF ) | ( 1 << USIDC ) | ( 0x0 << USICNT0 );
+			}
 			break;
 
 	} 
@@ -183,6 +179,7 @@ ISR( USI_OVF_vect ) {
 }
 
 int main(void) {
+
 	// disable all MPL115A2 sensors
 	DDRA |= RST0 | RST1 | RST2 | RST3 | RST4; 
 	PORTA &= ~(RST0 | RST1 | RST2 | RST3 | RST4);
@@ -195,6 +192,7 @@ int main(void) {
 
 	// calculate slaveAddress from state of ADDR pins
 	slaveAddress = (PINA & ADDR3) << 3 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
+	slaveAddress -= 1;
 	slaveAddress <<= 4;
 
 	// enable interupts	
