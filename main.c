@@ -189,7 +189,7 @@ int main(void) {
 	PORTB |= ADDR0 | ADDR1 | ADDR2;
 
 	// calculate slaveAddress from state of ADDR pins
-	slaveAddress = (PINA & ADDR3) << 3 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
+	slaveAddress = (PINA & ADDR3) >> 3 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
 	slaveAddress -= 1;
 	slaveAddress <<= 4;
 
