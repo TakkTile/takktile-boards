@@ -70,17 +70,15 @@ ISR( USI_STR_vect ) {
 	// wait for SCL to be high and SDA to be low
 	while ( ( SCL_PIN & ( 1 << SCL_BIT ) ) && !( ( SDA_PIN & ( 1 << SDA_BIT ) ) ) );
 
-
+	// a stop condition did not occur
 	if ( !( SDA_PIN & ( 1 << SDA_BIT ) ) ) {
 
-		// a Stop Condition did not occur
-
 		// keep Start Condition Interrupt enabled to detect RESTART
-				// enable Overflow Interrupt
-				// set USI in Two-wire mode, hold SCL low on USI Counter overflow
-				// shift Register Clock Source = External, positive edge
-				// 4-Bit Counter Source = external, both edges
-				// no toggle clock-port pin
+		// enable Overflow Interrupt
+		// set USI in Two-wire mode, hold SCL low on USI Counter overflow
+		// shift Register Clock Source = External, positive edge
+		// 4-Bit Counter Source = external, both edges
+		// no toggle clock-port pin
 		USICR = ( 1 << USISIE ) |
 				( 1 << USIOIE ) |
 				( 1 << USIWM1 ) | ( 1 << USIWM0 ) |
@@ -88,9 +86,9 @@ ISR( USI_STR_vect ) {
 				( 0 << USITC );
 
 	}
+	// a stop condition did occur
 	else {
 
-		// a Stop Condition did occur
 		// enable Start Condition Interrupt
 		// disable Overflow Interrupt
 		// set USI in Two-wire mode, no USI Counter overflow hold
