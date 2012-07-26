@@ -120,7 +120,7 @@ ISR( USI_OVF_vect ) {
 
 			uint8_t ADDR = USIDR;
 			
-			if ( ( ADDR == (0x0C|0x0D) ) || (( (ADDR&0xF0) == (slaveAddress&0xF0) )&&(ADDR < 0x0A))) {
+			if ( ( ADDR == 0x0C ) || (ADDR == 0x0D) || (( (ADDR&0xF0) == (slaveAddress&0xF0) )&&(ADDR < 0x0A))) {
 				// pin bit position determined by LSB1..3 inclusive
 				uint8_t pin_bp = (ADDR & 0x0F) >> 1;
 				// pin bitmask defaults to 1 << pin_bp
