@@ -1,24 +1,24 @@
-DEVICE  = attiny24a
+DEVICE  = attiny44a
 F_CPU   = 8000000 #
 FUSE_L  = 0xC2# internal 8MHz oscillator running ATTINY at 8MHz
 FUSE_H  = 0xDF# SPI programming enabled
-AVRDUDE = avrdude -c avrispmkII -P usb -p attiny24
+AVRDUDE = avrdude -c avrispmkII -P usb -p attiny44
 
 
 CFLAGS  =  -I. -DDEBUG_LEVEL=0
 OBJECTS = main.o 
 
-COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
+COMPILE = avr-gcc -g -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
 COMPILEPP = avr-g++ -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
+
+hex: main.hex
 
 # symbolic targets:
 help:
-	@echo "This Makefile has no default rule. Use one of the following:"
 	@echo "make hex ....... to build main.hex"
 	@echo "make program ... to flash fuses and firmware"
 	@echo "make clean ..... to delete objects and hex file"
 
-hex: main.hex
 
 # flash fuses and program firmware
 program: main.hex 
