@@ -2501,7 +2501,8 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <part name="C41" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="C42" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="PROG8" library="nonolith" deviceset="HEADER-2X3" device=""/>
-<part name="C43" library="microbuilder" deviceset="CAP_TANTALUM" device="D/7343_REFLOW"/>
+<part name="C43" library="microbuilder" deviceset="CAP_TANTALUM" device="D/7343_REFLOW" value="470uF"/>
+<part name="C44" library="nonolith" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -2526,6 +2527,7 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <instance part="JP1" gate="G$1" x="124.46" y="43.18" rot="R180"/>
 <instance part="JP2" gate="G$1" x="124.46" y="40.64" rot="R180"/>
 <instance part="C43" gate="G$1" x="-5.08" y="38.1" rot="R180"/>
+<instance part="C44" gate="G$1" x="22.86" y="27.94" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2592,6 +2594,11 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="127" y1="43.18" x2="132.08" y2="43.18" width="0" layer="91"/>
 <label x="132.08" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C44" gate="G$1" pin="P$1"/>
+<wire x1="22.86" y1="22.86" x2="20.32" y2="22.86" width="0" layer="91"/>
+<label x="20.32" y="22.86" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -2738,10 +2745,14 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <segment>
 <pinref part="3.3V" gate="G$1" pin="VIN"/>
 <wire x1="25.4" y1="38.1" x2="27.94" y2="38.1" width="0" layer="91"/>
-<wire x1="27.94" y1="38.1" x2="27.94" y2="12.7" width="0" layer="91"/>
+<wire x1="27.94" y1="38.1" x2="27.94" y2="30.48" width="0" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="VBUS"/>
+<wire x1="27.94" y1="30.48" x2="27.94" y2="12.7" width="0" layer="91"/>
 <wire x1="27.94" y1="12.7" x2="20.32" y2="12.7" width="0" layer="91"/>
 <label x="27.94" y="38.1" size="1.778" layer="95"/>
+<pinref part="C44" gate="G$1" pin="P$2"/>
+<wire x1="22.86" y1="30.48" x2="27.94" y2="30.48" width="0" layer="91"/>
+<junction x="27.94" y="30.48"/>
 </segment>
 <segment>
 <pinref part="DAISY" gate="A" pin="6"/>
