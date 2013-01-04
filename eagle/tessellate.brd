@@ -413,22 +413,22 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="UC0" library="nonolith" package="QFN20" value="ATTINY24QFN" x="13.287" y="2.986" rot="MR90"/>
-<element name="0" library="nonolith" package="LGA-8" value="MPL115A" x="2" y="3" smashed="yes" rot="R180">
+<element name="1" library="nonolith" package="LGA-8" value="MPL115A" x="2" y="3" smashed="yes" rot="R180">
 <attribute name="NAME" x="0.984" y="-0.5" size="0.75" layer="25" font="vector"/>
 </element>
-<element name="1" library="nonolith" package="LGA-8" value="MPL115A" x="8" y="3" smashed="yes">
+<element name="2" library="nonolith" package="LGA-8" value="MPL115A" x="8" y="3" smashed="yes">
 <attribute name="NAME" x="7.238" y="-0.5" size="0.75" layer="25" font="vector"/>
 </element>
-<element name="2" library="nonolith" package="LGA-8" value="MPL115A" x="14" y="3" smashed="yes" rot="R180">
+<element name="3" library="nonolith" package="LGA-8" value="MPL115A" x="14" y="3" smashed="yes" rot="R180">
 <attribute name="NAME" x="12.984" y="-0.373" size="0.75" layer="25" font="vector"/>
 </element>
 <element name="C0" library="nonolith" package="0402" value="" x="2" y="3" smashed="yes" rot="MR90"/>
 <element name="C1" library="nonolith" package="0402" value="" x="7.18" y="3.096" smashed="yes" rot="MR270"/>
 <element name="C2" library="nonolith" package="0402" value="" x="17.007" y="2.619" smashed="yes" rot="MR90"/>
-<element name="3" library="nonolith" package="LGA-8" value="MPL115A" x="20" y="3" smashed="yes">
+<element name="4" library="nonolith" package="LGA-8" value="MPL115A" x="20" y="3" smashed="yes">
 <attribute name="NAME" x="19.238" y="-0.5" size="0.75" layer="25" font="vector"/>
 </element>
-<element name="4" library="nonolith" package="LGA-8" value="MPL115A" x="26" y="3" smashed="yes" rot="R180">
+<element name="5" library="nonolith" package="LGA-8" value="MPL115A" x="26" y="3" smashed="yes" rot="R180">
 <attribute name="NAME" x="25.111" y="-0.5" size="0.75" layer="25" font="vector"/>
 </element>
 <element name="C3" library="nonolith" package="0402" value="" x="18.843" y="2.842" smashed="yes" rot="MR270"/>
@@ -438,7 +438,7 @@ Please make sure your boards conform to these design rules.</description>
 <signals>
 <signal name="CAP20">
 <contactref element="C2" pad="1"/>
-<contactref element="2" pad="2"/>
+<contactref element="3" pad="2"/>
 <wire x1="16.755" y1="2.023" x2="17.018" y2="1.778" width="0.254" layer="16"/>
 <via x="17.018" y="1.778" extent="1-16" drill="0.305" shape="octagon"/>
 <wire x1="16.755" y1="2.023" x2="16.9" y2="1.896" width="0.254" layer="16"/>
@@ -454,7 +454,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.456" y1="2.375" x2="15.2" y2="2.375" width="0.254" layer="1"/>
 </signal>
 <signal name="CAP30">
-<contactref element="3" pad="2"/>
+<contactref element="4" pad="2"/>
 <contactref element="C3" pad="1"/>
 <via x="18.796" y="3.429" extent="1-16" drill="0.305" shape="octagon"/>
 <wire x1="18.796" y1="3.629" x2="18.8" y2="3.625" width="0.254" layer="1"/>
@@ -465,7 +465,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="CAP40">
 <contactref element="C4" pad="1"/>
-<contactref element="4" pad="2"/>
+<contactref element="5" pad="2"/>
 <wire x1="27.2" y1="2.375" x2="26.73" y2="2.413" width="0.254" layer="1"/>
 <wire x1="26.73" y1="2.413" x2="26.73" y2="2.48" width="0.254" layer="1"/>
 <wire x1="26.73" y1="2.48" x2="27.432" y2="2.413" width="0.254" layer="1"/>
@@ -476,15 +476,15 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="GND">
 <contactref element="UC0" pad="8"/>
 <contactref element="UC0" pad="0"/>
-<contactref element="1" pad="3"/>
-<contactref element="C1" pad="2"/>
 <contactref element="2" pad="3"/>
-<contactref element="C2" pad="2"/>
+<contactref element="C1" pad="2"/>
 <contactref element="3" pad="3"/>
-<contactref element="C3" pad="2"/>
+<contactref element="C2" pad="2"/>
 <contactref element="4" pad="3"/>
+<contactref element="C3" pad="2"/>
+<contactref element="5" pad="3"/>
 <contactref element="C4" pad="2"/>
-<contactref element="0" pad="3"/>
+<contactref element="1" pad="3"/>
 <contactref element="C0" pad="2"/>
 <contactref element="UC0" pad="15"/>
 <contactref element="UC0" pad="12"/>
@@ -582,19 +582,28 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="28.067" y="-0.5"/>
 <vertex x="28.067" y="6.5"/>
 </polygon>
+<polygon width="0.254" layer="1">
+<vertex x="0.008" y="6.5"/>
+<vertex x="0" y="-0.5"/>
+<vertex x="28" y="-0.5"/>
+<vertex x="28" y="6.5"/>
+</polygon>
+<via x="2.54" y="-0.127" extent="1-16" drill="0.305" shape="octagon"/>
+<via x="23.241" y="0" extent="1-16" drill="0.305" shape="octagon"/>
+<via x="22.987" y="1.905" extent="1-16" drill="0.305" shape="octagon"/>
 </signal>
 <signal name="3.3V">
-<contactref element="1" pad="1"/>
-<contactref element="0" pad="1"/>
 <contactref element="2" pad="1"/>
+<contactref element="1" pad="1"/>
 <contactref element="3" pad="1"/>
 <contactref element="4" pad="1"/>
+<contactref element="5" pad="1"/>
 <contactref element="UC0" pad="9"/>
-<contactref element="1" pad="4"/>
 <contactref element="2" pad="4"/>
 <contactref element="3" pad="4"/>
 <contactref element="4" pad="4"/>
-<contactref element="0" pad="4"/>
+<contactref element="5" pad="4"/>
+<contactref element="1" pad="4"/>
 <wire x1="15.2" y1="4.875" x2="15.572" y2="4.875" width="0.254" layer="1"/>
 <wire x1="18.415" y1="4.826" x2="18.8" y2="4.875" width="0.254" layer="1"/>
 <wire x1="15.2" y1="1.125" x2="18.8" y2="1.125" width="0.254" layer="1"/>
@@ -683,7 +692,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="CAP00">
 <contactref element="C0" pad="1"/>
-<contactref element="0" pad="2"/>
+<contactref element="1" pad="2"/>
 <wire x1="2" y1="2.35" x2="2.032" y2="2.118" width="0.254" layer="16"/>
 <wire x1="2.032" y1="2.118" x2="2.032" y2="1.905" width="0.254" layer="16"/>
 <wire x1="2.032" y1="1.905" x2="2.159" y2="1.778" width="0.254" layer="16"/>
@@ -697,11 +706,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.2" y1="2.388" x2="3.2" y2="2.375" width="0.254" layer="1"/>
 </signal>
 <signal name="SDA">
-<contactref element="0" pad="7"/>
+<contactref element="1" pad="7"/>
+<contactref element="5" pad="7"/>
 <contactref element="4" pad="7"/>
 <contactref element="3" pad="7"/>
 <contactref element="2" pad="7"/>
-<contactref element="1" pad="7"/>
 <contactref element="UC0" pad="16"/>
 <wire x1="0.8" y1="2.375" x2="1.143" y2="2.413" width="0.254" layer="1"/>
 <wire x1="1.143" y1="2.413" x2="1.651" y2="2.413" width="0.254" layer="1"/>
@@ -762,11 +771,11 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="SCL">
 <contactref element="UC0" pad="1"/>
-<contactref element="0" pad="8"/>
+<contactref element="1" pad="8"/>
+<contactref element="5" pad="8"/>
 <contactref element="4" pad="8"/>
 <contactref element="3" pad="8"/>
 <contactref element="2" pad="8"/>
-<contactref element="1" pad="8"/>
 <wire x1="0.8" y1="1.125" x2="0.8" y2="0.724" width="0.254" layer="1"/>
 <wire x1="0.8" y1="0.724" x2="1.016" y2="0.508" width="0.254" layer="1"/>
 <wire x1="1.016" y1="0.508" x2="5.461" y2="0.508" width="0.254" layer="1"/>
@@ -825,7 +834,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RST00">
 <contactref element="UC0" pad="5"/>
-<contactref element="0" pad="5"/>
+<contactref element="1" pad="5"/>
 <wire x1="0.8" y1="4.875" x2="1.094" y2="4.875" width="0.254" layer="1"/>
 <wire x1="1.094" y1="4.875" x2="1.143" y2="4.826" width="0.254" layer="1"/>
 <wire x1="1.143" y1="4.826" x2="1.524" y2="4.826" width="0.254" layer="1"/>
@@ -848,7 +857,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RST10">
 <contactref element="UC0" pad="4"/>
-<contactref element="1" pad="5"/>
+<contactref element="2" pad="5"/>
 <wire x1="12.787" y1="1.086" x2="12.787" y2="0.595" width="0.254" layer="16"/>
 <wire x1="12.787" y1="0.595" x2="12.573" y2="0.381" width="0.254" layer="16"/>
 <wire x1="12.573" y1="0.381" x2="9.398" y2="0.381" width="0.254" layer="16"/>
@@ -859,7 +868,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RST20">
 <contactref element="UC0" pad="3"/>
-<contactref element="2" pad="5"/>
+<contactref element="3" pad="5"/>
 <wire x1="13.287" y1="1.086" x2="13.287" y2="1.572" width="0.254" layer="16"/>
 <wire x1="13.287" y1="1.572" x2="13.081" y2="1.778" width="0.254" layer="16"/>
 <wire x1="13.081" y1="1.778" x2="12.065" y2="1.778" width="0.254" layer="16"/>
@@ -878,7 +887,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RST30">
 <contactref element="UC0" pad="2"/>
-<contactref element="3" pad="5"/>
+<contactref element="4" pad="5"/>
 <wire x1="21.2" y1="1.125" x2="20.837" y2="1.143" width="0.254" layer="1"/>
 <wire x1="13.787" y1="1.086" x2="13.787" y2="0.564" width="0.254" layer="16"/>
 <via x="20.837" y="1.143" extent="1-16" drill="0.305" shape="octagon"/>
@@ -888,7 +897,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="CAP10">
 <contactref element="C1" pad="1"/>
-<contactref element="1" pad="2"/>
+<contactref element="2" pad="2"/>
 <wire x1="6.8" y1="3.625" x2="6.731" y2="3.556" width="0.254" layer="1"/>
 <wire x1="6.8" y1="3.625" x2="7.297" y2="3.625" width="0.254" layer="1"/>
 <wire x1="7.297" y1="3.625" x2="7.239" y2="3.556" width="0.254" layer="1"/>
@@ -901,7 +910,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RST40">
 <contactref element="UC0" pad="20"/>
-<contactref element="4" pad="5"/>
+<contactref element="5" pad="5"/>
 <wire x1="15.187" y1="1.986" x2="15.829" y2="1.986" width="0.254" layer="16"/>
 <wire x1="15.829" y1="1.986" x2="16.002" y2="2.159" width="0.254" layer="16"/>
 <wire x1="16.002" y1="2.159" x2="16.002" y2="3.937" width="0.254" layer="16"/>
