@@ -650,8 +650,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="5.461" y1="4.953" x2="6.477" y2="4.953" width="0.254" layer="1"/>
 <wire x1="6.477" y1="4.953" x2="6.477" y2="5.588" width="0.254" layer="1"/>
 <via x="6.477" y="5.588" extent="1-16" drill="0.305" shape="octagon"/>
-<wire x1="6.477" y1="5.588" x2="6.477" y2="6.731" width="0.254" layer="16"/>
-<wire x1="6.477" y1="6.731" x2="6.096" y2="7.143" width="0.254" layer="16"/>
+<wire x1="6.477" y1="5.588" x2="6.477" y2="7.231" width="0.254" layer="16"/>
+<wire x1="6.477" y1="7.231" x2="6.096" y2="7.643" width="0.254" layer="16"/>
 <wire x1="6.8" y1="4.875" x2="6.555" y2="4.875" width="0.254" layer="1"/>
 <wire x1="6.555" y1="4.875" x2="6.477" y2="4.953" width="0.254" layer="1"/>
 <wire x1="13.716" y1="5.461" x2="14.224" y2="4.953" width="0.254" layer="1"/>
@@ -744,7 +744,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.573" y1="2.413" x2="11.8745" y2="1.7145" width="0.254" layer="1"/>
 <wire x1="11.8745" y1="1.7145" x2="10.1346" y2="1.7145" width="0.254" layer="1"/>
 <wire x1="22.098" y1="3.048" x2="22.098" y2="1.016" width="0.254" layer="1"/>
-<wire x1="22.098" y1="7.747" x2="22.098" y2="6.477" width="0.254" layer="1"/>
+<wire x1="22.098" y1="8.247" x2="22.098" y2="6.477" width="0.254" layer="1"/>
 <wire x1="22.098" y1="6.477" x2="21.59" y2="5.969" width="0.254" layer="1"/>
 <wire x1="21.59" y1="5.969" x2="18.034" y2="5.969" width="0.254" layer="1"/>
 <wire x1="17.145" y1="4.699" x2="20.701" y2="4.699" width="0.254" layer="16"/>
@@ -797,8 +797,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="7.874" y1="0.508" x2="7.874" y2="0.635" width="0.254" layer="1"/>
 <via x="7.874" y="0.635" extent="1-16" drill="0.305" shape="octagon"/>
 <wire x1="7.874" y1="0.635" x2="7.874" y2="0.381" width="0.254" layer="16"/>
-<wire x1="8.255" y1="4.826" x2="8.255" y2="6.096" width="0.254" layer="16"/>
-<wire x1="8.255" y1="6.096" x2="7.874" y2="6.477" width="0.254" layer="16"/>
+<wire x1="8.255" y1="4.826" x2="8.255" y2="6.596" width="0.254" layer="16"/>
+<wire x1="8.255" y1="6.596" x2="7.874" y2="6.977" width="0.254" layer="16"/>
 <wire x1="8.255" y1="4.826" x2="9.151" y2="4.826" width="0.254" layer="1"/>
 <wire x1="9.151" y1="4.826" x2="9.2" y2="4.875" width="0.254" layer="1"/>
 <wire x1="25.273" y1="1.016" x2="25.146" y2="1.143" width="0.254" layer="1"/>
