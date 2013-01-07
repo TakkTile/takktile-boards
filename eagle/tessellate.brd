@@ -538,7 +538,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.89" y1="2.667" x2="8.509" y2="2.286" width="0.254" layer="16"/>
 <wire x1="8.509" y1="2.286" x2="7.493" y2="2.286" width="0.254" layer="16"/>
 <wire x1="12.787" y1="4.358" x2="12.787" y2="4.886" width="0.254" layer="16"/>
-<wire x1="12.787" y1="5.675" x2="13.208" y2="6.096" width="0.254" layer="16"/>
 <via x="5.461" y="2.54" extent="1-16" drill="0.4" shape="octagon" alwaysstop="yes"/>
 <wire x1="5.461" y1="2.54" x2="5.334" y2="2.413" width="0.254" layer="16"/>
 <wire x1="5.334" y1="2.413" x2="4.412" y2="2.413" width="0.254" layer="16"/>
@@ -551,7 +550,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="9.144" y1="4.826" x2="9.144" y2="4.064" width="0.2032" layer="16"/>
 <wire x1="2" y1="3.778" x2="2" y2="3.65" width="0.254" layer="16"/>
 <wire x1="17.018" y1="3.556" x2="18.161" y2="2.413" width="0.254" layer="1"/>
-<wire x1="12.787" y1="4.886" x2="12.787" y2="5.675" width="0.254" layer="16"/>
 <wire x1="2" y1="3.778" x2="3.143" y2="3.778" width="0.254" layer="16"/>
 <wire x1="3.143" y1="3.778" x2="3.175" y2="3.81" width="0.254" layer="16"/>
 <wire x1="4.412" y1="2.413" x2="3.2" y2="3.625" width="0.254" layer="16"/>
@@ -591,6 +589,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="2.54" y="-0.127" extent="1-16" drill="0.305" shape="octagon"/>
 <via x="23.241" y="0" extent="1-16" drill="0.305" shape="octagon"/>
 <via x="22.987" y="1.905" extent="1-16" drill="0.305" shape="octagon"/>
+<via x="26.797" y="6.096" extent="1-16" drill="0.305" shape="octagon"/>
 </signal>
 <signal name="3.3V">
 <contactref element="2" pad="1"/>
