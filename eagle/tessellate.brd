@@ -656,7 +656,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="4.699" y1="3.048" x2="4.699" y2="3.025" width="0.254" layer="1"/>
 <wire x1="6.8" y1="4.875" x2="7.161" y2="4.875" width="0.254" layer="1"/>
 <wire x1="5.461" y1="4.953" x2="6.477" y2="4.953" width="0.254" layer="1"/>
-<wire x1="6.096" y1="5.588" x2="6.096" y2="7.643" width="0.254" layer="16"/>
+<wire x1="6.096" y1="5.588" x2="6.096" y2="7.143" width="0.254" layer="16"/>
 <wire x1="6.8" y1="4.875" x2="6.555" y2="4.875" width="0.254" layer="1"/>
 <wire x1="6.555" y1="4.875" x2="6.477" y2="4.953" width="0.254" layer="1"/>
 <wire x1="13.716" y1="5.461" x2="14.224" y2="4.953" width="0.254" layer="1"/>
@@ -748,9 +748,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.573" y1="2.413" x2="11.8745" y2="1.7145" width="0.254" layer="1"/>
 <wire x1="11.8745" y1="1.7145" x2="10.14" y2="1.72" width="0.254" layer="1"/>
 <wire x1="22.098" y1="3.048" x2="22.098" y2="1.016" width="0.254" layer="1"/>
-<wire x1="22.098" y1="8.247" x2="22.098" y2="6.477" width="0.254" layer="1"/>
-<wire x1="22.098" y1="6.477" x2="21.59" y2="5.969" width="0.254" layer="1"/>
-<wire x1="21.59" y1="5.969" x2="18.288" y2="5.969" width="0.254" layer="1"/>
+<wire x1="22.098" y1="7.016" x2="22.098" y2="6.223" width="0.254" layer="1"/>
+<wire x1="21.844" y1="5.969" x2="18.288" y2="5.969" width="0.254" layer="1"/>
 <wire x1="17.145" y1="4.699" x2="20.701" y2="4.699" width="0.254" layer="16"/>
 <wire x1="22.098" y1="1.016" x2="23.622" y2="1.016" width="0.254" layer="1"/>
 <wire x1="15.289" y1="3.986" x2="15.187" y2="3.986" width="0.254" layer="16"/>
@@ -764,6 +763,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="14.224" y1="3.683" x2="14.224" y2="4.191" width="0.254" layer="1"/>
 <wire x1="17.145" y1="4.826" x2="16.891" y2="4.826" width="0.254" layer="1"/>
 <wire x1="16.891" y1="4.826" x2="16.256" y2="4.191" width="0.254" layer="1"/>
+<wire x1="21.844" y1="5.969" x2="22.098" y2="6.223" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="UC0" pad="1"/>
@@ -803,8 +803,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="7.874" y="0.635" extent="1-16" drill="0.305" shape="octagon"/>
 <wire x1="7.874" y1="0.635" x2="7.874" y2="0.381" width="0.254" layer="16"/>
 <wire x1="8.255" y1="4.826" x2="7.874" y2="5.207" width="0.254" layer="16"/>
-<wire x1="7.874" y1="5.207" x2="7.874" y2="6.596" width="0.254" layer="16"/>
-<wire x1="7.874" y1="6.596" x2="7.874" y2="6.977" width="0.254" layer="16"/>
+<wire x1="7.874" y1="5.207" x2="7.874" y2="6.635" width="0.254" layer="16"/>
 <wire x1="8.255" y1="4.826" x2="9.151" y2="4.826" width="0.254" layer="1"/>
 <wire x1="9.151" y1="4.826" x2="9.2" y2="4.875" width="0.254" layer="1"/>
 <wire x1="25.273" y1="1.016" x2="25.146" y2="1.143" width="0.254" layer="1"/>
