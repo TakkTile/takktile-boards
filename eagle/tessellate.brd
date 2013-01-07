@@ -657,10 +657,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="4.699" y1="3.048" x2="4.699" y2="3.025" width="0.254" layer="1"/>
 <wire x1="6.8" y1="4.875" x2="7.161" y2="4.875" width="0.254" layer="1"/>
 <wire x1="5.461" y1="4.953" x2="6.477" y2="4.953" width="0.254" layer="1"/>
-<wire x1="6.477" y1="4.953" x2="6.477" y2="5.588" width="0.254" layer="1"/>
-<via x="6.477" y="5.588" extent="1-16" drill="0.305" shape="octagon"/>
-<wire x1="6.477" y1="5.588" x2="6.477" y2="7.231" width="0.254" layer="16"/>
-<wire x1="6.477" y1="7.231" x2="6.096" y2="7.643" width="0.254" layer="16"/>
+<wire x1="6.477" y1="4.953" x2="6.096" y2="5.588" width="0.254" layer="1"/>
+<via x="6.096" y="5.588" extent="1-16" drill="0.305" shape="octagon"/>
+<wire x1="6.096" y1="5.588" x2="6.096" y2="7.643" width="0.254" layer="16"/>
 <wire x1="6.8" y1="4.875" x2="6.555" y2="4.875" width="0.254" layer="1"/>
 <wire x1="6.555" y1="4.875" x2="6.477" y2="4.953" width="0.254" layer="1"/>
 <wire x1="13.716" y1="5.461" x2="14.224" y2="4.953" width="0.254" layer="1"/>
@@ -806,8 +805,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="7.874" y1="0.508" x2="7.874" y2="0.635" width="0.254" layer="1"/>
 <via x="7.874" y="0.635" extent="1-16" drill="0.305" shape="octagon"/>
 <wire x1="7.874" y1="0.635" x2="7.874" y2="0.381" width="0.254" layer="16"/>
-<wire x1="8.255" y1="4.826" x2="8.255" y2="6.596" width="0.254" layer="16"/>
-<wire x1="8.255" y1="6.596" x2="7.874" y2="6.977" width="0.254" layer="16"/>
+<wire x1="8.255" y1="4.826" x2="7.874" y2="5.207" width="0.254" layer="16"/>
+<wire x1="7.874" y1="5.207" x2="7.874" y2="6.596" width="0.254" layer="16"/>
+<wire x1="7.874" y1="6.596" x2="7.874" y2="6.977" width="0.254" layer="16"/>
 <wire x1="8.255" y1="4.826" x2="9.151" y2="4.826" width="0.254" layer="1"/>
 <wire x1="9.151" y1="4.826" x2="9.2" y2="4.875" width="0.254" layer="1"/>
 <wire x1="25.273" y1="1.016" x2="25.146" y2="1.143" width="0.254" layer="1"/>
@@ -929,12 +929,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="UC0" pad="11"/>
 </signal>
 </signals>
-<errors>
-<approved hash="5,1,2c6ddf61e35bac15"/>
-<approved hash="5,1,fde1975d187c2230"/>
-<approved hash="5,1,afe8938a12b04fe0"/>
-<approved hash="5,1,d105fdbf9d8271ec"/>
-</errors>
 </board>
 </drawing>
 </eagle>
