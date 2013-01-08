@@ -574,22 +574,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.018" y1="3.556" x2="17.018" y2="3.28" width="0.254" layer="16"/>
 <wire x1="17.018" y1="3.28" x2="17.007" y2="3.269" width="0.254" layer="16"/>
 <wire x1="11.387" y1="2.986" x2="13.287" y2="2.986" width="0.254" layer="16"/>
-<polygon width="0.254" layer="16">
-<vertex x="0" y="6"/>
-<vertex x="0" y="0"/>
-<vertex x="28.067" y="0"/>
-<vertex x="28.067" y="6"/>
-</polygon>
-<polygon width="0.254" layer="1">
-<vertex x="0.008" y="6"/>
-<vertex x="0" y="0"/>
-<vertex x="28" y="0"/>
-<vertex x="28" y="6"/>
-</polygon>
 <via x="23.114" y="0.381" extent="1-16" drill="0.305" shape="octagon"/>
 <via x="22.987" y="1.905" extent="1-16" drill="0.305" shape="octagon"/>
 <via x="26.416" y="5.6" extent="1-16" drill="0.305" shape="octagon"/>
-<via x="14.986" y="5.727" extent="1-16" drill="0.305" shape="octagon"/>
+<wire x1="21.844" y1="1.905" x2="22.987" y2="1.905" width="0.254" layer="16"/>
+<wire x1="22.987" y1="1.905" x2="23.114" y2="1.905" width="0.4064" layer="16"/>
+<wire x1="23.114" y1="1.905" x2="23.114" y2="0.381" width="0.254" layer="16"/>
+<wire x1="26.035" y1="3.81" x2="26.416" y2="5.6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="3.3V">
 <contactref element="2" pad="1"/>
@@ -925,9 +916,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="UC0" pad="11"/>
 </signal>
 </signals>
-<errors>
-<approved hash="5,1,fde1975d187c2230"/>
-</errors>
 </board>
 </drawing>
 </eagle>
