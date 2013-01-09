@@ -4741,13 +4741,6 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <pinref part="32" gate="G$1" pin="CAP"/>
 </segment>
 </net>
-<net name="RESET06" class="0">
-<segment>
-<wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
-<label x="55.88" y="2.54" size="1.778" layer="95"/>
-<pinref part="UC07" gate="G$1" pin="PB3/RESET"/>
-</segment>
-</net>
 <net name="RST35" class="0">
 <segment>
 <wire x1="50.8" y1="20.32" x2="203.2" y2="20.32" width="0" layer="91"/>
@@ -4762,6 +4755,13 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <pinref part="UC07" gate="G$1" pin="PB0"/>
 <wire x1="50.8" y1="10.16" x2="53.34" y2="10.16" width="0" layer="91"/>
 <label x="53.34" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RESET07" class="0">
+<segment>
+<wire x1="50.8" y1="2.54" x2="55.88" y2="2.54" width="0" layer="91"/>
+<label x="55.88" y="2.54" size="1.778" layer="95"/>
+<pinref part="UC07" gate="G$1" pin="PB3/RESET"/>
 </segment>
 </net>
 </nets>
