@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -206,6 +206,8 @@
 <text x="14" y="16" size="0.75" layer="21" font="vector" ratio="12">V</text>
 <text x="12.5" y="19.5" size="0.6096" layer="21" font="vector" ratio="12">Cut Here!</text>
 <text x="21" y="19.5" size="0.6096" layer="21" font="vector" ratio="12">Cut Here!</text>
+<hole x="2.5" y="17" drill="2.4"/>
+<hole x="26.5" y="17" drill="2.4"/>
 </plain>
 <libraries>
 <library name="nonolith">
@@ -424,16 +426,6 @@ Mouser P/N - 649-10118192-0001LF</description>
 <rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-</package>
-<package name="STAND-OFF">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.302"/>
 </package>
 <package name="1X06_ROUND_2MM">
 <wire x1="-1.54" y1="0.635" x2="-1.54" y2="-0.635" width="0.1524" layer="51"/>
@@ -2402,8 +2394,6 @@ design rules under a new name.</description>
 <element name="SDA" library="nonolith" package="1X01_2MM" value="" x="10.5" y="18" smashed="yes">
 <attribute name="VALUE" x="9.23" y="14.825" size="1.27" layer="27"/>
 </element>
-<element name="U$3" library="nonolith" package="STAND-OFF" value="" x="2.5" y="17" smashed="yes"/>
-<element name="U$4" library="nonolith" package="STAND-OFF" value="" x="26.5" y="17"/>
 <element name="JP1" library="nonolith" package="1X01_2MM" value="" x="16.5" y="18" smashed="yes">
 <attribute name="VALUE" x="15.23" y="14.825" size="1.27" layer="27"/>
 </element>
