@@ -3,6 +3,7 @@
 // licensed under the terms of the GNU GPLv3+
 
 #include <avr/io.h>
+#include <util/delay.h>
 #include <avr/interrupt.h>
 
 #define RST0 1 << PA0
@@ -176,7 +177,18 @@ ISR( USI_OVF_vect ) {
 
 }
 
+uint8_t getAddress(void) {
+	uint8_t slaveAddress;
+	// calculate slaveAddress from state of ADDR pins
+	slaveAddress = (PINA & ADDR3) >> 4 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
+	slaveAddress -= 1;
+	slaveAddress <<= 4;
+	return slaveAddress;
+}
+
 int main(void) {
+
+	uint16_t bigAddress;
 
 	// disable all MPL115A2 sensors
 	DDRA |= RST0 | RST1 | RST2 | RST3 | RST4; 
@@ -188,10 +200,12 @@ int main(void) {
 	PORTA |= ADDR3;
 	PORTB |= ADDR0 | ADDR1 | ADDR2;
 
-	// calculate slaveAddress from state of ADDR pins
-	slaveAddress = (PINA & ADDR3) >> 4 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
-	slaveAddress -= 1;
-	slaveAddress <<= 4;
+	for (uint8_t i = 0; i < 8; i++) {
+		bigAddress += getAddress();
+		_delay_us(100);
+	}
+	slaveAddress = bigAddress >> 3;
+	
 
 	// enable interupts	
 	sei(); 

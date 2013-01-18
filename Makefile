@@ -8,7 +8,7 @@ AVRDUDE = avrdude -c avrispmkII -P usb -p attiny44
 CFLAGS  =  -I. -DDEBUG_LEVEL=0
 OBJECTS = main.o 
 
-COMPILE = avr-gcc -g -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
+COMPILE = avr-gcc -std=c99 -g -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
 COMPILEPP = avr-g++ -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
 
 hex: main.hex
