@@ -16,6 +16,8 @@
 #define ADDR1 1 << PB1
 #define ADDR2 1 << PB2
 
+//#define DEVICE_TAKKSTRIP // un-comment this line if the target is TakkStrip
+
 typedef enum
 {
 	USI_SLAVE_CHECK_ADDRESS	= 0x00,
@@ -62,7 +64,7 @@ void usiTwiSlaveInit( void ) {
 
 ISR( USI_STR_vect ) {
 
-	// set default starting conditions for new TWI package
+	// set default starting conditions for new TWI packageDDRA
 	overflowState = USI_SLAVE_CHECK_ADDRESS;
 
 	// set SDA as input
@@ -179,16 +181,44 @@ ISR( USI_OVF_vect ) {
 
 uint8_t getAddress(void) {
 	uint8_t slaveAddress;
+	uint8_t tmpAddress;
+
+	slaveAddress = ((PINA & (ADDR3)) >> 4) | ( PINB & ((ADDR0) | (ADDR1) | (ADDR2)) );
+
+// ---- TakkArray -----
 	// calculate slaveAddress from state of ADDR pins
-	slaveAddress = (PINA & ADDR3) >> 4 | ( PINB & (ADDR0 | ADDR1 | ADDR2) );
 	slaveAddress -= 1;
+// --------------------
+
+// ---- TakkStrip -----
+	#ifdef DEVICE_TAKKSTRIP
+		slaveAddress += 1;
+		// calculate slaveAddress from state of ADDR pins
+		tmpAddress = 0;
+		slaveAddress ^= 0b0111; // exclusive or ... to invert the bits value.
+		if (slaveAddress & 0b001) {
+			tmpAddress = 0b100;
+		}	
+		if (slaveAddress & 0b010) {
+			tmpAddress |= 0b010;
+		}	
+		if (slaveAddress & 0b100) {
+			tmpAddress |= 0b001;
+		}
+		slaveAddress = tmpAddress;	
+	#endif
+// --------------------
+
 	slaveAddress <<= 4;
+
 	return slaveAddress;
 }
 
 int main(void) {
 
 	uint16_t bigAddress;
+
+	bigAddress=0;
 
 	// disable all MPL115A2 sensors
 	DDRA |= RST0 | RST1 | RST2 | RST3 | RST4; 
@@ -201,11 +231,28 @@ int main(void) {
 	PORTB |= ADDR0 | ADDR1 | ADDR2;
 
 	for (uint8_t i = 0; i < 8; i++) {
-		bigAddress += getAddress();
+		// first wait, and then read the address
 		_delay_us(100);
+		bigAddress += getAddress();
 	}
 	slaveAddress = bigAddress >> 3;
-	
+
+// ---- for Debugging ----------------------	
+//	if (bigAddress % 8) {
+//	if (1) {
+//		PORTA |= RST0; 
+//		_delay_us(5);
+//		PORTA &= ~ RST0; 
+//		tmp=slaveAddress;
+//		tmp>>=4;
+//
+//		for (uint8_t i = 0; i < (tmp); i++) {
+//			PORTA |= RST0; 
+//			_delay_us(9);
+//			PORTA &= ~ RST0; 
+//		}
+//	}
+// --------------------------
 
 	// enable interupts	
 	sei(); 
