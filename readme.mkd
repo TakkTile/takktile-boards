@@ -1,10 +1,8 @@
-This repository contains the firmware and CAD files for the TakkTile mainboard, a sensitive, robust, and trimmable tactile array for robotic manipulation.
+This repository contains publicly-available firmware and CAD files for items in the TakkTile product line, a line of sensitive, easy-to-manufacture tactile sensors.
 
-The current design offers a 5x8 I2C-addressable sensor array providing ~2g sensitivity. The ATTINY45A microcontroller is used to multiplex the MPL115A2 sensors. The firmware is written is written in embedded C for the avr-gcc toolchain. The firmware is well commented and additional documentation is in the works.
+The TakkArray is a 5x8 I2C-addressable sensor array providing ~1g sensitivity. The ATTINY24A microcontroller is used to multiplex the MPL115A2 sensors. The firmware is written is written in embedded C for the avr-gcc toolchain. The firmware is well commented.
 
 [TakkTile-usb](https://github.com/TakkTile/TakkTile-usb) is the suggested implementation of the USB-I2C bridge, also providing a Python module implementing calibration and compensation routines.
-
-Development is ongoing.
 
 All schematics and board layouts for this project are released under a [Creative Commons BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/).
 
