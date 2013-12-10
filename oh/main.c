@@ -1,5 +1,6 @@
 // (C) 2012 Biorobotics Lab and Nonolith Labs
 // written by Ian Daniher, based off usiTwiSlave.c by Donald R. Blake
+// updated by Leif Jentoft, 2013
 // licensed under the terms of the GNU GPLv3+
 
 #include <avr/io.h>
@@ -11,12 +12,10 @@
 #define RST2 1 << PA2
 #define RST3 1 << PA3
 #define RST4 1 << PA5
-#define ADDR3 1 << PA7
+#define RST5 1 << PA7
 #define ADDR0 1 << PB0
 #define ADDR1 1 << PB1
 #define ADDR2 1 << PB2
-
-//#define DEVICE_TAKKSTRIP // un-comment this line if the target is TakkStrip
 
 typedef enum
 {
@@ -125,17 +124,19 @@ ISR( USI_OVF_vect ) {
 			
 			if ( ( ADDR == 0x0C ) || (ADDR == 0x0D) || (( (ADDR&0xF0) == (slaveAddress&0xF0) ))){
 				// pin bit position determined by LSB1..3 inclusive
-				uint8_t pin_bp = (ADDR & 0x0F) >> 1;
-				// pin bitmask defaults to 1 << pin_bp
-				uint8_t pin_bm = 1 << pin_bp;
+				uint8_t pin_bit_position = (ADDR & 0x0F) >> 1;
+				// pin bitmask defaults to 1 << pin_bit_position
+				uint8_t pin_bitmask = 1 << pin_bit_position;
 				// if you're theoretically writing the state of the "sixth" sensor, set the bitmask to match all of them
-				if ( pin_bp == 6 ) pin_bm = 0x2F;
+				if ( pin_bit_position == 6 ) pin_bitmask = 0xAF;
 				// RST4 is actually located at PA5
-				if ( pin_bp == 4 ) pin_bm = 0x20; 
+				if ( pin_bit_position == 4 ) pin_bitmask = 0x20; 
+				// RST5 is actually located at PA7
+				if ( pin_bit_position == 5 ) pin_bitmask = 0x80; 
 				// inverted logic - if transaction is a "read", disable the corresponding sensor
-				if ( ADDR & 0x01 ) PORTA &= ~pin_bm;
+				if ( ADDR & 0x01 ) PORTA &= ~pin_bitmask;
 				// otherwise, enable it
-				else PORTA |= pin_bm;
+				else PORTA |= pin_bitmask;
 				// prep ACK
 				USIDR = 0;
 				// set SDA as an output
@@ -182,32 +183,23 @@ ISR( USI_OVF_vect ) {
 uint8_t getAddress(void) {
 	uint8_t slaveAddress;
 	uint8_t tmpAddress;
-
-	slaveAddress = ((PINA & (ADDR3)) >> 4) | ( PINB & ((ADDR0) | (ADDR1) | (ADDR2)) );
-
-// ---- TakkArray -----
 	// calculate slaveAddress from state of ADDR pins
-	slaveAddress -= 1;
-// --------------------
 
-// ---- TakkStrip -----
-	#ifdef DEVICE_TAKKSTRIP
-		slaveAddress += 1;
-		// calculate slaveAddress from state of ADDR pins
-		tmpAddress = 0;
-		slaveAddress ^= 0b0111; // exclusive or ... to invert the bits value.
-		if (slaveAddress & 0b001) {
-			tmpAddress = 0b100;
-		}	
-		if (slaveAddress & 0b010) {
-			tmpAddress |= 0b010;
-		}	
-		if (slaveAddress & 0b100) {
-			tmpAddress |= 0b001;
-		}
-		slaveAddress = tmpAddress;	
-	#endif
-// --------------------
+	slaveAddress =  ( PINB & ((ADDR0) | (ADDR1) | (ADDR2)) );
+
+        // calculate slaveAddress from state of ADDR pins
+        tmpAddress = 0;
+        slaveAddress ^= 0b0111; // exclusive or ... to invert the bits value.
+        if (slaveAddress & 0b001) {
+                tmpAddress = 0b100;
+        }
+        if (slaveAddress & 0b010) {
+                tmpAddress |= 0b010;
+        }
+        if (slaveAddress & 0b100) {
+        	tmpAddress |= 0b001;
+        }
+        slaveAddress = tmpAddress;
 
 	slaveAddress <<= 4;
 
@@ -221,13 +213,11 @@ int main(void) {
 	bigAddress=0;
 
 	// disable all MPL115A2 sensors
-	DDRA |= RST0 | RST1 | RST2 | RST3 | RST4; 
-	PORTA &= ~(RST0 | RST1 | RST2 | RST3 | RST4);
+	DDRA |= RST0 | RST1 | RST2 | RST3 | RST4 | RST5; 
+	PORTA &= ~(RST0 | RST1 | RST2 | RST3 | RST4 | RST5);
 
 	// set all ADDR pins as inputs with pullups
-	DDRA &= ~(ADDR3);
 	DDRB &= ~(ADDR0 | ADDR1 | ADDR2);
-	PORTA |= ADDR3;
 	PORTB |= ADDR0 | ADDR1 | ADDR2;
 
 	for (uint8_t i = 0; i < 8; i++) {
