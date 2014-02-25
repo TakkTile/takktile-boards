@@ -1,0 +1,836 @@
+Archive member included because of file (symbol)
+
+/usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+                              /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o (exit)
+/usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+                              usb/usb_xmega.o (__do_copy_data)
+/usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+                              usb/usb_xmega.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+ep0_buf_in          0x40              usb/usb_xmega.o
+sensorDataPrime     0x200             main.o
+aliveCells          0x28              main.o
+ep_in_pipe_buffer   0x200             main.o
+USB_DeviceState     0x1               usb/usb_xmega.o
+USB_Device_ConfigurationNumber
+                    0x1               usb/usb_xmega.o
+sensorData          0x200             main.o
+ep0_buf_out         0x40              usb/usb_xmega.o
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+ .bss           0x00000000        0x0 usb/usb_xmega.o
+ .bss           0x00000000        0x0 usb/usb_requests.o
+ .bss           0x00000000        0x0 Descriptors.o
+ .text          0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00802000         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+LOAD usb/usb_xmega.o
+LOAD usb/usb_requests.o
+LOAD main.o
+LOAD Descriptors.o
+LOAD /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a
+LOAD /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/libc.a
+LOAD /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1a4e
+ *(.vectors)
+ .vectors       0x00000000      0x1fc /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x000001fc        0xc main.o
+                0x000001fc                fwversion
+                0x00000204                hwversion
+ .progmem.data  0x00000208       0x74 Descriptors.o
+                0x00000208                TakkTile_ProductString
+                0x0000021c                TakkTile_ManufacturerString
+                0x00000246                TakkTile_LanguageString
+                0x0000024a                TakkTile_ConfigurationDescriptor
+                0x0000026a                TakkTile_DeviceDescriptor
+                0x0000027c                . = ALIGN (0x2)
+                0x0000027c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000027c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000027c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000027c                __ctors_start = .
+ *(.ctors)
+                0x0000027c                __ctors_end = .
+                0x0000027c                __dtors_start = .
+ *(.dtors)
+                0x0000027c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000027c        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+                0x0000027c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000027c        0xc /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000288       0x16 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+                0x00000288                __do_copy_data
+ .init4         0x0000029e       0x10 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+                0x0000029e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000002ae        0x8 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+ *(.init9)
+ *(.text)
+ .text          0x000002b6        0x2 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+                0x000002b6                __vector_38
+                0x000002b6                __vector_104
+                0x000002b6                __vector_22
+                0x000002b6                __vector_63
+                0x000002b6                __vector_28
+                0x000002b6                __vector_67
+                0x000002b6                __vector_1
+                0x000002b6                __vector_119
+                0x000002b6                __vector_32
+                0x000002b6                __vector_75
+                0x000002b6                __vector_71
+                0x000002b6                __vector_91
+                0x000002b6                __vector_34
+                0x000002b6                __vector_62
+                0x000002b6                __vector_77
+                0x000002b6                __vector_102
+                0x000002b6                __vector_24
+                0x000002b6                __vector_12
+                0x000002b6                __vector_55
+                0x000002b6                __vector_69
+                0x000002b6                __vector_81
+                0x000002b6                __vector_90
+                0x000002b6                __vector_46
+                0x000002b6                __bad_interrupt
+                0x000002b6                __vector_122
+                0x000002b6                __vector_72
+                0x000002b6                __vector_114
+                0x000002b6                __vector_6
+                0x000002b6                __vector_110
+                0x000002b6                __vector_31
+                0x000002b6                __vector_92
+                0x000002b6                __vector_35
+                0x000002b6                __vector_78
+                0x000002b6                __vector_74
+                0x000002b6                __vector_117
+                0x000002b6                __vector_39
+                0x000002b6                __vector_107
+                0x000002b6                __vector_3
+                0x000002b6                __vector_105
+                0x000002b6                __vector_98
+                0x000002b6                __vector_23
+                0x000002b6                __vector_68
+                0x000002b6                __vector_30
+                0x000002b6                __vector_73
+                0x000002b6                __vector_45
+                0x000002b6                __vector_25
+                0x000002b6                __vector_93
+                0x000002b6                __vector_61
+                0x000002b6                __vector_11
+                0x000002b6                __vector_54
+                0x000002b6                __vector_99
+                0x000002b6                __vector_13
+                0x000002b6                __vector_17
+                0x000002b6                __vector_19
+                0x000002b6                __vector_56
+                0x000002b6                __vector_7
+                0x000002b6                __vector_49
+                0x000002b6                __vector_123
+                0x000002b6                __vector_41
+                0x000002b6                __vector_86
+                0x000002b6                __vector_100
+                0x000002b6                __vector_101
+                0x000002b6                __vector_64
+                0x000002b6                __vector_88
+                0x000002b6                __vector_109
+                0x000002b6                __vector_43
+                0x000002b6                __vector_27
+                0x000002b6                __vector_5
+                0x000002b6                __vector_113
+                0x000002b6                __vector_33
+                0x000002b6                __vector_76
+                0x000002b6                __vector_115
+                0x000002b6                __vector_47
+                0x000002b6                __vector_52
+                0x000002b6                __vector_37
+                0x000002b6                __vector_95
+                0x000002b6                __vector_103
+                0x000002b6                __vector_96
+                0x000002b6                __vector_89
+                0x000002b6                __vector_108
+                0x000002b6                __vector_4
+                0x000002b6                __vector_44
+                0x000002b6                __vector_82
+                0x000002b6                __vector_106
+                0x000002b6                __vector_118
+                0x000002b6                __vector_51
+                0x000002b6                __vector_9
+                0x000002b6                __vector_2
+                0x000002b6                __vector_21
+                0x000002b6                __vector_15
+                0x000002b6                __vector_66
+                0x000002b6                __vector_36
+                0x000002b6                __vector_79
+                0x000002b6                __vector_58
+                0x000002b6                __vector_70
+                0x000002b6                __vector_83
+                0x000002b6                __vector_29
+                0x000002b6                __vector_60
+                0x000002b6                __vector_121
+                0x000002b6                __vector_40
+                0x000002b6                __vector_85
+                0x000002b6                __vector_94
+                0x000002b6                __vector_8
+                0x000002b6                __vector_26
+                0x000002b6                __vector_48
+                0x000002b6                __vector_124
+                0x000002b6                __vector_116
+                0x000002b6                __vector_112
+                0x000002b6                __vector_111
+                0x000002b6                __vector_80
+                0x000002b6                __vector_14
+                0x000002b6                __vector_84
+                0x000002b6                __vector_57
+                0x000002b6                __vector_53
+                0x000002b6                __vector_10
+                0x000002b6                __vector_50
+                0x000002b6                __vector_59
+                0x000002b6                __vector_18
+                0x000002b6                __vector_97
+                0x000002b6                __vector_20
+                0x000002b6                __vector_42
+                0x000002b6                __vector_87
+                0x000002b6                __vector_65
+                0x000002b6                __vector_120
+ .text          0x000002b8      0x186 usb/usb_xmega.o
+                0x000002b8                EVENT_USB_Device_WakeUp
+                0x000002b8                USB_Event_Stub
+                0x000002b8                EVENT_USB_Device_Suspend
+                0x000002b8                EVENT_USB_Device_StartOfFrame
+                0x000002b8                EVENT_USB_Device_Reset
+                0x000002b8                EVENT_USB_Device_ControlOUT
+                0x000002ba                USB_Event_Stub_Bool
+                0x000002ba                EVENT_USB_Device_SetInterface
+                0x000002be                USB_Init
+                0x00000340                USB_ResetInterface
+                0x0000038c                USB_ep0_send_progmem
+                0x000003d6                USB_ConfigureClock
+ .text          0x0000043e      0x27a usb/usb_requests.o
+                0x0000043e                USB_HandleSetup
+ .text          0x000006b8     0x110c main.o
+                0x00000702                EVENT_USB_Device_ConfigurationChanged
+                0x00000748                __vector_125
+                0x000007d6                __vector_126
+                0x00000994                botherAddress
+                0x000009e2                getCalibrationData
+                0x00000b06                getSensorData
+                0x000011a0                getAliveFlat
+                0x0000127e                __vector_16
+                0x00001376                EVENT_USB_Device_ControlRequest
+ .text          0x000017c4       0x82 Descriptors.o
+                0x000017c4                CALLBACK_USB_GetDescriptor
+                0x00001846                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x00001846      0x204 main.o
+                0x00001846                main
+                0x00001a4a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001a4a        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+                0x00001a4a                exit
+                0x00001a4a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001a4a        0x4 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001a4e                _etext = .
+
+.data           0x00802000       0x38 load address 0x00001a4e
+                0x00802000                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00802000        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+ .data          0x00802000       0x30 usb/usb_xmega.o
+                0x00802000                endpoints
+ .data          0x00802030        0x0 usb/usb_requests.o
+ .data          0x00802030        0x7 main.o
+                0x00802030                ep_in_pipe_data
+                0x00802035                timeout_or_sampling_no_longer_enabled
+                0x00802036                SLAVE
+ .data          0x00802037        0x0 Descriptors.o
+ .data          0x00802037        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+ .data          0x00802037        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+ .data          0x00802037        0x0 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00802038                . = ALIGN (0x2)
+ *fill*         0x00802037        0x1 
+                0x00802038                _edata = .
+                0x00802038                PROVIDE (__data_end, .)
+
+.bss            0x00802038      0x6b1
+                0x00802038                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00802038        0x7 main.o
+                0x00802038                cmd_data
+                0x00802039                usb_cmd
+                0x0080203a                ep_in_data
+                0x0080203e                MASTER
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0080203f       0x82 usb/usb_xmega.o
+                0x0080203f                ep0_buf_in
+                0x0080207f                USB_DeviceState
+                0x00802080                USB_Device_ConfigurationNumber
+                0x00802081                ep0_buf_out
+ COMMON         0x008020c1      0x628 main.o
+                0x008020c1                sensorDataPrime
+                0x008022c1                aliveCells
+                0x008022e9                ep_in_pipe_buffer
+                0x008024e9                sensorData
+                0x008026e9                PROVIDE (__bss_end, .)
+                0x00001a4e                __data_load_start = LOADADDR (.data)
+                0x00001a86                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008026e9        0x0
+                0x008026e9                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008026e9                PROVIDE (__noinit_end, .)
+                0x008026e9                _end = .
+                0x008026e9                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x00000000      0x6cc
+ *(.stab)
+ .stab          0x00000000      0x6cc /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+
+.stabstr        0x00000000       0x97
+ *(.stabstr)
+ .stabstr       0x00000000       0x97 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f usb/usb_xmega.o
+                                 0x30 (size before relaxing)
+ .comment       0x00000000       0x30 usb/usb_requests.o
+ .comment       0x00000000       0x30 main.o
+ .comment       0x00000000       0x30 Descriptors.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x88
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 usb/usb_xmega.o
+ .debug_aranges
+                0x00000020       0x20 usb/usb_requests.o
+ .debug_aranges
+                0x00000040       0x28 main.o
+ .debug_aranges
+                0x00000068       0x20 Descriptors.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x6b28
+ *(.debug_info)
+ .debug_info    0x00000000      0xde2 usb/usb_xmega.o
+ .debug_info    0x00000de2     0x1347 usb/usb_requests.o
+ .debug_info    0x00002129     0x4268 main.o
+ .debug_info    0x00006391      0x797 Descriptors.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xcb3
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x2f5 usb/usb_xmega.o
+ .debug_abbrev  0x000002f5      0x302 usb/usb_requests.o
+ .debug_abbrev  0x000005f7      0x4da main.o
+ .debug_abbrev  0x00000ad1      0x1e2 Descriptors.o
+
+.debug_line     0x00000000      0xe71
+ *(.debug_line)
+ .debug_line    0x00000000      0x18c usb/usb_xmega.o
+ .debug_line    0x0000018c      0x1ff usb/usb_requests.o
+ .debug_line    0x0000038b      0x92a main.o
+ .debug_line    0x00000cb5      0x1bc Descriptors.o
+
+.debug_frame    0x00000000      0x30c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x88 usb/usb_xmega.o
+ .debug_frame   0x00000088       0x3c usb/usb_requests.o
+ .debug_frame   0x000000c4      0x224 main.o
+ .debug_frame   0x000002e8       0x24 Descriptors.o
+
+.debug_str      0x00000000     0x2cac
+ *(.debug_str)
+ .debug_str     0x00000000      0xc7d usb/usb_xmega.o
+                                0xcf3 (size before relaxing)
+ .debug_str     0x00000c7d      0x586 usb/usb_requests.o
+                                0xe95 (size before relaxing)
+ .debug_str     0x00001203     0x1719 main.o
+                               0x1e5d (size before relaxing)
+ .debug_str     0x0000291c      0x390 Descriptors.o
+                                0x739 (size before relaxing)
+
+.debug_loc      0x00000000     0x26af
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x1e9 usb/usb_xmega.o
+ .debug_loc     0x000001e9      0x4e9 usb/usb_requests.o
+ .debug_loc     0x000006d2     0x1d66 main.o
+ .debug_loc     0x00002438      0x277 Descriptors.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0xaa0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0xf0 usb/usb_requests.o
+ .debug_ranges  0x000000f0      0x9b0 main.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(takktile.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+CALLBACK_USB_GetDescriptor                        Descriptors.o
+                                                  usb/usb_requests.o
+EVENT_USB_Device_ConfigurationChanged             main.o
+                                                  usb/usb_xmega.o
+                                                  usb/usb_requests.o
+EVENT_USB_Device_ControlOUT                       usb/usb_xmega.o
+                                                  main.o
+EVENT_USB_Device_ControlRequest                   main.o
+                                                  usb/usb_xmega.o
+                                                  usb/usb_requests.o
+EVENT_USB_Device_Reset                            usb/usb_xmega.o
+EVENT_USB_Device_SetInterface                     usb/usb_xmega.o
+                                                  usb/usb_requests.o
+EVENT_USB_Device_StartOfFrame                     usb/usb_xmega.o
+EVENT_USB_Device_Suspend                          usb/usb_xmega.o
+EVENT_USB_Device_WakeUp                           usb/usb_xmega.o
+MASTER                                            main.o
+SLAVE                                             main.o
+TakkTile_ConfigurationDescriptor                  Descriptors.o
+TakkTile_DeviceDescriptor                         Descriptors.o
+TakkTile_LanguageString                           Descriptors.o
+TakkTile_ManufacturerString                       Descriptors.o
+TakkTile_ProductString                            Descriptors.o
+USB_ConfigureClock                                usb/usb_xmega.o
+                                                  main.o
+USB_DeviceState                                   usb/usb_requests.o
+                                                  usb/usb_xmega.o
+USB_Device_ConfigurationNumber                    usb/usb_requests.o
+                                                  usb/usb_xmega.o
+USB_Event_Stub                                    usb/usb_xmega.o
+USB_Event_Stub_Bool                               usb/usb_xmega.o
+USB_HandleSetup                                   usb/usb_requests.o
+                                                  main.o
+USB_Init                                          usb/usb_xmega.o
+                                                  main.o
+USB_ResetInterface                                usb/usb_xmega.o
+USB_ep0_send_progmem                              usb/usb_xmega.o
+                                                  main.o
+                                                  usb/usb_requests.o
+__bad_interrupt                                   /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__bss_end                                         /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+__data_start                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_clear_bss.o)
+                                                  main.o
+                                                  usb/usb_xmega.o
+__do_copy_data                                    /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_copy_data.o)
+                                                  main.o
+                                                  usb/usb_xmega.o
+__heap_end                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__init                                            /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__stack                                           /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_1                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_10                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_100                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_101                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_102                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_103                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_104                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_105                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_106                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_107                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_108                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_109                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_11                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_110                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_111                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_112                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_113                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_114                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_115                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_116                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_117                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_118                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_119                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_12                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_120                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_121                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_122                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_123                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_124                                      /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_125                                      main.o
+                                                  /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_126                                      main.o
+                                                  /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_13                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_14                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_15                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_16                                       main.o
+                                                  /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_17                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_18                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_19                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_2                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_20                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_21                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_22                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_23                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_24                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_25                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_26                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_27                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_28                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_29                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_3                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_30                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_31                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_32                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_33                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_34                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_35                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_36                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_37                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_38                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_39                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_4                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_40                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_41                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_42                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_43                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_44                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_45                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_46                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_47                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_48                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_49                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_5                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_50                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_51                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_52                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_53                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_54                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_55                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_56                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_57                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_58                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_59                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_6                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_60                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_61                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_62                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_63                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_64                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_65                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_66                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_67                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_68                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_69                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_7                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_70                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_71                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_72                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_73                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_74                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_75                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_76                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_77                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_78                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_79                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_8                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_80                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_81                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_82                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_83                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_84                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_85                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_86                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_87                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_88                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_89                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_9                                        /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_90                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_91                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_92                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_93                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_94                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_95                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_96                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_97                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_98                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_99                                       /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vector_default                                  /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+__vectors                                         /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+_exit                                             /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+aliveCells                                        main.o
+botherAddress                                     main.o
+cmd_data                                          main.o
+endpoints                                         usb/usb_xmega.o
+                                                  main.o
+                                                  usb/usb_requests.o
+ep0_buf_in                                        main.o
+                                                  usb/usb_requests.o
+                                                  usb/usb_xmega.o
+ep0_buf_out                                       main.o
+                                                  usb/usb_requests.o
+                                                  usb/usb_xmega.o
+ep_in_data                                        main.o
+ep_in_pipe_buffer                                 main.o
+ep_in_pipe_data                                   main.o
+exit                                              /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/avrxmega2/libgcc.a(_exit.o)
+                                                  /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+fwversion                                         main.o
+getAliveFlat                                      main.o
+getCalibrationData                                main.o
+getSensorData                                     main.o
+hwversion                                         main.o
+main                                              main.o
+                                                  /usr/local/avr8-gnu-toolchain-linux_x86/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega2/crtx32a4u.o
+sensorData                                        main.o
+sensorDataPrime                                   main.o
+timeout_or_sampling_no_longer_enabled             main.o
+usb_cmd                                           main.o
